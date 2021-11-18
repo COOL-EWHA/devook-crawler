@@ -1,8 +1,0 @@
-{
-  "name": "devook-crawler",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/COOL-EWHA/devook-crawler.git",
-  "author": "gywlsp <gywls517@gmail.com>",
-  "license": "MIT"
-}
