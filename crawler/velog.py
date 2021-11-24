@@ -1,4 +1,5 @@
-from .base import BlogCrawler
+from utils import remove_escape
+from crawler.base import BlogCrawler
 
 
 class VelogCrawler(BlogCrawler):
@@ -7,8 +8,8 @@ class VelogCrawler(BlogCrawler):
 
     @property
     def content(self):
-        return (
+        return remove_escape(
             self._soup.find("div", id="root")
             .find("div", class_=["sc-cIShpX", "cUTnDC", "sc-bXGyLb", "eLTqCr"])
-            .text.replace("\n", " ")
+            .text
         )
