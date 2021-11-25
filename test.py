@@ -13,7 +13,9 @@ lambda_handler(
         # "url": "https://coffeeandcakeandnewjeong.tistory.com/98"
         # "url": "https://mong-blog.tistory.com/entry/promise%EC%99%80-async-await%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90"
         # "url": "https://jungpaeng.tistory.com/100"
-        "url": "https://weekwith.tistory.com/entry/React%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83-01-DOM%EA%B3%BC-Virtual-DOM-%EA%B7%B8%EB%A6%AC%EA%B3%A0-CDN"
+        # "url": "https://weekwith.tistory.com/entry/React%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83-01-DOM%EA%B3%BC-Virtual-DOM-%EA%B7%B8%EB%A6%AC%EA%B3%A0-CDN"
+        # "url": "https://medium.com/uniquegood/%EC%86%8C%EA%B0%9C-dc78312c51d3"
+        "url": "https://medium.com/musinsa-tech/mab-211d14d2090b"
     },
     None,
 )
