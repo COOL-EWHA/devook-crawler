@@ -1,4 +1,5 @@
 from crawler.base import BlogCrawler
+from crawler.medium import MediumCrawler
 from crawler.tistory import TistoryCrawler
 from crawler.velog import VelogCrawler
 from urllib.error import HTTPError
@@ -15,6 +16,8 @@ def lambda_handler(event, context):
             crawler = VelogCrawler(url)
         elif "tistory.com" in url:
             crawler = TistoryCrawler(url)
+        elif "medium.com" in url:
+            crawler = MediumCrawler(url)
         else:
             crawler = {"content": ""}
 
