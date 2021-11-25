@@ -4,7 +4,9 @@ from bs4 import BeautifulSoup
 
 class BlogCrawler:
     def __init__(self, url):
-        self._soup = BeautifulSoup(urllib.request.urlopen(url).read(), "html.parser")
+        headers = {"User-Agent": "Mozilla/5.0"}
+        req = urllib.request.Request(url, headers=headers)
+        self._soup = BeautifulSoup(urllib.request.urlopen(req).read(), "html.parser")
 
     @property
     def info(self):
