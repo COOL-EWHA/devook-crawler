@@ -9,7 +9,8 @@ class VelogCrawler(BlogCrawler):
     @property
     def content(self):
         return remove_escape(
-            self._soup.find("div", id="root")
-            .find("div", class_=["sc-cIShpX", "cUTnDC", "sc-bXGyLb", "eLTqCr"])
-            .text
+            (
+                self._soup.select_one("#root div.sc-cIShpX.cUTnDC")
+                or self._soup.select_one("#root div.sc-bXGyLb.eLTqCr")
+            ).get_text()
         )
