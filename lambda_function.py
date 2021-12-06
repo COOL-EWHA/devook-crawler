@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     url = event["url"]
 
     base_crawler = BlogCrawler(url)
-    print(base_crawler.info)
+    ret = base_crawler.info.copy()
 
     try:
         if "velog.io" in url:
@@ -21,8 +21,10 @@ def lambda_handler(event, context):
         else:
             crawler = {"content": ""}
 
-        print(crawler.content)
+        ret['content'] = crawler.content
 
     except HTTPError:
         pass
         return
+
+    print(ret)
