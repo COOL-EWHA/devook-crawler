@@ -8,7 +8,6 @@ from urllib.error import HTTPError
 def lambda_handler(event, context):
     url = event["url"]
 
-
     try:
         if "velog.io" in url:
             crawler = VelogCrawler(url)
@@ -24,4 +23,3 @@ def lambda_handler(event, context):
     except HTTPError:
         pass
         return
-
