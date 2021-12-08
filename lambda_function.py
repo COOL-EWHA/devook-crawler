@@ -18,7 +18,7 @@ def lambda_handler(event, context):
         else:
             crawler = BlogCrawler(url)
 
-        return crawler.info
+        return crawler.data
 
     except HTTPError:
         pass
