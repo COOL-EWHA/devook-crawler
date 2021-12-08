@@ -11,7 +11,7 @@ class BlogCrawler:
         self._soup = BeautifulSoup(urllib.request.urlopen(req).read(), "html.parser")
 
     @property
-    def info(self):
+    def data(self):
         return {
             "title": self.title,
             "description": self.description,
@@ -36,7 +36,6 @@ class BlogCrawler:
 
     @property
     def content(self):
-        # return remove_escape((self._soup.select_one("body")).get_text() or "")
         return remove_escape(
             (
                 self._soup.select_one("article")
