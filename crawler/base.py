@@ -21,15 +21,18 @@ class BlogCrawler:
 
     @property
     def title(self):
-        return self._soup.find("meta", property="og:title")["content"]
+        tag = self._soup.find("meta", property="og:title")
+        return tag["content"] if tag else ""
 
     @property
     def description(self):
-        return self._soup.find("meta", property="og:description")["content"]
+        tag = self._soup.find("meta", property="og:description")
+        return tag["content"] if tag else ""
 
     @property
     def image(self):
-        return self._soup.find("meta", property="og:image")["content"]
+        tag = self._soup.find("meta", property="og:image")
+        return tag["content"] if tag else ""
 
     @property
     def content(self):
