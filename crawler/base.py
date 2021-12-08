@@ -36,4 +36,12 @@ class BlogCrawler:
 
     @property
     def content(self):
-        return remove_escape((self._soup.select_one("body")).get_text() or "")
+        # return remove_escape((self._soup.select_one("body")).get_text() or "")
+        return remove_escape(
+            (
+                self._soup.select_one("article")
+                or self._soup.select_one("main")
+                or self._soup.select_one("body")
+            ).get_text()
+            or ""
+        )
