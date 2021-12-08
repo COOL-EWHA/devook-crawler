@@ -8,8 +8,6 @@ from urllib.error import HTTPError
 def lambda_handler(event, context):
     url = event["url"]
 
-    base_crawler = BlogCrawler(url)
-    ret = base_crawler.info.copy()
 
     try:
         if "velog.io" in url:
@@ -19,12 +17,11 @@ def lambda_handler(event, context):
         elif "medium.com" in url:
             crawler = MediumCrawler(url)
         else:
-            crawler = {"content": ""}
+            crawler = BlogCrawler(url)
 
-        ret['content'] = crawler.content
+        return crawler.info.copy()
 
     except HTTPError:
         pass
         return
 
-    print(ret)

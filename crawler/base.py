@@ -1,6 +1,8 @@
 import urllib.request
 from bs4 import BeautifulSoup
 
+from utils import remove_escape
+
 
 class BlogCrawler:
     def __init__(self, url):
@@ -14,6 +16,7 @@ class BlogCrawler:
             "title": self.title,
             "description": self.description,
             "image": self.image,
+            "content": self.content,
         }
 
     @property
@@ -27,3 +30,7 @@ class BlogCrawler:
     @property
     def image(self):
         return self._soup.find("meta", property="og:image")["content"]
+
+    @property
+    def content(self):
+        return remove_escape((self._soup.select_one("body")).get_text() or "")
