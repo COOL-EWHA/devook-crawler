@@ -31,8 +31,11 @@ def key_phrase_extraction_example(client):
         documents   = get_test_document()
         response    = client.extract_key_phrases(documents=documents, language="ko")
 
+        print("\n")
+
         for data in response:
-            print(data)
+            print("Key Phrase size : %d" % len(data.key_phrases))
+            print(data, "\n")
 
     except Exception as err:
         print("Encountered exception. {}".format(err))

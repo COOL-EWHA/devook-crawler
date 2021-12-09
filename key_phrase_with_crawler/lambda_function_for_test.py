@@ -22,6 +22,7 @@ def lambda_handler(event, context):
         else:
             crawler = {"content": ""}
 
+        print("Contents size : %d\n" % len(crawler.content))
         return crawler.content
 
     except HTTPError:
