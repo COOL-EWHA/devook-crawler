@@ -66,16 +66,16 @@ def main():
         posts_b = soup.find_all("div", "ct-item base")
         posts_t = soup.find_all("div", "ct-item text")
 
-        for b in posts_b:
-            url.append(b.find("div", "ct-title").contents[0].attrs['href'])
-            title.append(b.find("div", "ct-title").text)
-            description.append(b.find("div", "ct-text").text)
+        for item in posts_b:
+            url.append(item.find("div", "ct-title").contents[0].attrs['href'])
+            title.append(item.find("div", "ct-title").text)
+            description.append(item.find("div", "ct-text").text)
             category.append(category_list[i])
 
-        for t in posts_t:
-            url.append(t.find("div", "ct-title").contents[0].attrs['href'])
-            title.append(t.find("div", "ct-title").text)
-            description.append(t.find("div", "ct-text").text)
+        for item in posts_t:
+            url.append(item.find("div", "ct-title").contents[0].attrs['href'])
+            title.append(item.find("div", "ct-title").text)
+            description.append(item.find("div", "ct-text").text)
             category.append(category_list[i])
 
     for i, url in enumerate(url):
