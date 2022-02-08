@@ -1,7 +1,9 @@
 import time
+import csv
 import MySQLdb
-from selenium   import webdriver
-from bs4        import BeautifulSoup
+
+from selenium import webdriver
+from bs4 import BeautifulSoup
 
 from surfit_crawler.parsers import parse_url_title_description
 
@@ -35,7 +37,7 @@ def web_page_scroll(driver):
 
 def set_beautifulsoup(driver):
     html = driver.page_source
-    return BeautifulSoup(html, 'html.parser')
+    return BeautifulSoup(html, "html.parser")
 
 
 def convert_driver_to_beautifulsoup(driver, url):
@@ -46,25 +48,24 @@ def convert_driver_to_beautifulsoup(driver, url):
 
 def one_cycle_of_crawling(driver, url, posts, index):
     soup = convert_driver_to_beautifulsoup(driver, url)
-    parse_url_title_description(soup=soup, tag_name="div", class_name="ct-item base", posts=posts, index=index)
-    parse_url_title_description(soup=soup, tag_name="div", class_name="ct-item text", posts=posts, index=index)
+    parse_url_title_description(
+        soup=soup, tag_name="div", class_name="ct-item base", posts=posts, index=index
+    )
+    parse_url_title_description(
+        soup=soup, tag_name="div", class_name="ct-item text", posts=posts, index=index
+    )
 
 
 def append_data(urls, titles, descriptions, category):
     items = []
     for i, url in enumerate(urls):
-        data = (url, titles[i], descriptions[i], category[i])
+        data = (url, titles[i], descriptions[i], category[i])  # tuple 생성
         items.append(data)
     return items
 
 
 def connect_db(user, passwd, host, db):
-    return MySQLdb.connect(
-        user=user,
-        passwd=passwd,
-        host=host,
-        db=db
-    )
+    return MySQLdb.connect(user=user, passwd=passwd, host=host, db=db)
 
 
 def disconnect_db(conn):
@@ -91,3 +92,13 @@ def insert_into_database(items, user, passwd, host, db):
         cursor.execute(sql, values)
 
     disconnect_db(conn=conn)
+
+
+def save_to_csv(
+    file_name, column, data
+):  # file_name: string, columns: list, data: [(), (), ..] list(tuple)
+    with open(file_name, mode="w", newline="", encoding="utf-8") as out:
+        csv_out = csv.writer(out)
+        csv_out.writerow(column)
+        for row in data:
+            csv_out.writerow(row)
