@@ -1,11 +1,13 @@
 from unittest import TestCase
 
 from surfit_crawler.parsers import parse_url_title_description
-from surfit_crawler.utils import set_chrome_driver, \
-    loads_a_web_page_in_the_current_session, \
-    web_page_scroll, \
-    set_beautifulsoup, \
-    initialize_jagged_list
+from surfit_crawler.utils import (
+    set_chrome_driver,
+    loads_a_web_page_in_the_current_session,
+    web_page_scroll,
+    set_beautifulsoup,
+    initialize_jagged_list,
+)
 
 
 class ParsersTestCase(TestCase):
@@ -19,16 +21,23 @@ class ParsersTestCase(TestCase):
         """
         성공 : 파싱한 데이터의 개수와 리스트에 저장된 개수가 동일한 경우
         """
+        # given
         url = "https://www.surfit.io/explore/develop/ios"
         index = 13
-
         driver, soup = self.set_chrome_driver_and_beautifulsoup(url)
         expected = len(soup.find_all("div", "ct-item base"))
-        parse_url_title_description(soup=soup, tag_name="div", class_name="ct-item base", posts=self.posts, index=index)
+        # when
+        parse_url_title_description(
+            soup=soup,
+            tag_name="div",
+            class_name="ct-item base",
+            posts=self.posts,
+            index=index,
+        )
         result = len(self.posts[0])
         print(self.posts)
-
         driver.quit()
+        # then
         self.assertEqual(expected, result)
 
     @staticmethod
