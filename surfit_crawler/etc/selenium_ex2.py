@@ -4,7 +4,7 @@ import time
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
-driver = webdriver.Chrome("./chromedriver")
+driver = webdriver.Chrome("../chromedriver")
 driver.implicitly_wait(3)
 
 url = "https://www.surfit.io/explore/develop/bigdata-ai-ml"
@@ -24,7 +24,7 @@ while True:
 
 # BeaufitulSoup 적용
 html = driver.page_source
-soup = BeautifulSoup(html, 'html.parser')
+soup = BeautifulSoup(html, "html.parser")
 
 # 데이터 개수 확인
 item_base = soup.find_all("div", "ct-item base")
