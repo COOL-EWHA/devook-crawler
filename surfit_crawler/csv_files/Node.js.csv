@@ -1,0 +1,178 @@
+url,title,description,category
+https://surfit.io/link/GAjen,Vue Server Side Rendering,"Vue Server Side Rendering의 구조
+필자는 Nuxt.js를 사용하지 않고 보일러플레이트를 사용해서 약간 개선해서 구현했다. 처음에는 ‘그냥 Nuxt쓸걸…’이라고 후회하기도 했지만 그래도 덕분에 Universal SSR의 실행 과정을 더 깊게 알아볼 수 있는 좋은 기회였다고 생각한다.(라고 삽질을 포장해본다)
+해당 포스팅에서는 필자가 작성했",Node.js
+https://surfit.io/link/qyODD,직접 만들어보며 이해하는 JWT,"Json Web Token 의 줄임말이다. RFC 7519 에 명세되어 있는 국제 표준으로써, 통신 양자간의 정보를 JSON 형식을 사용하여 안전하게 전송하기 위한 방법이다. JWT 는 정보가 토큰 자체에 포함된 (Self-Contained) 클레임 (Claim) 기반 토큰이다.
+JWT 는 인증 (Authentication) 과 권한부여(Authorizat",Node.js
+https://surfit.io/link/xrbBA,채팅서비스를 구현하며 배워보는 Websocket 원리 (feat. node.js),"웹소켓(Websocket) 은 HTTP 와 구분되는 통신 프로토콜이다. RFC 6455 로 국제적으로 표준화 되어있다. HTTP 와 웹소켓은 모두 OSI 참조 모델의 7계층에 위치해있고, TCP 에 의존한다.
+많은 사람들이 알고 있는 것 처럼 HTTP 통신은 요청 (Request) 와 응답 (Response) 이 존재한다. 여기서 요청은 클라이언트가, 응답",Node.js
+https://surfit.io/link/YAaP8,"웹팩보다 100배 빠른 번들러, esbuild","웹팩보다 100배 빠르다는 건 어그로가 아닙니다. 아래 그림을 봐주시죠.
+
+위 벤치마크는 메이저 자바스크립트 번들러들의 빌드 타임을 비교한 표입니다.
+아니 어떻게 이렇게 빠를 수가 있냐구요? 이유는 이러합니다.
+Go 언어로 작성됨
+코드 파싱, 출력과 소스맵 생성을 모두 병렬로 처리함
+불필요한 데이터 변환과 할당 없음
+하지만 아직 1.0 버전 출시 전이기 때",Node.js
+https://surfit.io/link/EmozE,NodeJS 와 PostgreSQL Connection Pool,"Database에 관해 기본적인 id/pw 외에 해야할 설정들이 여러개 있는데요. 그 중 실제 서비스 운영에 가장 중요한 설정 중 하나가 이전 글인 쿼리 타임아웃 과 함께 커넥션 풀 (Connection Pool) 설정입니다.
+이 커넥션풀 설정이 왜 필요한지, 어떻게 해야할지 등등을 알아보겠습니다.
+1. 실험 환경
+실험의 경우 아래 환경에서 진행합니다.
+N",Node.js
+https://surfit.io/link/qyW7v,"Yarn Workspace에서 package.json 틸드(~), 캐럿(^) 버전 명시 주의할 점","yarn workspace에서는 yar berry(2.0)를 쓰고 있다.  yarn berry를 이용하게 되면 Zero install을 통해 의존성 패키지들을 더 가볍고 빠르게 설치 및 이용할 수 있다. (여기서는 zero install이 무엇인지 다루지 않는다.)
+
+그러나 지금 작업 중인 모노레포에서는 yarn workspace 환경 세팅에 zero in",Node.js
+https://surfit.io/link/nlDkg,NodeJS 와 PostgreSQL Query Timeout,"작은 서비스를 운영할때는 문제가 없던 서비스가 데이터가 적재되면 될수록 점점 슬로우 쿼리가 등장하게 됩니다.
+이때 쿼리 시간을 제한하지 않으면, 5분/10분씩 수행되는 쿼리가 운영 환경에서 실행하게 되기도 하는데요.
+이런 쿼리가 트래픽에 맞춰 여러개 요청이 온다면 결국 Node에서 사용가능한 Connection Pool이 가득차 더이상 쿼리 질의를 못하거나",Node.js
+https://surfit.io/link/rMDlb,Mock Service Worker로 만드는 모의 서버,"MSW(=Mock Service Worker)는 API 모킹(mocking) 라이브러리로, 서버를 향한 네트워크 요청을 가로채서(intercept) 모의 응답(mocked response)을 내려주는 역할을 한다. 이 라이브러리의 장점은 사용자가 정의한 모킹 핸들러를 테스트를 위한 노드(node.js) 환경, 개발과 디버깅을 위한 브라우저 환경에서 모두 사",Node.js
+https://surfit.io/link/AZlnz,Tree Shaking과 Module System,"들어가며
+어플리케이션은 개발자가 직접 작성한 코드, 외부 라이브러리 등 다양한 코드조각들로 이루어져 있습니다.  어플리케이션이 복잡해질수록 번들 사이즈에 신경을 쓰게 되는데요, 이때 필요한 코드만 남기기 위한 작업, 흔히 Tree Shaking이라고 불리는 과정이 수반되어야 합니다.
+이 글에서는 Tree Shaking에 대한 기본 개념과 Tree Shaki",Node.js
+https://surfit.io/link/P1z06,NestJS (with Mono Repo) WebStorm으로 디버깅 하기,"어떤 개발 환경에서도 터미널만 있으면 실행할 수 있으니 좋습니다만, 이럴 경우 WebStorm/IntelliJ 등 디버깅 기능이 강력한 IDE의 도움을 못받습니다.
+개발에 있어서 디버거의 사용유무는 중요합니다.
+실시간 데이터 변경 흐름 파악
+특정 지점에서의 별도 로직 수행
+Logger를 추가할 수 없는 외부 라이브러리에 대한 코드 추적
+등등 디버거를 통해 ",Node.js
+https://surfit.io/link/YAn8V,테스트 코드에서 내부 구현 검증 피하기,"테스트 코드를 작성하고 운영하다보면 기존 코드가 조금만 변경되어도 테스트를 다 고쳐야하는 경우가 종종 있다. (모든 경우가 그렇진 않겠지만) 기능의 최종 결과를 검증하는게 아니라 내부 구현을 검증하는 경우에 자주 이런일이 있었다.
+내부 구현을 검증하는 테스트들은 구현을 조금만 변경해도 테스트가 깨질 가능성이 커진다. 내부 구현은 언제든지 바뀔 수 있기 때문",Node.js
+https://surfit.io/link/xrMjx,DataLoader로 Non-GraphQL환경에서 활용하기,"DataLoader는 일반적으로 GraphQL의 N+1 문제를 해결하기 위해 사용하는 패키지로 널리 사용되고 있는 유틸리티입니다. 때문에 DataLoader는 GraphQL를 사용하지 않는 환경에서는 큰 관심을 보이지 않습니다.하지만 DataLoader는 오직 GraphQL를 위한 라이브러리도 아니며, 종속성도 전혀 없이 독립적입니다. 오늘은 DataLoa",Node.js
+https://surfit.io/link/P11pl,Jest CLI 대신에 WebStorm Run (Debug)로 수행하자,IDE가 지원하는 강력한 테스팅 환경을 사용하기 위해서 IDE로 수행하는 것을 추천합니다.   이번시간에는 CLI 보다 IDE로 통합 테스트를 수행하는 방법의 장점을 알아보겠습니다. 1. 장점 먼저 깔끔하게 정리된 테스트 레포트를 볼 수 있는데요.   아래와 같이 지정해놓은 테스트 로그를 숨기고 결과만을 정리 해서 보여줍니다.  기존 CLI에서는 테스트를 ,Node.js
+https://surfit.io/link/2vpGj,node_modules로부터 우리를 구원해 줄 Yarn Berry,"Yarn Berry는 Node.js를 위한 새로운 패키지 관리 시스템으로, Yarn v1의 주요 개발자인 Maël Nison 씨가 만들었습니다. 2020년 1월 25일부터 정식 버전(v2)가 출시되어, 현재는 Babel과 같은 큰 오픈소스 레포지토리에서도 채택하고 있습니다. Yarn Berry는 GitHub yarnpkg/berry 레포지토리에서 소스코드가",Node.js
+https://surfit.io/link/4bb74,NestJS에서 응답/요청 객체 직렬화 (Serialization) 하기,"흔히 소프트웨어 설계에서 이야기하는 응집도(cohesion)와 결합도(coupling)가 있습니다. 좋은 코드 디자인이라 하면, 높은 응집도 / 낮은 결합도로 설계해야 하는데요.
+한 객체가 변경이 발생하면 해당 객체에 의존하는 다른 객체들도 변경해야 하기 때문에 이들의 변경 범위를 최소화 하기 위해 캡슐화를 사용합니다. 이를 위해 일반적으로 모든 내부 필드",Node.js
+https://surfit.io/link/4bbeQ,도커 컴포즈를 이용한 Express-Typescript-MySQL 개발환경 구축,docker-compose 를 활용해 로컬 vscode 에서 코드를 변경하면 컨테이너 안에서 프로그램이 재시작되도록 만들었다. nodemon(node monitor) 는 노드가 실행하는 파일이 속한 디렉터리를 감시하고 있다가 파일이 수정되면 자동으로 노드 애플리케이션을 재시작한다. ts-node 는 메모리 상에서 타입스크립트를 transpile 해 바로 실,Node.js
+https://surfit.io/link/6QAjq,DataLoader로 Non-GraphQL환경에서 활용하기,"DataLoader는 일반적으로 GraphQL의 N+1 문제를 해결하기 위해 사용하는 패키지로 널리 사용되고 있는 유틸리티입니다. 때문에 DataLoader는 GraphQL를 사용하지 않는 환경에서는 큰 관심을 보이지 않습니다.하지만 DataLoader는 오직 GraphQL를 위한 라이브러리도 아니며, 종속성도 전혀 없이 독립적입니다. 오늘은 DataLoa",Node.js
+https://surfit.io/link/KEQnJ,Node.js express와 error handling,"callback, Promise, async/await 등 다양한 코드 형태별 최적의 에러 핸들링 방안을 소개해 드립니다.
+
+에러 발생시키기 - 기본
+
+아래는 express 공식 가이드인 에러 핸들링에 있는 코드인데요.
+
+app.get('/', (req, res) =&gt; {
+  throw new Error('BROKEN'); // express가 알아서",Node.js
+https://surfit.io/link/mxyjZ,NestJs의 Module과 CacheModule을 활용한 Redis 연동,"NestJs 프레임워크의 Module과 CacheModule을 활용하여 Redis, 그리고 Redis-Cluster 연동에 대해 이야기해 보려 합니다.NestJs에서는 Module을 다음과 같이 정의합니다@Module() 데코레이터가 달린 클래스를 Module이라 합니다.@Module() 데코레이터는 NestJs가 어플리케이션 구조를 구성할 수 있도록 메타",Node.js
+https://surfit.io/link/KY2l4,NestJS & TypeORM 환경에서 Monorepo 구성하기: TypeORM 추가하기,"초기의 작은 App에서는 어느 패턴이여도 상관없지만, 유지보수와 확장성을 고려하면 Data Mapper를 선호하게 됩니다.
+Data Mapper 패턴이 Active Record 패턴에 비해 가장 큰 차이점은, 도메인을 Persistence 와 완전히 분리한다는 것입니다. 이를테면 Active Record 패턴은 Model을 테이블로 바라봅니다
+const t",Node.js
+https://surfit.io/link/3OdPZ,국제화(i18n) 자동화 가이드,"글로벌을 무대로 서비스하는 웹 애플리케이션은 국제화(i18n)가 필수다. 이를 위하여 국제화 라이브러리를 사용하거나 직접 구현하기도 한다. 이 글은 국제화 지원을 위한 개발과 번역 과정에서 이른바 ""복붙""이나 반복적인 수작업으로 인해 고통받는 모든 프런트엔드 개발자를 위하여 작성하였다. 이 자동화 가이드를 따른다면 여러분은 단 한 줄의 스크립트 실행만으로 ",Node.js
+https://surfit.io/link/3jQAl,타입스크립트로 슬랙 앱(봇) 만들기: 기초편,"목차
+슬랙 앱(봇) 이란?
+슬랙 앱 활용 사례
+슬랙 앱 생성하기
+타입스크립트로 슬랙 봇 만들기
+사용할 스코프 추가하기
+슬랙 앱 설치하기
+슬랙 앱으로 메시지 받아보기
+슬랙 앱으로 메시지 보내기
+아쉬운 점
+다음편
+1. 슬랙 앱(봇) 이란?
+국내에서도 인지도가 있는 업무용 메신저인 슬랙을 아시나요? 강남언니에서도 사내 메신저로 슬랙을 쓰고 있습니다. 슬랙의 큰 ",Node.js
+https://surfit.io/link/w496Q,IBM Cloud로 Node.js 배포하기,"IBM Cloud는 이름에서도 알 수 있듯이 IBM에서 제공하는 클라우드 서비스입니다. 개인적으로 무료 버전인 Lite로 사용할 경우 별도의 카드 번호 입력을 요구하지 않는 점이 좋았고, UI 또한 다른 서비스에 비해 깔끔하고 직관적이라는 인상을 주었습니다. 이제부터 IBM Cloud를 시작해볼까요?
+
+
+
+1. 계정 생성과 로그인
+먼저 IBM Cloud 화",Node.js
+https://surfit.io/link/wdavN,NestJS & TypeORM 환경에서 Monorepo 구성하기,"직접 모노레포를 구성해도 되지만, NestJS에서는 이미 CLI로 모노레포 구성을 지원하기 때문에 CLI로 진행하겠습니다.
+아직 NestJS CLI를 설치하지 않으셨다면 아래 명령어로 설치합니다.
+npm install -g @nestjs/cli
+설치가 다 되셨다면, CLI로 NestJS로 프로젝트를 생성합니다.
+nest new monorepo-nestjs-",Node.js
+https://surfit.io/link/wo14j,Lerna와 yarn-workspace를 활용한 Mono Repo (Typescript & Jest) 환경 구성하기,"보통 하나의 도메인 시스템을 운영할때 프로젝트 하나만으로는 해결이 안될 때가 많습니다.
+이를테면 다음과 같은 경우인데요.
+
+어떤 분은 이걸 보고 MSA 라고 하시기도 하는데요. API / Admin / Batch 가 분리된걸로 절대로 MSA 라고 하진 않습니다.
+
+하나의 주문시스템을 위해 3개의 하위 프로젝트가 있는 상태입니다.
+주문 어드민
+주문 API
+주",Node.js
+https://surfit.io/link/wdxnN,Naver Pinpoint APM Node 버전 설치하기,"자바 진영에서 유명한 분산 환경 APM (Application Performance Monitoring) 도구를 고르라고 하면 네이버에서 만든 Pinpoint를 쉽게 떠올리곤 하는데요.
+특히나 요즘 같이 분산환경에서 애플리케이션 모니터링에 최적화된 기능들이 많아 백엔드 구성하는데 있어 큰 도움을 받는데요.
+아쉽게도 그동안 공식적으로 Java / PHP / ",Node.js
+https://surfit.io/link/K2BnP,nodeenv를 활용한 프로젝트별 node 가상 환경 관리,"Node에는 nvm 이나 n을 통해 동적으로 로컬 PC의 Node 버전을 변경할 수 있는데요. 다만 애초에 여러 프로젝트를 서로 다른 버전으로 동시에 사용하는 경우에는 매번 버전을 변경하는 것도 상당히 귀찮은 일입니다. 이를테면 다음과 같은 경우입니다.
+회사의 프로젝트는 node 12를 쓴다
+개인 프로젝트는 최신 버전인 node 16을 쓰고 싶다.
+주말마다",Node.js
+https://surfit.io/link/3LnNl,TypeORM에서 Camelcase 필드를 Snake 컬럼에 매핑하기,"일반적으로 PostgreSQL을 비롯한 Database의 컬럼 명명 (Naming) 규칙은 snake, 애플리케이션 코드의 필드 명명 규칙은 Camelcase 입니다.   Entity  Table  둘 간에 명명 규칙이 달라 일반적인 ORM 들 (JPA등) 에서는 이들간의 불일치 해소를 위한 명명 전략 (Naming Strategy)를 지원하는데요.   T",Node.js
+https://surfit.io/link/wDaL9,streaming API를 사용한 네이버페이의 대형 XLSX 파일 다운로드 구현,"네이버페이에서는 엄청난 양의 데이터가 생성됩니다. 자신이 생성한 많은 데이터를 한꺼번에 보고 싶어 하는 판매자를 위해 네이버페이는 Microsoft Excel 통합 문서 파일(XLSX 파일) 다운로드 기능을 제공합니다.
+
+일반적인 웹 페이지는 페이징(paging)을 사용합니다. 해당 데이터가 어떤 기간에 생성되었든 한 페이지에 표시할 수 있는 내용만 표시합",Node.js
+https://surfit.io/link/3xg6A,공식문서 짜증나서 내가 그냥 한 번에 정리하는 시퀄라이즈,"공식문서 짜증나서 내가 그냥 한 번에 정리하는 시퀄라이즈 공식문서1
+공식문서2공식문서3
+query 관련 blog
+
+한 번에 여러 모델을 가져오는 query이다.
+required eager loading
+required: true 옵션 : associated model 이 존재하는 객체만을 Return 하도록 강제한다. 
+User.findAll({
+  inc",Node.js
+https://surfit.io/link/wmEQP,앱과 라이브러리 관리에 Monorepo?,"현 직장에서 사내의 모든 FE 프로젝트를 하나의 팀에서 담당하게 되다 보니 어느 순간 의존성 관리 문제에 봉착하게 되었다. 라이브러리와 앱이 N:N으로 늘어나 의존성 관리가 복잡해지고 있다.
+예를 들면. 쇼핑몰의 경우 보통 웹과 관리자 한 세트로 개발하여 운영한다. 만약 새로운 서비스를 오픈한다면 총 2세트가 되고. 서비스 간에 회원, 주문을 하나로 통합하",Node.js
+https://surfit.io/link/KbdNe,NVM으로 Windows 환경에서 Node 버전 관리하기,"NVM을 사용하여 Windows 환경에서도 Node.js의 버전을 관리하고, 개발 환경에 따라 Node.js 버전을 변경하는 방법을 배워보자. 
+NVM 은 Node Version Manager로써 Node.js의 도구이며 여러 Node.js를 설치하여 상황에 따라 버전을 변경해 가면서 사용하는 것을 말한다.
+개발 환경에 따라 Node.js의 버전을 변경해야",Node.js
+https://surfit.io/link/3qZEV,불꽃 튀게 빠른 번들러 Parcel 개념잡기!,"불꽃 튀게 빠르고 설정이 필요 없는 zero-configuration이며, 웹 애플리케이션 번들러인 Parcel에 대해 개념을 잡아보자.
+Parcel은 2017년에 나온 번들러로 릴리즈 된 지는 별로 되지 않았지만, 설정이 필요 없다는 강력한 장점이 있다. 그렇기 때문에 반대로 설정이 복잡한 Webpack과 비교 대상이 되기도 한다. 우리는 Parcel의 ",Node.js
+https://surfit.io/link/wDkal,NPM-SCOPE 패키지 어디까지 알고 있니?,"npm에는 scope라는 개념이 존재한다.npm의 scope 개념은 조직 또는 그룹이다. 우리는 이 scope를 통해서 협업이 가능하며, 여러개의 분산된 패키지를 하나의 조직으로 관리 또는 배포 할 수 있다. 
+빠르게 배우는 Node.js와 NPM 설치부터 개념 잡기에서 NPM과 Node.js에 대한 개념을 잡고 빠르게 배우는 NPM 패키지 생성부터 배포까",Node.js
+https://surfit.io/link/wmOrk,Lerna를 활용한 Mono-Repo 구축 완벽 가이드 - 예제를 통한 완벽 파악,"Lerna를 설치하고 주요 명령어 및 실제로 패키지를 만들고 배포까지 따라 하면서 완벽하게 Lerna와 Mono-Repo를 파악하자
+예제는 CLI를 통해 간단한 로그를 출력하는 패키지로 Lerna를 활용한 Mono-Repo 구조로 구축, 개발, 배포까지 진행할 것이다.
+lerna의 독립 모드의 경우 패키지의 버전을 독립적으로 가져가며 좀 더 까다로운 면이 ",Node.js
+https://surfit.io/link/wkZW8,빠르게 배우는 NPM 패키지 생성부터 배포까지 완벽 가이드,"Last Updated: 
+                2020-12-17
+            
+
+            
+            
+            
+이번 포스팅에서는 npm 모듈 혹은 npm 패키지를 생성하여 실제로 NPM Registry에 업로드까지 하여 오픈소스로서 NPM 생태계에 기여하는 방법을 배워보자.
+해당 섹션을 읽기 전에 ",Node.js
+https://surfit.io/link/KQyz4,"어서와, SSR은 처음이지 - 개발 편","어서 와, SSR은 처음이지? - 개발 편은 Node.js 기반의 SSR 개발과 운영을 통해 겪은 경험기 총 3편 중 두 번째 글로, 17년간 잔존해 왔던 레거시 시스템 내에서 네이버 모바일 블로그 서비스를 어떻게 SSR로 전환했는지와 대한민국의 거의 모든 사람들이 사용하는 모바일 블로그 서비스의 트래픽에 대응하기 위해 SSR 구축을 어떻게 준비하고 개발했",Node.js
+https://surfit.io/link/KvD66,"당근마켓의 푸시알림을 지탱하고 있는 Node.js 서비스. 푸시알림은 당근마켓 서비스에서 채팅, ‘키워드 알림’, ‘금주의…","푸시알림은 당근마켓 서비스에서 채팅, ‘키워드 알림’, ‘금주의 인기매물’과 같은 여러 기능에 사용되고 있습니다. 기존에 당근마켓 메인 Ruby on Rails 서버에 구현됐었던 푸시알림 서비스를 트래픽 증가에 따라 마이크로 서비스로 분리하는 작업이 필요했습니다. 현재 초당 1500 요청을 누락 없이 지원하는 푸시 서비스를 Node.js, TypeScrip",Node.js
+https://surfit.io/link/5lYzz,prettier 2.0에서 달라진 옵션 살펴보기,"prettier 2.0은 얼마 전(2020.3) 정식 릴리즈되었습니다. 바로 적용을 하려다 조금 기간을 두고 적용하자는 의견이 있어 쪼-금 두고 봤습니다. 두 달 정도 시간이 지나 Chart 4.0 개발에 Prettier2.0을 적용했고, 이전과 달라진 점을 간단하게 달라진 점을 정리해봤습니다.
+Prettier는?
+Prettier는 코드 포맷팅 도구입니다.",Node.js
+https://surfit.io/link/KbYV4,Node CPU 점유율 최적화 경험기,"SSR (Server Side Rendering), React 개발자라면 한 번쯤 들어보고 또 실제로 NextJS 등을 사용해서 만들어보셨을 거라 생각됩니다.
+보통의 SPA로 개발하고 S3 등에 올려 Static file로 서빙하는 것과는 다르게 서버에서 렌더링하기 때문에 서버 자원을 고려할 수밖에 없게 됩니다.
+본 포스팅에서는 아자르에서 사용하는 SSR ",Node.js
+https://surfit.io/link/59jlm,안심번호 마이크로서비스 개발하기,"gRPC 에러 핸들링
+그렇게 static codegen 방식으로 개발을 하던 중, 에러 핸들러의 필요성을 느꼈습니다. gRPC에서는 callback 함수의 첫 번째 인자에 에러를 넘겨서 응답할 수 있는데 매번 logging 같은 공통된 처리를 반복해야 합니다. 그래서 express 처럼 에러를 한 곳으로 모을 수 있으면 좋겠다는 생각을 했습니다.
+app.u",Node.js
+https://surfit.io/link/5e8rG,Typescript를 이용한 NodeJS 개발기02,이 포스팅에서 사용한 모든 소스는 깃헙에서 확인할 수 있습니다.이전 포스팅에서는 로컬에서 NodeJS 프레임워크 중 하나인 Express를 이용하여 API 서버를 만들 수 있도록 기본적인 환경을 구축해보았다. 사실 내가 이 포스팅을 쓰며 정리하고자 했던 내용은 이제부터 본격적인 시작이 아닐까 싶다.Typescript 적용하기이전의 다른 포스팅에서도 여러번 ,Node.js
+https://surfit.io/link/w4vLv,Typescript를 이용한 NodeJS 개발기01,"Javascript 기반의 NodeJS를 이용하여 서버를 개발하다보면 종종 클라이언트를 개발할때 겪던 아쉬움이 새록새록 떠오른다. 역시나 타입을 유추할 수 없다는 점이다. 더군다나 Node 서버의 경우에는 에러 발생시 서버 자체가 죽어버리니, 처리가 되어 있지 않은 상황에서 서비스에 올렸다면 초유의 사태가 생길지도 모른다. 그래서 이번에는 NodeJS의 E",Node.js
+https://surfit.io/link/wnX8y,TypeScript와 함께하는 Fullstack Development,"몇 년 전만해도 TypeScript는 JavaScript 내에서 부분적으로 사용되며 ‘어떻게 혹은 왜 써야하는지’ 에 대한 논의의 대상이 되곤 했습니다. 하지만 개발 환경은 점점 빠르게 변하고 이제는 ‘TypeScript를 왜 쓰지 않는지?’의 경지가 되었기 때문에 서두에서 그 중요성을 따로 언급하지는 않겠습니다.
+
+
+
+
+What is TypeScript ",Node.js
+https://surfit.io/link/DA1Jp,차세대 빌드 도구 비교,"개발자 도구들은 지난 몇 년 동안 webpack, Babel, Rollup, Parcel, create-react-app을 포함하는 프론트엔드 개발을 지배해 온 도구의 뒤를 따른다. 
+여기서 소개할 새로운 도구들은 같은 기능을 하도록 설계되어있지 않으며, 도구마다 목표와 기능이 다르다. 이 도구들은 서로 다르지만 개발자 경험 개선이라는 공통의 목표를 가진다",Node.js
+https://surfit.io/link/ozbdj,TypeScript 환경에서 class-transformer 적극적으로 사용하기,"요즘 같이 분산 환경이 적극적으로 도입 되고 있는 시기에는 꼭 프론트엔드가 아니더라도 백엔드 환경에서도 외부의 HTTP API를 호출하는 일은 당연한 일입니다.
+그래서 HTTP API (저는 Rest API라는 단어는 선호하진 않습니다. 어차피 규약 지키고 있는 경우가 거의 없거든요) 를 통해 원격 서버에서 JSON 객체를 읽어오는 작업을 자주 하게 되는데",Node.js
+https://surfit.io/link/wnzrY,Node.js 라이브러리 Readability로 전문 RSS 만들기,"블로그 시대에 등장한 RSS 포맷은 지금도 많은 블로그와 웹사이트에서 제공하고 있습니다. 사람들이 즐겨듣는 팟캐스트의 기본 포맷은 여전히 RSS 피드입니다. 가끔은 블로그 운영자도 모를 수 있습니다만, 예를 들어 티스토리Tistory 블로그의 루트 URL 뒤에 feed를 붙이면 RSS가 나오며, 유튜브Youtube나 미디엄Medium에서도 공식적으로 채널 ",Node.js
+https://surfit.io/link/w6WMM,Node.js 프로덕션 환경을 위한 Best Practice 모음,"Node.js 애플리케이션을 프로덕션 환경에서 서비스하기 위한 모범 사례(Best Practice) 컬렉션에 오신 것을 환영합니다. 
+
+모니터링은 고객이 발견하기 전에 먼저 문제를 찾아내는 게임입니다. 이것은 엄청나게 중요합니다. 요 근래 모니터링 업계는 압도적으로 많은 기능들을 제공하고 있으며, 이는 선택을 하는데 어려움을 주는 요인이 됩니다. 그러므로 ",Node.js
+https://surfit.io/link/5ek8B,NodeJS Filestream,"많은 양의 데이터를 한 번에 한 청크(chunk)씩 가져올 수 있다.
+  리눅스 piping과 같이 코드 조합도 가능하게 해준다.
+  다양한 모듈들이 스트림 인터페이스의 구현체이다. 예를들어, HTTP Response는 클라이언트 사이드에서는 읽기 스트림인 반면, 서버 사이드에서는 쓰기 스트림이다.
+일반 Read File과 File Stream 비교
+
+비교",Node.js
+https://surfit.io/link/KY01A,Deno의 모든 것 : Node.js와 간단하게 비교해보기,"최근 Deno v1이 릴리즈 되면서 큰 이슈가 되었습니다. 어떤 사람들은 이제 Node.js의 시대가 끝났다고 이야기하기도 했습니다. 하지만 이런 의견은 너무 과장되었으며 지나치게 낙관적인 시각입니다. Deno는 Node.js와 비교될 수밖에 없습니다. 무엇보다도 Deno를 개발하고 있는 사람이 Node.js를 개발한 Ryan Dahl이기 때문입니다.
+De",Node.js
+https://surfit.io/link/w4MYP,Intellij에서 nodejs 프로젝트가 인식되지 않을 때 해결 방법,"Intellij IDEA나 WebStorm 에서 노드 프로젝트를 생성 또는 새로 오픈하는 경우 require가 사용된 모듈 선언 구문에서
+""Unresolved function or method"" for require() 등의 경고가 발생하는 경우가 있다.
+
+애플리케이션 실행에는 문제가 없을 수 있지만, 해당 모듈을 사용하는 곳으로 이동이 되지 않는 등과 같",Node.js
+https://surfit.io/link/Kg74P,"어서 와, SSR은 처음이지? - 도입 편","2019년 5월 29일 ""내 동영상 페이지""를 시작으로 Node.js 기반의 SSR(server-side rendering) 아키텍처가 네이버 모바일 블로그에 적용되고 있습니다.
+
+어서 와, SSR은 처음이지?는 Node.js 기반의 SSR 개발과 운영을 통해 겪은 경험을 총 3편에 걸쳐 다룰 예정입니다.
+
+어서 와. SSR은 처음이지? - 도입 편  
+어",Node.js

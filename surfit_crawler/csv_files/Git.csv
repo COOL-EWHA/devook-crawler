@@ -1,0 +1,282 @@
+url,title,description,category
+https://surfit.io/link/p1DD0,슬기로운 코드 리뷰 생활 with GitHub Pull Request,"크롬 웹스토어에서 PR 관련 크롬 익스텐션 검색 결과Better Pull Request for GitHub 익스텐션 설치한 PR 화면크롬을 사용하는 경우, 크롬 웹스토어에 PR에 관련된 다양한 익스텐션이 존재합니다. 코드 리뷰의 생산성에 매우 큰 차이가 있기 때문에, 일단 하나 골라서 설치를 해봅시다!특히, PR의 파일들을 Tree View 형식으로 볼 수",Git
+https://surfit.io/link/P1WmM,카카오웹툰은 GitHub Actions를 어떻게 사용하고 있을까?,"GitHub Actions의 도큐먼트를 보면 GitHub Actions는 CI/CD와 같은 workflow를 자동화 할 수 있는 도구라고 설명되어 있는데, 쉽게 말해 GitHub 내 어떤 이벤트(push, pull, merge ...)가 발생하면 해당 이벤트에 대해 정해진 동작을 실행하게 하는 도구라고 이해하시면 될 거 같아요.
+GitHub Actions에",Git
+https://surfit.io/link/llNNr,github actions로 버전 관리하기-릴리즈 노트편,"pull_request가 opened됐을 때 labeler-action을 사용해 라벨링을 한다.
+이때, pull_request 제목에 feat가 들어갔다면 enhancement라는 라벨을 지정해준다.
+pull_request가 main에 merge되었을 때 release drafter을 사용해 릴리즈 노트를 작성하도록 한다.
+기본적으로 patch 버전을 올리",Git
+https://surfit.io/link/BlzbO,GitHub Personal access token 생성 및 사용하기,"평상시처럼 Homebrew를 사용하여 search 명령어를 사용하였더니 위와 같은 경고 문구가 나타났습니다. 해당하는 정보들은 무리 없이 출력되었으나 서두에 나오는 경고 문구를 해결하기 위해 알아보기 시작하였습니다.
+
+Warning: Error searching on GitHub: GitHub API Error: Bad credentialsThe GitHu",Git
+https://surfit.io/link/N7Rj7,모두의 Github Actions 2편 - 공용 CI 머신에서 Secret 관리하기,"지난 글에서는 Jenkins에서 돌아가던 CI/CD 작업을 Github Actions로 옮긴 이유와, 개발자가 고민 없이 Actions를 쓰게 하기 위해 Actions Runner를 사용하는 패턴을 만드는 과정에 대해 소개했습니다.
+지난 글의 핵심은 컨테이너를 이용하여 언제나 격리된 환경을 제공하면 관리가 용이한 CI 환경을 만들 수 있다는 것이었습니다.
+",Git
+https://surfit.io/link/P1prj,PR에 변경사항 쉽게 알아보게 쓰기,"내가 어떤 과정으로 왜 변경했는지 그 히스토리를 적는 것이 변경사항을 파악하는데(또는 설득하는데) 도움이 되었다.
+
+예를 들어 버그 A가 있으면 A의 원인은 무엇인지, A를 해결하기 위해 어떤 과정을 거쳤는지 기록한다.
+아래 예시는 코드 흐름에 따라 버그가 어떻게 생기는지 원인을 적었다.
+예시 1.
+
+혹은 어떤 이유로 변경하게 되었는지에 대한 사유를 as-",Git
+https://surfit.io/link/VDGY1,리멤버에서 Pull Request 편리하게 사용하는 법,"리뷰어가 좀 더 쉽게 리뷰를 진행할 수 있도록 Pull Request에 작업 내용, 고민됐던 부분, 희망 리뷰 완료일 등 다양한 정보를 적고 있습니다. 이런 코드 리뷰 프로세스를 더 잘 정착시키고 효율적으로 진행할 수 있도록 리멤버의 서버 개발자들이 고민하고 적용했던 몇 가지 방법에 대해 공유하고자 합니다.
+
+
+
+CODEOWNERS로 리뷰어 자동으로 지정하",Git
+https://surfit.io/link/glDoM,CODE GURU REVIEWER를 사용하여 코드리뷰 받기,"안녕하세요. 리멤버 서버/웹 팀 서버 개발자 사승준입니다. 
+
+
+
+얼마 전에 AWS에 CodeGuru라는 기능이 새롭게 나왔습니다. 
+
+
+
+Amazon CodeGuru는 코드 품질을 높이고 애플리케이션에서 가장 비경제적인 코드 줄을 찾아낼 수 있도록 지원하는 권장 사항을 제공하는 지능형 개발자 도구입니다. CodeGuru 기능 안에서도 프로덕션에서 애플리케",Git
+https://surfit.io/link/AZjJX,Git에서 원하는 커밋만 제거하기 (feat. SourceTree),"Git을 사용하다보면 특정 커밋들만 날리고 싶을때가 있습니다. 근데 하필 그게 한참 전 커밋들이거나, 중간 커밋들이면 reset으로 골라내기가 쉽지 않은데요. 이럴때 rebase interactively 를 사용하기가 좋습니다.
+해결방법
+예를 들어 아래와 같이 REC-296 커밋 2개를 모두 빼고 싶은 상황이라고 가정해봅니다.
+그럼 그 직전 커밋을 선택합니",Git
+https://surfit.io/link/3qpbv,"GitHub Actions, 커스텀 액션을 만들고 활용해보자","GitLab CI와 어떻게 다른지 살펴보고, GitHub Actions만의 특징을 활용한 응용법에 대하여 짚어 보겠습니다.Runner: GitLab CI vs GitHub Actions   GitLab CI와 GitHub Actions 둘 다 Runner를 기반으로 하여 CI/CD를 이루어 내는 도구입니다. 이는 CI/CD 도구라면 당연한 이야기입니다. 바",Git
+https://surfit.io/link/3LXoq,git submodule로 중요한 정보 관리하기,"git submodule은 메인(부모) 레포지토리에 하위(자식) 레포지토리를 두고 관리하기 위한 도구이다.
+하나의 프로젝트에서 다른 프로젝트를 함께 사용해야 하는 경우 주로 활용한다.
+필자는 이번에 이를 프로젝트 비밀 정보를 숨기기 위한 용도로 이용했다.
+어떻게 적용하게 됐는지, 어떻게 적용했는지를 글을 통해 알아보자.
+
+사용 계기
+레벨 3 팀 프로젝트를 ",Git
+https://surfit.io/link/3MaqR,git bisect 로 문제가 발생한 commit 빠르고 쉽게 찾기,"만약 여러분의 제품에 버그가 발견되었는데 발생 원인을 찾기 힘들다면, 어떻게 원인을 찾으시나요?
+git bisect 명령어를 알아봅시다.
+git bisect
+개요
+bisect 는 'divide into two parts', 즉 '양분하다' 라는 의미를 가지고 있습니다. 그래서 Python 의 배열 이진 분할 알고리즘 이름도 bisect 이죠.
+Python3",Git
+https://surfit.io/link/5zWvX,GitHub으로 협업하기: 클론부터 코드 리뷰까지,"다른 사람이 내 코드를 보고 피드백을 준다는 것이 마치 숙제 검사처럼 느껴지기도 하고 괜스레 부끄럽게 느껴질지도 모르지만 너무 무서워하지 않으셔도 됩니다. 코드 리뷰는 누가 잘했고 잘못했고를 따지는 과정이 아니니까요. 그저 서로의 코드를 조금 더 좋게 만들 수 있는지 보는 과정일 뿐입니다.
+코드 리뷰에는 많은 장점이 있지만 몇 가지 장점을 꼽자면 아래와 같",Git
+https://surfit.io/link/3Apx1,.git 내부 구조 파헤치기,"개발을 함에 있어 필수 요소가 된 git. 개발 과정에서의 수많은 커밋과 브랜치, 관리되는 파일의 정보들이 모두 .git 안에서 관리되는데, 그 내부를 파헤쳐 본다. 이 글은 git을 어느 정도 사용해보고 읽는 것을 추천한다.
+
+.git 내부 구조
+
+      
+    
+  
+    
+.git 폴더의 내부 구조는 위 캡처와 같다. git의 작동원리를 이해하",Git
+https://surfit.io/link/wZL4b,git 브랜치 전략에 대해서,"Git
+우리는 개발을 진행하면서 우리가 구현한 소스코드를 git이라는 버전 관리 시스템을 통해 관리한다.
+git을 사용하지 않았더라면 협업을 진행하면서 메일이나 USB로 소스코드를 주고받아야 했을 것이다.
+git을 사용함으로써 우리는 시시각각 코드를 전송할 수 있다.
+게다가 일일이 병합하는 과정을 생략하고도 손쉽게 소스코드를 관리할 수 있다.
+뿐만 아니라 ",Git
+https://surfit.io/link/KgZX9,Github Actions으로 배포 자동화하기,"Github Actions이란 Github에서 제공하는 워크플로우(workflow)를 자동화하도록 도와주는 도구이다. 테스트, 빌드, 배포 등의 다양한 작업들을 자동화하여 처리한다. 
+요금과 제한
+public 저장소의 경우 무료로 사용 가능하며 private 저장소는 월마다 제공되는 무료 사용량 초과 시에 요금이 부과된다. 무료 계정을 기준으로 500MB의",Git
+https://surfit.io/link/KRd67,Github 프로필 꾸미기,"최근 Github에 사용자가 직접 자신의 프로필을 조금 더 예쁘게 디자인하는 기능이 추가되었다. 정말 간단하게 프로필을 예쁘게 꾸밀 수 있다.
+아래와 같은 모습이다. 기존에는 사용자의 코드 저장소만 보였는데, 이제는 아래와 같이 인삿말이나 여러가지 오픈소스를 활용하여 사용자 입맛에 맞게 꾸밀 수 있다.
+
+
+
+
+
+
+Github 프로필을 시작하기 위한 첫 단계",Git
+https://surfit.io/link/woA1R,"💥 복잡한 커밋 로그를 정리해줄 구원자, gitmoji","제가 가장 관심을 가지고 있는 분야 중 하나는 개발에만 집중할 수 있는 환경을 만드는 것입니다.
+간단히 말하면 개발 중 붕 뜨는 시간을 줄이는 것이죠.
+
+우리를 개발에 집중할 수 없게 만드는 요소는 참 많은데요.
+
+빌드나 아카이빙할 때 붕 뜨는 시간을 줄여줄 수 있는 해결책은 작년에 작성했던 Carthage+Rome에 대한 글에서 설명해 드렸었죠.
+
+오늘 ",Git
+https://surfit.io/link/w8AB9,GPG(GNU PG)를 이용해 git 커밋에 서명하는 방법,"깃헙GitHub에서 커밋을 읽다보면 다음 화면처럼 Verified라는 표시를 보신 적이 있을 겁니다. 이 표시는 왜 등장했고, 어떤 의미가 있는 걸까요? 이 글에서는 Verified 표시의 의미를 설명하고, 내 커밋에 Verified 표시를 나타내기 위한 방법을 소개합니다.
+Github 커밋에서 볼 수 있는 Verified 표시
+44BITS 소식과 클라우드",Git
+https://surfit.io/link/KRb8b,커뮤니케이션 방식과 PR 템플릿 개선해보기,"개발자가 갖추어야 할 9가지 기술(https://youtu.be/fHyTA-UIcqs)
+
+  프로세스는 전체 시스템을 보호해주고, 어떤 사람이 실수를 해도 계속해서 나아갈 수 있도록 도와준다.
+
+
+회사라는 곳은 각기 다른 개성을 가진 사람들이 모인 곳이고, 각자 일을 하는 방식도 다릅니다. 그래서 업무를 효율적으로 하기 위한 프로세스가 없다면, 개인 간에는",Git
+https://surfit.io/link/3jeAx,Github Action & AWS Beanstalk 배포하기 - Github Action으로 빌드하기,"기존에 사이드 프로젝트를 만들면 다음과 같은 환경에서 진행을 해왔습니다.  
+TravisCI &amp; AWS Code Deploy
+TravisCI &amp; AWS Beanstalk
+상황에 따라 골라 쓰긴 했지만, 큰 불편함이 없었는데요.  
+최근 대세가 TravisCI에서 Github Action으로 넘어갔음이 느껴져 Github Action과 Bean",Git
+https://surfit.io/link/w8Vqn,👀 나의 프로젝트 구성을 한 눈에?,"기능이 너무 많은데.. 언제 다 설명하지..?
+파일 디렉토리를 이쁘게 하고싶다..
+파일 구성을 한번에 보고 싶다..
+
+그렇게 첫 번째로 나온 대안으로, 
+
+
+앱 기능을 나누어, 폴더 별 기능 설명 법앱 안의 사소한 파일들에 대한 내용을 볼 수 없음.
+
+기본적으로 기능에 대한 설명을 나누어서 좋긴 하지만...
+폴더 안의 상세한 파일 내용들을 못본다는 단점이 ",Git
+https://surfit.io/link/3BPgO,"standard-version을 이용한 배포, 롤백 전략","lerna에는 커밋 메시지를 읽어 자동으로 새로운 버전과 CHANGELOG를 작성하고 git 태그를 작성해 주는 기능(이하 버전 자동화)도 포함되어 있는데. 이 기능을 활용하면 운영에 큰 도움이 된다.
+이 기능을 사용하려면 --conventional-commits 인자를 전달해야 한다. 이름에서 알 수 있듯 이 기능을 사용하려면 커밋 메시지들을 Conven",Git
+https://surfit.io/link/wmEQP,앱과 라이브러리 관리에 Monorepo?,"현 직장에서 사내의 모든 FE 프로젝트를 하나의 팀에서 담당하게 되다 보니 어느 순간 의존성 관리 문제에 봉착하게 되었다. 라이브러리와 앱이 N:N으로 늘어나 의존성 관리가 복잡해지고 있다.
+예를 들면. 쇼핑몰의 경우 보통 웹과 관리자 한 세트로 개발하여 운영한다. 만약 새로운 서비스를 오픈한다면 총 2세트가 되고. 서비스 간에 회원, 주문을 하나로 통합하",Git
+https://surfit.io/link/3B1y1,github profile 예쁘게 꾸미기,"올해 초였나 생활코딩 페이지에서 github profile을 예쁘게 꾸밀 수 있는 easter egg가 있다 해서 나중에 해보려고 공유해놨는데 드디어,, 해보았다,,^ ^
+뭐든 시작은 공식문서로 하는게 좋으니 공식문서를 참고해서 만들었다! 
+1. Repository 만들기
+내 github 계정이름과 똑같은 이름의 repository를 만들면 된다.
+난 이미",Git
+https://surfit.io/link/wkYZO,사람인 GIT 전환,"Saramin 형상관리 전환과정을 설명합니다.
+
+
+SSG TF 소개
+
+사람인 서비스의 형상관리 전환을 위해 IT연구소 내부에서 자발적 지원으로 구성된 TF팀이며 Saramin SVN to Git 이라는 의미를 담고 있습니다. 저희 SSG 팀에서 SVN 에서 GIT으로의 형상관리 전환과정에 대해 공유드리고자 이 글을 작성합니다.
+
+배경
+
+사람인의 주요서비스 ",Git
+https://surfit.io/link/wDv1y,AWS Amplify x GitHub 기반 CI/CD 설정,"GitHub의 특정 레포지토리(애플리케이션)를 AWS Amplify 에 등록한 후 특정 브랜치를 연결 설정 하면 해당 브랜치에 코드가 푸시될 때 자동으로 배포가 수행된다.
+하지만 master 브랜치는 일반적으로 실 운영환경으로서 관리되기 때문에 코드 푸시보다는 태그생성시에 배포하는 것이 더욱 적절하다. AWS Amplify 의 웹훅과 GitHub 액션을 이",Git
+https://surfit.io/link/KyeQR,오픈 소스(Open-Source) 구조와 모듈 파악하기,"Last Updated: 
+                2020-12-17
+            
+
+            
+            
+            
+이번 포스트에서는 오픈 소스(Open-Source)를 만들기 위한 구조와 오픈 소스(Open-Source) 개발에 필요한 모듈을 정의해보려 한다.
+개발자라면 한 번쯤은 오픈 소스(Open-",Git
+https://surfit.io/link/wmOrk,Lerna를 활용한 Mono-Repo 구축 완벽 가이드 - 예제를 통한 완벽 파악,"Lerna를 설치하고 주요 명령어 및 실제로 패키지를 만들고 배포까지 따라 하면서 완벽하게 Lerna와 Mono-Repo를 파악하자
+예제는 CLI를 통해 간단한 로그를 출력하는 패키지로 Lerna를 활용한 Mono-Repo 구조로 구축, 개발, 배포까지 진행할 것이다.
+lerna의 독립 모드의 경우 패키지의 버전을 독립적으로 가져가며 좀 더 까다로운 면이 ",Git
+https://surfit.io/link/KrZo0,팀 스터디를 위한  GitHub 코드리뷰 요청 가이드,"팀 스터디를 위해 코드리뷰 요청 가이드 문서를 빠르게 작성해서 공유합니다. 참고하시고 잘못된 내용은 피드백 부탁드립니다. 짧은 시간안에 작성한 문서라서 내용이 매끄럽지 못하고 오타가 있을 수 있습니다.
+
+
+팀 스터디를 위한 GitHub 운영 가이드이며, 회사에서 사용하는 방법이 아닙니다. 회사에서는 일반적인 Git Flow 정책에 맞게 개발합니다.
+이 글은",Git
+https://surfit.io/link/370QQ,Git Rebase --Interactive 옵션 알아보기,"커밋 히스토리는 프로젝트의 성장과 진행 과정을 나타내는 기록입니다. 따라서 프로젝트의 규모가 커지고 협업하는 사람이 많아질수록 커밋 히스토리를 잘 관리해야 할 필요성은 더욱 커지게 됩니다. 하지만 처음부터 완벽한 계획을 세우면서 작업을 하는 게 아니다보니, 작업 도중 커밋 히스토리를 수정해야 하는 상황을 자주 맞닥뜨릴 수 있습니다. 구체적으로 예를 들자면 ",Git
+https://surfit.io/link/woLm9,인텔리제이 Github Code Review,인텔리제이기반으로 Github 기반 Pull Request & Code Review를 진행할 수 있습니다. 바로 기능을 살펴보겠습니다. 인텔리제이 기반 Pull Request는 Github로 프로젝트 관리하기 Part1을 참고해 주세요,Git
+https://surfit.io/link/3X198,deploy 브랜치 전략 활용 방법,당근마켓에서는 GitHub을 이용해서 소스코드를 관리하고 있습니다. 최근까지는 적은 인원이 빠른 개발을 하는 것을 목적으로 했기 때문에 특별한 브랜치 전략 없이 작업 후 테스트한 코드를 develop 브랜치에 merge 하고 서비스 배포 시 master 브랜치에 develop 브랜치를 merge 해서 배포하는 방식을 사용하고 있었습니다. 하지만 서비스가 성,Git
+https://surfit.io/link/598XZ,Jekyll 테마로 나만의 Github 페이지 만들기,"이번 글에서는 Jekyll을 로컬 컴퓨터에 설치하지 않고, Jekyll 테마를 하나 복사하여 본인의 Github 페이지를 만들어 보도록 하겠습니다.
+
+Git 설치하기
+
+우선 Git을 다운로드 합니다. 본인의 컴퓨터 운영체제에 맞는 버전을 설치하면 됩니다. Git은 로컬 컴퓨터에서 글을 작성하고 수정한 내용들을 Github에 Push해 실제 서버에 결과가 반",Git
+https://surfit.io/link/oznVM,모두의 Github Actions (feat. Github Enterprise) 3편 - Build Cache,"지난 글에서는 Github Actions를 이용하며 번거롭지 않고 안전하게 Secret에 접근하는 방법에 대해 다루었습니다. 핵심은 Vault Login을 Actions Runner에서 잘 할 수 있도록 구성하고, 나머지는 Vault에 맡기는 것이었습니다.
+
+이번 글에서는 Github Enterprise 위에서 Github Actions를 사용하며 지원되지",Git
+https://surfit.io/link/3aR2e,git rebase를 이해하기,"fork한 저장소를 최신 원본과 동기화 시키기 라는 포스팅을 작성한 적이 있습니다.
+
+간단히 요약하면,
+
+1) upstream 에서 받아온 변경사항을 가져오고,
+
+2)  merge를 이용해 로컬을 최신화시키고,
+
+3)  git push 하여 내 원격저장소를 최신화시키는 방법을 정리한 글입니다.
+
+
+
+이번에 리베이스를 공부하면서, 리베이스가 머지를 이용한 방",Git
+https://surfit.io/link/wnrmg,SSH로 GitHub 연결하기,"어느때와 동일하게 로컬에서 업데이트한 코드를 내 원격 GitHub Repository에 push 하려고 할 때, 갑자기 github의 인증 관련 에러가 터미널을 덮었다. 에러의 요지는 이렇다. ‘2021년 8월 13일부로 GitHub 계정의 비밀번호로 원격의 git 동작을 제어하는 권한을 제한한다’는 것이다. 작년 7월 GitHub Blog에 글로 미리 공",Git
+https://surfit.io/link/3XRR2,Git branch 톺아보기 - branch를 확인/생성/삭제,"하나의 프로젝트에서 누가 어떤 작업을 어떻게 작업했는지 확인하는지 관리할 수 없습니다.(이는 혼자서 작업을 하더라도 발생할 수 있는 문제입니다. 어떤 시점에서 어떤 작업이 이루어졌는지) 
+  이 문제를 해결하기 위해서 branch 기능을 사용하여 하나의 프로젝트에서 각각의 이슈(issue; feat, bug, style, build, chore, ...)를",Git
+https://surfit.io/link/KYG1V,GitHub Actions의 pull_request_target과 workflow_run 이벤트,"GitHub Actions에서 워크플로우가 트리거되는 조건을 걸 수 있다. 예를 들어 GitHub Actions의 워크플로우에서 다음과 같이 on을 지정하면 해당 저장소에서 push나 pull_request 이벤트가 발생했을 때 워크플로우가 시작된다.
+
+
+
+보통 이 두 이벤트 혹은 push 만을 사용하지만, 협업이 많은 저장소에서는 Pull Request에",Git
+https://surfit.io/link/wkLPa,이미 commit한 메세지 수정하기📍 - 바로 이전/그 전/리모트 commit," 
+Git 사용 중 commit를 할 때는 꼭 메시지를 입력하게 됩니다. 때때로 오타를 입력하거나 commit한 후에 메시지를 수정하고 싶은 경우가 있을 때가 있습니다. 세가지 경우의 commit 메시지 수정 방법을 알아봅시다.
+ 
+마지막 commit 메시지 수정하기
+이전 commit 메시지 수정하기
+이미 push한 commit 메시지 수정하기
+ 
+ 
+ 
+",Git
+https://surfit.io/link/3xLpx,Github commit 메세지 규칙,"얼마 전까지만 해도 저에게 Github는 사이드 프로젝트 혹은 블로그 글을 작성해 올리는 혼자만의 공간이었습니다. 
+그렇다보니 commit 메세지도 제 멋대로 올리고 있었습니다. 
+사실 혼자 작업을 하다보니 commit 메세지 읽을 사람도 없고, 귀찮기도 했습니다.
+
+
+최근에 친구의 사업을 돕게 되면서 Github을 이용한 협업이 필요하게 되었습니다. 
+현",Git
+https://surfit.io/link/KPGnM,Pull Requests를 Merge 하면 자동으로 배포하기,"하이퍼커넥트에는 마이크로서비스를 몇 번의 클릭만으로 배포할 수 있는, Spinnaker 기반의 배포 파이프라인이 구축되어 있습니다.
+다만 개발팀마다 원하는 배포 전략이 다르기 때문에, 배포를 트리거하는 부분은 개발팀에서 정할 수 있게 되어 있습니다. 
+저희 팀에서는 개발자가 수동으로 Spinnaker로 접속해서 배포를 진행하고 있었습니다.
+
+코드 Merge",Git
+https://surfit.io/link/wovgp,Git pre-commit 사용법,"pre-commit
+
+이름에서 볼 수 있듯이 Git commit을 수행하기 전에 자동으로 특정 작업을 수행하도록 해주는 기능입니다. 
+보통 formatter 또는 linter 등을 실행해서 코드의 잠재적 문제 발견 또는 일관성있는 포맷을
+유지하게 해줍니다.
+
+
+
+설치 방법
+
+pre-commit는 파이썬 패키지를 이용해서 설치할 수 있습니다.
+
+$ pip3 ",Git
+https://surfit.io/link/wJvXz,지속적 통합/배포(CI/CD)를 위한 Git Workflow 전략,"2010년 Vicent Driessen이라는 분이 만든 가장 널리 알려진 Git 작업 절차입니다. Git Flow는 master와 develop이라는 항상 존재하는 주 브랜치가 있고, feature-*, hotfix-*, release-*라는 필요에 따라 생성하는 브렌치가 있습니다. 물론, 이후 improvement-*, bugfix- 등 프로젝트에 따라 ",Git
+https://surfit.io/link/5ev7n,Husky 사용할 때 주의!,자바스크립트 프로젝트의 Git hook을 작성할 때 많이 사용하는 Husky 프로젝트가 v5 버전을 새로 릴리스하면서 라이선스 정책에 일부 변화가 생겨서 사용할 때 주의가 필요해졌다. 이 글에서는 Husky 프로젝트의 어떤 점이 달라졌는지 기능과 라이선스 측면에서 알아보도록 하겠다. 또한 라이선스가 마음에 걸리는 이들을 위해 어떤 대안이 있는지도 살펴보려고,Git
+https://surfit.io/link/KyXJB,커밋 메시지로 GitHub Actions 실행 취소하기,"CI를 사용하면 커밋이 올라올 때마다 CI를 실행하게 되는데 보통 시간도 몇 분 이상 걸리고 유료로 사용하면 과금이 되기 때문에 커밋을 올리면서 불필요한 CI 실행을 하지 않을 필요가 있다. 예를 들면 README 파일만 수정했다거나 소스 코드와 관련이 없는 부분의 수정이라서 굳이 CI를 실행해서 결과를 확인해 보지 않아도 되는 경우이다.
+
+개발자가 직접 ",Git
+https://surfit.io/link/KbBpA,GitHub Actions 워크플로우 사용하기,"2018년에 GitHub Actions가 처음 발표되고 간단히 Actions를 사용하는 방법에 관해 글을 올렸다.
+전체적인 배경이나 컨셉 등은 유지되었지만 일단 사용법이 완전히 달라졌다. 일단 GUI로 설정하는 부분이 사라졌고 HCL에서 YAML로 바뀌었다. 내가 좋아하던 HCL이 도입되어 좋아했지만 여러 상황에 한계를 느꼈는지 요즘 인프라스트럭처를 설정할",Git
+https://surfit.io/link/37VJG,GitHub 공식 CLI gh,"GitHub의 공식 CLI 1.0 버전이 릴리스되었다.
+
+GitHub CLI는 깃헙을 CLI로 쉽게 사용할 수 있는 CLI 도구이고 이전에는 hub라는 CLI를 제공하고 있었는데 문서에 따르면 hub를 이용할까 고민하다가 장기적인 설계 관점과 git의 별칭으로 사용되는 부분을 제외하기 위해서 새로 만들었고 기존에 hub에 익숙한 사람들의 사용패턴을 바꾸고 ",Git
+https://surfit.io/link/3BkLl,git log examples,"Permalinklink
+# -p: 각 커밋별 diff
+git log -p
+
+# -2: 최근 2개 커밋
+git log -p -2
+
+# --stat: 각 커밋별 통계
+git log --stat
+
+# --pretty: oneline, short, full, fuller
+git log --pretty=oneline
+git log --pretty=short
+git",Git
+https://surfit.io/link/Kbm0k,빌드/테스트는 내가 해줄게. 너는 코딩에 집중해 (by GitHub Pull Request Builder),git 은 분산 버전 관리 시스템 중 가장 잘 알려져 있다고 해도 과언이 아닐 정도로 대부분의 시스템에서 사용되고 있는 것 같다. 이를 웹서비스에서 보다 편하게 사용할 수 있도록 한 시스템이 Github. Github 을 사용하는 이유 중에 가장 큰 이유를 하나만 이야기해보자면 바로 온라인상에서 코드 리뷰를 할 수 있는 pullRequest라는 기능 때문이,Git
+https://surfit.io/link/3apRO,Git Commit Id를 문자열로 획득하는 방법,"Git Commit Id 및 날짜 획득 방법
+
+CMakeLists.txt 예제
+
+CMakeLists.txt 파일에 다음 명령어를 추가하면 Git Commit Id 및 Commit Date를 얻을 수 있습니다.
+add_definitions 명령어를 이용해서 C++ 코드에 전달할 수 있습니다.
+
+execute_process(
+		COMMAND git log -",Git
+https://surfit.io/link/K2YYq,Github PR을 올리면 자동으로 테스트가? 심지어 멀티 프로젝트에도 가능하다!,"안녕하세요.메세징플랫폼개발팀의 한병익 사원입니다. 
+저희 팀을 비롯하여 많은 분들이 사내에서 Jenkins를 CI/CD 도구로 사용하고 있습니다.저희는 그중에서도 GitHub Pull Request Builder라는 플러그인을 사용하여 PR마다 자동으로 테스트를 돌려 해당 결과를 알려주는 도구로 잘 사용하고 있습니다.GitHub Pull Request Bu",Git
+https://surfit.io/link/Krl79,Git LFS(Large File Storage) 사용법,"LFS(Large File Storage)
+
+일반적으로 Git은 파일 한 개 용량이 100MB 까지만 업로드 가능합니다. 그 이상의 파일을 올리고 싶을 때는
+LFS(Large File Storage)를 이용해야 합니다.
+
+LFS 설치 방법은 다음과 같습니다.
+
+
+
+LFS 설치 방법
+
+Ubuntun에서는 다음 명령어를 이용해서 설치합니다. 여기를 참고하세요.",Git
+https://surfit.io/link/31oGr,GitHub Action을 사용해 새로 올라온 전월세 방 목록 받아보기,"매일 아침 11시,  피터팬의 좋은방 구하기라는 부동산 거래 사이트에 새로 올라온 특정 조건(가격대, 지역 등)을 만족하는 매물을 아래와 같이 정리해서 보내주는 프로그램을 만들었다. (저장소) 요새 블로깅이 너무 뜸하기도 했고, 재밌는 작업이라 과정을 기록으로 남겨보았다.
+
+2019-11-12 수정: 양성민 님께서 GitHub Action의 타임존 관련 수",Git
+https://surfit.io/link/3qXY1,Utterances 적용하기,"Utterances 소개
+Utterances는 GitHub Issue 기반으로 Comment를 작성할 수 있게 해줍니다.
+Utterances의 장점
+GitHub Issue 기반이기 때문에 블로그 플랫폼을 이전해도 기존 Comment을 그대로 가져갈 수 있음
+개발 블로그 라면 Github 계정으로 댓글을 작성할 수 있기 때문에 사용성이 용이함
+뭔가 있어 보임",Git
+https://surfit.io/link/3BzP0,SwiftLint와 Git Hook을 이용해서 코딩 스타일 관리하기,"안녕하세요. 우아한형제들 앱서비스팀에서 iOS 앱을 만들고 있는 김민호입니다. 이번에 저희 팀에서 코딩 스타일을 맞추기 위해 Git Hook을 적용한 경험을 공유드리려고 합니다.
+
+
+iOS 앱을 만들고 있는 많은 팀에서 코딩 스타일을 관리하기 위해 SwiftLint를 도입해서 사용하고 있는데요. 저희 팀 역시 SwiftLint를 이용하고 있지만 엄격하게 적",Git
+https://surfit.io/link/K28Xq,내가 개발 블로그 플랫폼으로 Github과 Jekyll을 선택한 이유,"많은 개발자분들께서는 자기만의 개인 기술 블로그를 하나 갖고 싶어 합니다. 알고 있는 지식을 정리하고, 지식을 다른 사람들에게 전달하며, 나의 포트폴리오를 정리하는 것처럼 각양각색의 다양한 동기를 갖고 말이죠. 심지어 최근에는 개발자 채용 공고에서 개인 블로그가 있을 경우에 좀 더 우대해주는 경우도 볼 수 있습니다. 그 만큼 개발자의 지식을 문서로 정리한다",Git
