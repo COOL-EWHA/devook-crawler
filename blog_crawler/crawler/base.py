@@ -1,7 +1,7 @@
 import urllib.request
 from bs4 import BeautifulSoup
 
-from utils import remove_escape
+from blog_crawler.utils import remove_escape
 
 
 class BlogCrawler:

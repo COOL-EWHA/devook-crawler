@@ -1,5 +1,5 @@
-from utils import remove_escape
-from crawler.base import BlogCrawler
+from blog_crawler.utils import remove_escape
+from blog_crawler.crawler.base import BlogCrawler
 
 
 class VelogCrawler(BlogCrawler):

@@ -1,4 +1,4 @@
-from lambda_function import lambda_handler
+from blog_crawler.lambda_function import lambda_handler
 
 
 print(

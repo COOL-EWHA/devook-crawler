@@ -1,7 +1,7 @@
-from crawler.base import BlogCrawler
-from crawler.medium import MediumCrawler
-from crawler.tistory import TistoryCrawler
-from crawler.velog import VelogCrawler
+from blog_crawler.crawler.base import BlogCrawler
+from blog_crawler.crawler.medium import MediumCrawler
+from blog_crawler.crawler.tistory import TistoryCrawler
+from blog_crawler.crawler.velog import VelogCrawler
 from urllib.error import HTTPError
 
 
