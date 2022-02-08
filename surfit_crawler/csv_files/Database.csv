@@ -1,0 +1,372 @@
+url,title,description,category
+https://surfit.io/link/yRLOa,jOOQ 동시성(Concurrency) 제어 - Optimistic Lock / Pessimistic Lock,"1. 동시성 제어(Concurrency Control)
+왜 필요한가
+스프링 프레임워크는 기본적으로 멀티 쓰레드 환경이기 때문에 각기 다른 요청들에 의해 개발자가 원하지 않는 결과를 얻을 수 있다.
+해결 방안
+어플리케이션 사이드에서 동시성(쓰레드 기반)을 제어할 수도 있지만 이번 게시글에서는 Java 네이티브 쿼리빌더인 jOOQ를 활용하여 디비 사이드에서 동",Database
+https://surfit.io/link/aWJep,ECS를 이용한 Serverless 배치 서버,"travis ci + ECS를 이용한 Batch서버 효율화대용량 데이터를 다루기 위한 데이터 아키텍쳐데이터를 뽑는 방법 중 가장 많이 쓰이는 방법은 데이터베이스에 저장하고 이를 SQL을 이용하여 추출하는 방법입니다. 예를 들어, 오늘 샌프란시스코에서 예약은 몇 건인지는 SQL 등으로 간단히 뽑을 수 있습니다. 그러나 이를 미국의 모든 도시별 예약 수를 지난",Database
+https://surfit.io/link/EmozE,NodeJS 와 PostgreSQL Connection Pool,"Database에 관해 기본적인 id/pw 외에 해야할 설정들이 여러개 있는데요. 그 중 실제 서비스 운영에 가장 중요한 설정 중 하나가 이전 글인 쿼리 타임아웃 과 함께 커넥션 풀 (Connection Pool) 설정입니다.
+이 커넥션풀 설정이 왜 필요한지, 어떻게 해야할지 등등을 알아보겠습니다.
+1. 실험 환경
+실험의 경우 아래 환경에서 진행합니다.
+N",Database
+https://surfit.io/link/mxdnO,Django DB Transaction 2편 - 명시적으로 transaction 활용하기. (feat. savepoint),"Django 에서 DB Transaction을 명시적으로 시작하고, 트랜잭션 안에서 savepoint를 사용해서 좀 더 작은 작업 단위로 묶어서 처리하는 방법에 대해서 살펴볼 예정입니다. 특히, savepoint과 관련된 부분은 예제코드와 실제 Raw SQL이 어떻게 실행되는지 까지 살펴보도록 하겠습니다.주의! 이 글에서 DB는 MySQL 5.7 기준입니다",Database
+https://surfit.io/link/EmrvW,Elasticsearch Update_By_Query 적용 과정,"Elasticsearch(이하 es)에서 기존에 색인된 내용을 변경하고자 할 때, Update_By_Query 기능을 사용할 수 있습니다. 이 기능은 단순히 업데이트를 수행하는것 뿐만 아니라 쿼리를 통한 질의 후에 해당하는 조건에 맞는 필드를 탐색하여 업데이트를 진행합니다.
+
+취급하는 데이터의 양이 많다보니 일괄적으로 값을 변경해주는 기능이 필요했고, 기존",Database
+https://surfit.io/link/2vWMl,PostgreSQL (Aurora) 10 vs 11 버전 성능 비교,"PostgreSQL은 버전별로 굉장히 많은 개선이 있다. 2022년 1월 13일 현재, AWS RDS Aurora는 PostgreSQL 버전을 10, 11, 12, 13까지 지원하고 있다.
+
+실제 PostgreSQL은 14까지 나와있으며, 현재 Aurora가 아닌 RDS는 14 RC1 까지 준비되었다.
+
+10 버전이 이미 출시된지 4년 이상 지났고, 현재까",Database
+https://surfit.io/link/7LOV6,Java 기반의 알림 서비스로 MSA 전환기,"TTL을 기본적으로 지원해주는 NoSQL이 RDB보다 적합합니다. 유연한 스키마 대응Read/Write가 굉장히 빈번하게 일어나는 도메인 특성상 한 번에 최대한 적은 행이 추가되어야 합니다.알림 도메인의 큰 틀은 고정되어있지만, 알림의 행위를 정의하는 부분은 구조의 변경이 잦기 때문에 유연한 스키마를 가질 수 있어야 합니다.Shema-less한 NoSQL이",Database
+https://surfit.io/link/RvlVy,"Firebase를 대체할 오픈소스 프로젝트, Supabase","Supabase는 구글 Firebase를 엔터프라이즈 레벨에서도 사용 가능하도록 만든 오픈소스 프로젝트이다. 현재는 베타 서비스이다.
+컴퓨터에 직접 설치하는 방식은 아니고, Firebase처럼 클라우드로 제공되는 서비스이다.
+내가 Firebase를 사용하면서 아쉬웠던 건, 데이터가 많아졌을 때 인덱싱을 쉽게 적용시켜서 빠르게 레코드를 읽어오는 기능이 강력하",Database
+https://surfit.io/link/bbAZv,여러컬럼으로 Join 맺어야할 경우의 인덱스,"RDBMS는 쿼리 사용시 한 테이블에는 1개의 인덱스만 적용 된다. 즉, course_id 인덱스와 user_id 인덱스가 각각 있을 경우 그 중에서 가장 효율적인 인덱스 1개만 적용 된다.
+이럴 경우 복합 컬럼 인덱스를 잡아야 한다. 복합컬럼의 경우 조인 컬럼 -&gt; 조건별 컬럼으로 생성한다. 현재의 경우 조인 컬럼 (user_id) → 조건컬럼 (c",Database
+https://surfit.io/link/vRj16,Django Transaction(트랜잭션) 1편 - Request와 DB Transaction 묶기(Feat. ATOMIC_REQUESTS),"Django에서는 데이테베이스의 트랜잭션을 control할 수 있는 몇 가지 방법을 제공합니다.
+트랜잭션을 따로 control하는 설정이나 기능을 사용하지 않으면 기본적으로 autocommit mode로 동작합니다.
+autocommit이 True인 경우는 각 쿼리에서 명시적으로 transaction을 시작하고 commit하지 않아도 됨을 의미합니다.
+
+
+d",Database
+https://surfit.io/link/8qRJ4,데이터베이스 버퍼매니저(BUFFER MANAGER)란 무엇인가?,"버퍼 매니저는 인덱스와 디스크 사이에 있는 중간 층이다. 파일과 인덱스 관리를 하는데 중간의 추상 계층을 제공한다.
+
+
+버퍼 풀은 페이지 단위의 프레임이라고 하는 것의 집합으로 구성되어 있다. 버퍼 매니저의 주요 역할은 메인 메모리에서 디스크에 저장된 데이터를 조작하는 것이다. 따라서 마치 디스크에 접근하는 것이 아니라, 모든 것이 메인 메모리에서 끝나게 ",Database
+https://surfit.io/link/OoEor,무신사 서비스에 적합한 NoSQL 도입 여정 ,"성능, 가용성 못지않게 중요한 것이 안정적인 운영입니다. 데이터베이스를 대체하는 데 있어 실제 운영 시 고려해야 할 사항이 한둘이 아니기 때문입니다.기존에 사용하던 DocumentDB는 관리형 서비스로 구성/운영/모니터링/백업/복구 모두 GUI(Graphical User Interface)로 간단히 할 수 있습니다. 반면, 오픈소스 기반의 데이터베이스는 모",Database
+https://surfit.io/link/Q6ar0, Entity Framework Core ORM (활용편),"EF Core에서는 모델을 만들 때 설정(Configuration) 코드를 통해서 만들 수도 있지만, 기본 키나 관계 등 일부 기능들은 규약(Convention)을 통해서 좀 더 손쉽게 모델을 만들 수 있습니다. 따라서 이러한 채널-게임-미션-퀘스트 간의 단순한 One-to-Many 관계는 EF Core에서 모델의 코드로 쉽게 표현 됩니다. 이해에 무리가 ",Database
+https://surfit.io/link/XelrG,인덱스 (INDEX) 정리 2,"인덱스가 지원하는 연산
+동등 조회 (=)
+범위 조회 (<, >, <=, >=, BETWEEEN)
+B+TREE 인덱스는 위의 두개의 연산을 모두 지원하지만, 해시 인덱스는 오직 동등 연산만 지원을 한다.
+그 밖에 다양한 데이터 종류를 처리하기 위한 많은 종류의 인덱스가 종류한다.  (R-TREE, KD-TREE, GiST)
+인덱스 키와 정렬
+
+B+TREE와 ",Database
+https://surfit.io/link/8qaQq,DataGrip 에서 SSH 터널링으로 DB 접근하기,"보안상의 이유로 운영 환경의 데이터베이스에는 직접 접근하는 경우를 거의 차단합니다. 예외적인 경우 별도의 EC2 서버를 SSH 터널링을 통해 접근하는 방식을 사용하게 되는데요.
+그럼 아래와 같이 로컬 PC =&gt; EC2 서버 (ssh 접근) =&gt; Database (RDS) 로 접근해야만 합니다.
+DataGrip에서는 이와 같이 특정 서버를 통해 S",Database
+https://surfit.io/link/aWxze,인덱스 (INDEX) 정리,"데이터에 접근하는 첫 번째 방법은 바로, 레코드 아이디(페이지 아이디, 슬롯 아이디)를 이용하는 방법이다. 레코드 아이디는 페이지 아이디와, 슬롯 아이디로 구성 되어있으며 이를 통해서 페이지를 찾아 갈 수 있으며 슬롯을 통해서 튜플을 찾을 수 있다.
+
+
+두 번째 방법은, 페이지 시작 부분부터 모두 스캔하는 방법이다. 하지만 이런 방법은 모든 데이터를 접근해",Database
+https://surfit.io/link/VDMJo,Kubernetes 운영을 위한 etcd 기본 동작 원리의 이해,"Kubernetes는 기반 스토리지(backing storage)로 etcd를 사용하고 있고, 모든 데이터가 etcd에 보관됩니다. 예를 들어, 클러스터에 어떤 노드가 몇 개나 있고 어떤 파드가 어떤 노드에서 동작하고 있는지가 etcd에 기록됩니다. 만약 동작 중인 클러스터의 etcd 데이터베이스가 유실된다면 컨테이너뿐만 아니라 클러스터가 사용하는 모든 리",Database
+https://surfit.io/link/Z827Q,데이터베이스 페이지 및 레코드 구조,"페이지에는 페이지 헤더가 있는데 페이지에 대한 메타 정보를 담고 있다.
+
+
+레코드의 숫자, 남은 공간, 다음 또는 이전 페이지에 대한 포인터, 비트맵 그리고 슬롯 테이블을 가지고 있다.
+
+
+페이지에 레이아웃은 두 가지 관점이 있는데 첫번째로 페이지 안에 저장될 레코드의 형태가 고정 길이를 가지는 경우와 가변 길이를 가지는 경우가 있다. 두 번째는 페이지가 ",Database
+https://surfit.io/link/rMOOl,데이터 엔지니어의 좌충우돌 검색 개발기,"오늘의집의 검색 내재화 과정을 소개합니다. 안녕하세요. 오늘의집 데이터 엔지니어 델피입니다. 지난 4월 작성했던 &lt;버킷플레이스 Airflow 도입기 (클릭)&gt; 에 이어 이번에는 '검색기능 개발기'로 찾아왔습니다.
+
+검색 내재화, 급격한 성장이 불러온 새로운 이슈
+
+
+과거 오늘의집은 외부 업체의 검색엔진을 사용하고 있었습니다. 서비스가 빠르게 성장",Database
+https://surfit.io/link/P18NM,Aurora MySQL vs Aurora PostgreSQL,"Aurora MySQL vs Aurora PostgreSQL
+우선 이관을 고려하기에 적절할지 파악을 위해 두 DBMS 간 간단하게 기능적, 성능적 차이를 살펴보았습니다.
+기능비교
+
+Aurora MySQL(5.7)
+Aurora PostgreSQL(11)
+comment
+DB특성
+RDBMS
+ORDBMS
+PostgreSQL은 객체관계형 DBMS로 개발자는 기존 데",Database
+https://surfit.io/link/3x4Oq,[Redis] Stream 사용 방법,"클라우드의 메시지 큐(AWS SQS 등)를 사용하자니 벤더 락인(vendor lock-in)이 우려될 때 Redis stream은 아주 좋은 대안이 됩니다. 혹시 kafka를 redis pub/sub과 비교하려 한다면 정확한 비교가 안되는데 토픽 개념은 유사하지만 redis pub/sub에는 소비자 그룹의 개념이 없기 때문입니다.
+요즘은 캐시 용도, 혹은 ",Database
+https://surfit.io/link/3a7L7,여러개의 DB 작업을 동시에 수행하고 결과를 합쳐서 보내줘야 할 때,"요번 글에서 다루고자 하는 점은
+Spring 에서 API 처리 시
+Asynchronous 한 Hibernate DB 작업을 하고
+모든 결과물을 wait 해서 함께 처리한 뒤 내려줘야 하는 상황
+3가지 요소를 다 처리하는 방법에 대한 고민입니다.
+메인페이지에 보여주는 여러가지 위젯을 한번에 내려줘야 하는 상황이었는데, 위젯 1개마다 복잡한 쿼리를 날려 DB ",Database
+https://surfit.io/link/6Q4QM,엘라스틱서치 그게 뭔데 그거 어떻게 하는 건데,"서비스가 성장함에따라 데이터가 증가하면서 검색 속도도 느려졌는데요, 주문 하나를 검색하는데 9.87초가 걸리고 있었습니다. 서비스가 급성장 중이라 굵직한 기능 개발이 매우 많았고, 자주 쓰이는 페이지도 아니라서 우선순위가 밀리다보니 이렇게 되었네요.
+
+ES 적용 전 검색 10초
+
+그러던 중, 서비스개발팀만의 ES 환경을 구축할 건데 딜리버드에도 적용해보는 ",Database
+https://surfit.io/link/yRrDB,Flyway,"Flyway는 오픈소스 DB 마이그레이션 도구로, DB 형상관리를 위한 도구이다.
+개발을 하며 한번 쯤은 형상관리 도구를 사용해본 경험이 있을 거다.
+대표적으로 Git이 있다. 이는 소스코드 형상관리 도구이다.
+결국 Flyway는 Git처럼 형상관리 도구인데, DB 형상관리를 할 때 쓰는 도구이다.
+
+운영 환경에서는 spring.jpa.hibernate.d",Database
+https://surfit.io/link/EmYN2,API V2 전환과 DB 무중단 마이그레이션 후기,"마이그레이션 전략은 다양한 방법으로 진행될 수 있습니다. 가장 직관적인 방법은 서비스 점검 공지 후 가용 시간을 확보하여 서비스를 중단한 뒤에, 기존 데이터를 Dump 하고 신규 시스템에 Load 시킨 후 서비스를 재개하면 됩니다.좋아요 데이터의 경우 데이터 행이 꽤 많은 빅테이블 중 하나였고, 마이그레이션이 필요한 경우 분 단위가 아닌 시간 단위가 필요했",Database
+https://surfit.io/link/dPlP8,무신사 서비스에 적합한 NoSQL 도입 여정,"높은 트래픽을 담당하는 일부 서비스에 관계형 데이터베이스가 아닌 MongoDB 기반의 AWS DocumentDB를 도입하여 서비스를 안정적으로 운영하고 있습니다.서비스 만족도 측면에서는 목표를 달성한 셈이지만, 운영 중에 발생하는 비용 증가로 인해 더 효율적인 서비스 운영 방법을 고민하게 되었습니다. 이를 위해 AWS 관리형 서비스가 아닌 오픈소스 기반의 ",Database
+https://surfit.io/link/Q66Mo, Entity Framework Core ORM (소개편),ORM인 Dapper와는 다르게 EF는 구체화 작업만 하는 게 아니라 쿼리 빌더의 역할과 DB 테이블을 코드로 생성하고 수정하는 마이그레이션 기능까지도 포함하고 있는 커다란 라이브러리입니다.오픈소스이긴 하지만 Microsoft의 주도로 만들어지고 있는 만큼 Microsoft SQL Server와 사용했을 때 가장 안정적으로 사용할 수 있습니다. 하지만 My,Database
+https://surfit.io/link/zMMzG,통계 서버를 구축하며!,"통계 처리만을 위해서 실 서버에 있는 데이터베이스 구조를 바꾸는 것이 상당히 하이리스크(아니면 맥시멈 리스크?) 이기도 하고, 조금 억지스러운 부분이 없지 않아 있어서 이 생각은 과감히 버렸습니다.그래서 결국에는 사용자 가입, 사용자 정보 변경, 게임 플레이 시작, 게임 종료이 5가지의 이벤트를 정의하여 각 이벤트가 발생할 때 마다 통계 데이터를 따로 만들",Database
+https://surfit.io/link/6QAjq,DataLoader로 Non-GraphQL환경에서 활용하기,"DataLoader는 일반적으로 GraphQL의 N+1 문제를 해결하기 위해 사용하는 패키지로 널리 사용되고 있는 유틸리티입니다. 때문에 DataLoader는 GraphQL를 사용하지 않는 환경에서는 큰 관심을 보이지 않습니다.하지만 DataLoader는 오직 GraphQL를 위한 라이브러리도 아니며, 종속성도 전혀 없이 독립적입니다. 오늘은 DataLoa",Database
+https://surfit.io/link/AZxd7,커버링 인덱스,"조회 성능 개선 미션을 진행하며 커버링 인덱스를 알게 됐다.
+처음 보는 단어여서 이게 어떤 인덱스일까 궁금했고, 바로 찾아보고 이해했다.
+그러면서 한번 내용을 글로 정리하면 좋을 것 같다는 생각을 했다.
+그래서 이번 기회에 학습 테스트를 하며 해당 개념을 잡고가려 한다.
+
+
+*인덱스는 데이터를 효율적으로 탐색하는 방법이다.
+MySQL의 경우 인덱스 안에 있",Database
+https://surfit.io/link/OoERR,Spark Shuffle Partition과 최적화,"Partition은 RDDs나 Dataset를 구성하고 있는 최소 단위 객체입니다. 각 Partition은 서로 다른 노드에서 분산 처리됩니다.
+
+
+
+Spark에서는 하나의 최소 연산을 Task라고 표현하는데, 이 하나의 Task에서 하나의 Partition이 처리됩니다. 또한, 하나의 Task는 하나의 Core가 연산 처리합니다.
+
+
+
+즉, 1 Core ",Database
+https://surfit.io/link/OoErb,DB Index 입문,"Index는 DB 분야에 있어서 테이블에 대한 동작의 속도를 높여주는 자료 구조를 일컫는다. Index는 테이블 내 1개의 컬럼, 혹은 여러 개의 컬럼을 이용하여 생성될 수 있다. 고속의 검색 동작뿐만 아니라 레코드 접근과 관련 효율적인 순서 매김 동작에 대한 기초를 제공한다.
+
+DB Index는 흔히 책의 목차에 비유됩니다. 책에 목차가 없다고 가정해봅시",Database
+https://surfit.io/link/wJXzL,MySQL Group Replication 구축,"DB 구성 중 가장 많은 고민과 시간을 투자하게 만드는 부분이 성능(Performance)과 고가용성(High Availabilty)이라고 생각합니다. 성능은 좋으면 좋을수록 좋겠지만, 서비스를 제공하는 입장에선 서버 장애로 서비스의 중단이 발생하지 않도록 안정성을 유지하는 것도 중요합니다. 이렇게만 이야기하면 Oracle의 RAC를 사용하는게 가장 좋은 ",Database
+https://surfit.io/link/KpQv2,"신입 개발자, DB를 최적화 하다! 2편","부하 테스트를 진행한 결과, 분당 100번 조회하는 적은 양의 부하 테스트인데도 불구하고 ‘타임아웃’으로 HTTP 상태 코드 500이 반환되는 현상을 확인했습니다.이번 목록 조회 API는 웹 서버에서 무언가 크게 작업하는 것이 아니라 대부분 데이터베이스에 의존하는 것으로 확인했습니다. 이러한 부분을 미루어 보아 결론적으로 웹 서버에서 부하를 감당하지 못하는",Database
+https://surfit.io/link/50PDz,"신입 개발자, DB를 최적화 하다! 1편","서버에 트래픽이 몰리고 있고, 많은 트래픽이 특정 기능에 집중되는 경향이 있어 성능 저하나 타임아웃 등의 문제가 발생하고 있습니다.Azure 클라우드에서 작동하는 서버의 인스턴스를 충분히 늘려서(Scale-Out) 해결하는 방법도 있겠지만, 비용적으로 비효율적이기도 하고 특히 데이터베이스와 연결되는 부분은 웹 서버를 늘려서 해결되는 문제가 아닙니다. 물론 ",Database
+https://surfit.io/link/KQDbo,"리얼월드 서버의 미제사건, 원인 모를 과부하 해결하기","리얼월드를 2018년 7월 처음 정식 오픈한 이후, 리얼월드 서버에는 만성적인 질환이 하나 생겼었습니다. 가끔 알 수 없는 이유로 서버가 요청들을 빠르게 처리하지 못 하고 매우 매우 느려지는 현상이었습니다. 그 문제가 한 번 발생하기 시작하면 CPU 사용량이 급증하고 요청들이 쌓이고 쌓여 결국 서버 전체가 마비되어 아무런 요청도 처리하지 못 하는 상태가 되",Database
+https://surfit.io/link/w4Lq9,"Flyway 로 Java 에서 DB schema, seed 관리하기","안녕하세요, 힐링페이퍼에서 백엔드를 담당하고 있는 제이슨입니다!
+사용자가 불편함 없이 빠르고 안정적으로 더 좋은 의료 서비스를 이용할 수 있도록 하는 역할을 하고 있습니다.
+이번에 공유드릴 내용은 작년쯤 힐링페이퍼에 입사해서 가장 먼저 진행했던 Flyway 로 DB schema, seed 관리하기 입니다. Flyway 의 자세한 사용방법은 다루지 않지만, ",Database
+https://surfit.io/link/w6DqN,MySQL 그날의 끝 시간(23:59:59) 저장 시 주의 할 점,"한날의 최후시간인 23시 59분 59.999 초로 세팅하면 DB 에 저장하는 순간 그 다음날 0시0분0초 000 으로 바뀐다.
+일전에 백오피스 클라이언트에서 어떤 상품의 판매기간 세팅시 사용했던 캘린더 라이브러리가, 그 날의 끝시간을 던질때 23:59:59.999 값으로 던졌었는데, 자꾸 판매 일시(date) 데이터를 뽑아보니 입력한 날이 아닌 다음날로 나",Database
+https://surfit.io/link/597m2,Amazon Aurora PostgreSQL 에서 pg_bigm 모듈사용하기,"pg_bigm 모듈은 PostgreSQL 에서 전체 텍스트 검색 기능 (full text search) 를 제공 합니다. 이 모듈을 사용하면 더 빠른 전체 텍스트 검색 을 위해 2-gram 인덱스를 만들 수 있는데요. 여기서 2-gram 인덱스라는 것은 문자열의 연속된 2개 문자마다 인덱스 항목을 만드는 것을 의미합니다.
+
+bigm 은 bi-gram 의 약",Database
+https://surfit.io/link/5971r,데이터 분석 결과를 효과적으로 제공하기 위한 그래프 데이터베이스 구축,"네이버는 다양한 서비스를 제공하고 있으며, 서비스별로 매일 엄청난 크기의 로그를 저장합니다. DIKW 피라미드에 따르면 Data(데이터)는 단순히 수집된 사실에 해당하며, 따라서 네이버가 수집하고 있는 서비스 로그는 Data에 해당합니다. 그리고 네이버의 많은 팀이 서비스 로그를 Information(정보), Knowledge(지식), 그리고 Wisdom(",Database
+https://surfit.io/link/KvMO2,개발했더니 내 서재였던 건에 대하여,"실행 계획을 확인해보면, SELECT 타입을 통해 결괏값을 얻는 것으로 보아 가상 테이블을 생성하지 않고 병합되었다는 걸 다시 한 번 확인할 수 있었다.
+
+
+
+EXPLAIN SELECT * 
+FROM (
+	SELECT series.title AS series_title, 
+		book.title AS book_title, 
+		library_item.exp",Database
+https://surfit.io/link/3AWQX,뼈대 있는 가문의 데이터로 만들기,"데이터 처리, 집계, 모델링 업무를 수행하다 보면 인지하지 못하는 복잡한 상관관계가 만들어지게 됩니다.특히 테이블이라고 표현되는 Relational Database의 DataSet들은 조회 용으로 쓰이는 경우도 있지만많은 경우 다른 DataSet의 입력이 되거나 침조하는 meta성 데이터가 되기도 합니다.
+그러다 보니 아래와 같은 경우가 심심치 않게 자주 ",Database
+https://surfit.io/link/KYZbA,NoSQL,"전통적인 관계형 데이터베이스(RDB, Relational Database) 시장을 지배하던 시절과 
+다른 형태를 가지는 데이터의 양이 늘어나게 되면서 NoSQL이 각광받기 시작하였습니다. 
+일단 형태에 따른 데이터 종류가 무엇이 있는지 알아보겠습니다.
+
+형태에 따른 데이터 종류Permalink
+정형 데이터 - 형태가 정해져 있는 데이터. 관계형 데이터베이스",Database
+https://surfit.io/link/377xn,BigQuery PIVOT 사용법(Pivot Operator),"21년 5월 전엔 BigQuery가 피벗 기능을 제공하지 않아서, 스프레드시트, Pandas 등에서 피벗하곤 함그 이후엔 스크립팅을 사용한 PIVOT 글도 나왔으나, 스크립팅을 사용한 부분은 여전히 어려웠음하지만 이제 PIVOT 오퍼레이터가 생겨서, 빅쿼리 상에서 데이터를 처리할 수 있음단, 아직 이 기능은 정시 출시가 아님. 프러덕션 환경에서 쓰면 추후에",Database
+https://surfit.io/link/3BYBj,웹로그 히스토리 데이터를 이용한 데이터 분석 꼼수,"데이터를 이용해서 몇 명이 방문하고 있고 어떤 페이지를 많이 보더라는 지표도 뽑아보고 chart도 그려가며 데이터에 익숙해지다 보니 문득 다음과 같은 것들이 궁금해질 경우가 생기게 됩니다.
+방문자들이 내 사이트에 접속하면 보통 몇 개의 페이지를 볼까? 한 페이지 당 얼마나 머무를까? 
+
+페이지 이동 중 가장 체류를 오래 하는 페이지는? 혹은 가장 이탈이 심",Database
+https://surfit.io/link/wJR0N,PostgreSQL RDS Slow log Slack으로 알람 보내기,"서비스를 운영하다보면 여러가지 이유로 서버 장애가 발생합니다. 그 중 가장 빈도수가 높은 원인은 DB의 슬로우쿼리일텐데요. 어떤 쿼리가 언제, 얼마나 긴시간동안 수행되었는지에 대해 알람을 받거나 모니터링이 되어야 서비스에 이슈가 될만한 쿼리들을 지속적으로 탐지하고 개선이 가능하기 때문입니다.
+이번 시간에는 AWS RDS PostgreSQL에서 슬로우 쿼리에",Database
+https://surfit.io/link/5lA2W,mongoDB Story 1: mongoDB 정의와 NoSQL,"""mongoDB""라는 데이터베이스를 들어보셨나요? 이미 잘 아시는 분들도 있겠지만 Oracle, Microsoft SQL Server, DB2, MySQL과 같은 관계형 데이터베이스 제품으로 생각하시는 분들도 있을 겁니다. 물론 데이터베이스 제품인 것은 맞지만 중요한 것은 관계형 데이터베이스가 아니라는 겁니다. 그럼 관계형 데이터베이스가 아닌 것이 왜 중요",Database
+https://surfit.io/link/5lAOL,쿼리 캐시란? (MARIADB),"쿼리 캐시란, SELECT 쿼리문을 이용하여 조회한 값을 저장하고 있다가, 같은 쿼리 문을 요청하였을 때 미리 캐싱된 값을 반환하는 DBMS 기능이다.
+
+
+일반적인 웹사이트와 같이 쓰기 (WRITE)보다, 읽는 (READ) 횟수가 많은 환경에서 유용하다.
+
+
+하지만, 멀티 코어 시스템 및 처리량이 높은 환경에서는 확장성이 좋지 않으므로 기본적으로 사용되지 ",Database
+https://surfit.io/link/KPn2l,MySQL IN절을 통한 성능 개선 방법,"잘 사용되진 않는 범위 조건 중에 IN 이 있습니다.   일반적으로 BETWEEN, LIKE, &lt;&gt; 에 비해서는 하나씩 모든 Key를 입력해야 되기 때문에 애플리케이션에서 작업양이 추가되어 선호되진 않는데요.   이 IN 절을 통해 여러 성능 개선들이 가능해서 생각보다 활용하기에 따라 많은 성능 개선을 이룰 수 있습니다.   이번 시간에는 IN ",Database
+https://surfit.io/link/KExY9,이커머스에서 검색엔진이 필요한 이유,"상품 정보 텍스트에서 의미있는 용어를 추출할 수 있다
+RDB를 사용한 단순 질의에서는 검색 키워드가 상품명에 정확히 포함되어 있어야 해당 상품을 조회할 수 있습니다.
+예를 들어, “다이슨선풍기"" 키워드로는 “다이슨 DP-03 퓨어쿨 선풍기” 상품을 조회할 수 없습니다.
+검색엔진은 다양한 패턴의 키워드로 원하는 상품을 찾을 수 있도록 돕는 역할을 합니다. 예",Database
+https://surfit.io/link/K2J4d,Elasticsearch SQL,"엘라스틱이 sql을 지원하기 시작한지 꽤 됐는데 조인은 아직이다.
+
+
+그런데 아마존이 배포하는 opendistro는 조인을 지원한다.
+
+
+물론 아직 조인 내부적으로 집계도 안 되고, 서브 쿼리도 안 먹고 등등 많이 부족함.
+
+
+중복 제거 좀..
+
+하지만 외부 조인까지 지원하는 걸 보면, 빠르게 기능 개선이 이루어지지 않을까 싶다.
+
+아마존이 이렇게 발 빠르",Database
+https://surfit.io/link/w84G0,검색을 위한 데이터 다루기,"배달의민족 검색시스템에서 검색에 사용되는 데이터를 적재하면서 경험했던 어려움과 해결했던 방법을 공유하고자 합니다.
+
+검색시스템이란?
+먹고 싶은 음식을 찾는 첫 단계 
+배달의민족에서 검색시스템은 주문하고 싶은 가게 또는 메뉴를 빠르게 찾을 수 있도록 도와주는 여러 기능을 개발하고 있습니다.
+검색 기능
+  인기검색어
+  1인분, 채식 등의 테마 지면 리스팅
+ ",Database
+https://surfit.io/link/3qeA2,스타벅스 메뉴 모델링,"데이터 모델링은 현실세계의 존재하는 데이터를 단순화 시켜서 컴퓨터 세계의 데이터베이스로 변환하는 과정이다. 모델링은 현실 세계를 추상화 명확화 단순화 시키는 것이다. 
+그래서 오늘은 스타벅스의 메뉴판을 모델링 할 것입니다.
+
+스타벅스의 메뉴판을 조사하면서 메뉴가 이렇게 많은지 처음 알았습니다. 메뉴는 크게 음료 음식 상품 카드 등이 있지만 오늘은 여기서 음",Database
+https://surfit.io/link/wnGdg,MySQL MSR(Multi Source Replication) 도입,"큰 하나의 데이터베이스(Monolithic)를 여러개의 데이터베이스(MSA)로 구조를 개선하면서  
+발생하는 이슈에 좀 더 쉽게 대응하기 위하여 MSR을 도입한 사례에 대해서 간략하게 설명하겠습니다.
+
+소개
+
+저희 IT전략팀은 사람인의 계속적인 서비스 확장에 따른 개발 복장성 증가 및 서비스 간 강한 결합으로 인한 각 개발팀간 병렬 작업에 따르는 복잡한 상",Database
+https://surfit.io/link/KEkxe,ERD 다이어그램 툴 종류와 설치 경로 정리,개인 프로젝트를 하면서 쓸만한 ERD 툴을 찾아보았습니다. 주로 무료나 저렴한 가격으로 사용할 수 있는 툴들을 찾아봤는데요. 막상 조사해보니 이전에 oracle ERD 툴로 사용했던 erwin 처럼 막강한 기능을 가진 툴은 찾기 어렵더군요. 하지만 어느정도 장점을 가지고 있는 무료 ERD 다이어그램 툴들을 찾을 수 있었습니다.1. ERD Cloud개인 프로,Database
+https://surfit.io/link/wnd8N,ElasticSearch 스냅샷을 S3글래셔로 저장하기,ElasticSearch를 기반으로 로그 수집 및 조회 시스템을 운영하다 보면 법적인 요건 등 다양한 이유로 오랜 시간 로그를 보관하고 있어야 할 경우가 있습니다. 하지만 언제 조회하게 될지도 모를 로그들을 저장하기 위해 많은 수의 데이터 노드를 운영한다는 건 배보다 배꼽이 더 커지는 경우가 됩니다. ElasticSearch에서는 이런 경우를 위해 스냅샷이,Database
+https://surfit.io/link/5zoE0,"ElasticSearch, OOM을 막아보자","오늘은 ElasticSearch(이후 ES) 운영 중에 맞닥뜨릴 수 있는 가장 흔한 주제 중에 하나인 OutOfMemory(이하 OOM)에 대해서 이야기해보려고 합니다. OOM의 전조 증상과 그에 따른 나름대로의 대비책에 대해 살펴보겠습니다.
+
+OOM 이란 무엇인가?
+
+Java 기반의 애플리케이션들은 힙 메모리라는 것을 필요로 합니다. 이 영역에 연산에 필",Database
+https://surfit.io/link/31AJW,캐시 성능 향상기 (Improving Cache Speed at Scale),"안녕하세요! 데이터운영팀 김가림입니다.🙇🏻‍♀️ 올해 레디스 컨퍼런스는 코로나로 인해 온라인으로 진행되었습니다. 오늘은 그 중 제가 가장 흥미롭게 들었던 세션의 내용을 공유해보려고 합니다. 원 제목은 Improving Cache Speed at Scale 이며, 세션 영상은 유튜브에서 확인하실 수 있습니다.
+Cache Stampede
+레디스를 캐시로 사용할",Database
+https://surfit.io/link/3N2Xg,이미 사용 중인 MongoDB 인스턴스 종료하기,"February / 2020mongodb간혹 시동 중이던 MongoDB가 비정상적으로 종료된 후 다시 MongoDB를 시동하기 위해 명령어를 삽입하면 다음과 같은 에러를 반환할 수 있습니다.Another mongod instance is already running on the ‘xxx’ directory,이 경우 MongoDB 인스턴스로 사용되는 포트를 ",Database
+https://surfit.io/link/5lO7z,[AWS] 서버리스를 위한 RDS Proxy서비스,"RDS Proxy 2019년 12월 3일에 발표된 신규 AWS 서비스입니다. RDS Proxy란 관계형 데이터베이스에서 커넥션(Connection) 연결을 효율적으로 관리해주는 서비스입니다. 일반적으로 AWS Lambda 서비스를 사용한다면 DynamoDB와 같은 API 기반의 데이터베이스를 많이 사용할 수밖에 없습니다.
+
+서버리스 컴퓨팅에서 유휴 상태로 ",Database
+https://surfit.io/link/50oYD,GraphQL 개념잡기,"GraphQL은 페이스북에서 만든 쿼리 언어입니다. 요즘 개발자들 사이에 자주 입에 오르내리고 있으나 2019년 4월 기준으로는 아직 얼리스테이지임은 분명합니다. 실제 국내에서 GraphQL API를 Open API로서 공식적으로 제공하는 곳은 존재하지 않는것 같고, 해외에서는 사례(Github v4 GraphQL)를 찾을 수는 있지만 GraphQL을 공식",Database
+https://surfit.io/link/exDxB,데이터베이스 소팅과 해싱에 대해서 정리,"데이터베이스에서 정렬이 중요한 이유.
+(DISTINCT, GROUP BY, ORDER BY, UNION)와 같은 많은 SQL 에서 정렬을 사용한다. 또한 조인을 할 때도 소트 머지 조인 같은 방법으로 조인을 한다.
+
+만약 100GB의 데이터를 1GB의 램으로 정렬을 하려고 하면 어떻게 해야하는가? 버추얼 메모리를 사용하면 안되는가?
+
+버추얼 메모리를 사용하",Database
+https://surfit.io/link/Q6ZBz,DB Concurrency 어디까지 알고 있니,"DB에 다수의 사용자가 동시에 접근하는 일은 비일비재하게 일어납니다. 동시성은 이런 상황에서 transaction이 순차적으로 실행되는 것이 아니라, 순서에 상관없이 동시에 실행되는 것을 의미합니다.이 동시성이 문제가 되는 상황을 봅시다.비행기 티켓팅을 한다고 생각해 봅시다.비행기에 자리가 하나 남은 상황.A와 B는 같은 비행기를 예매하려고 합니다.A, B",Database
+https://surfit.io/link/qyXdV,엘라스틱 서치의 update_by_query의 기능,"Elasticsearch는 이미 색인된 문서에 대해서는 사전에 관련 단어를 업데이트 하더라도 적용이 되지 않았습니다.
+
+따라서, 이를 해결하기 위해서는 아래의 방법들을 사용해야 합니다.
+
+1) 새 인덱스를 만들어 색인
+  2) reindex
+  3) update_by_query
+update_by_query를 사용하여 사전 업데이트를 진행하는 방법과, upd",Database
+https://surfit.io/link/nlR7Y,데이터베이스 시스템 이해하기 : 트랜잭션 격리수준 소개,"수십 년 동안 데이터베이스 시스템은 사용자가 선택할 수 있는 여러 격리 수준을 제공했습니다. 고급형의 ""serializability""부터 저가형의 ""read committed"" 또는 ""read uncommitted""에 이르기까지 다양합니다. 이러한 서로 다른 격리수준은 어플리케이션에게 수많은 동시성 버그를 노출시킬 수 있습니다. 그럼에도 불구하고 많은 데이",Database
+https://surfit.io/link/BlzB0,DB Concurrency 어디까지 알고 있니,"DB에 다수의 사용자가 동시에 접근하는 일은 비일비재하게 일어납니다.동시성은 이런 상황에서 transaction이 순차적으로 실행되는 것이 아니라, 순서에 상관없이 동시에 실행되는 것을 의미합니다.이 동시성이 문제가 되는 상황을 봅시다.비행기 티켓팅을 한다고 생각해 봅시다.비행기에 자리가 하나 남은 상황.A와 B는 같은 비행기를 예매하려고 합니다.A, B ",Database
+https://surfit.io/link/KgonP,Sql을 통해서 테스트 코드를 쉽게 작성하자,데이터베이스와 의존성이 있는 테스트를 진행하는 경우 given 절에 해당하는 데이터를 set up 한 이후에 로직에 대한 검증을 진행하는 것이 일반적입니다. 이때 given 절에 대한 데이터 set up을 *.sql 파일 기반으로 작성하는 것입니다.사용방법은 간단합니다. @Sql 어노테이션을 작성하고 해당 경로에 *.sql 파일을 위치 시킵니다.테스트 코드,Database
+https://surfit.io/link/wkP28,Postgresql Lock 파헤치기,"Database lock을 이해하는 것은 동시성 문제를 해결하는데 중요한 요소입니다. 다양한 Lock의 종류 중 가장 중요한 Read Lock, Write Lock, Race condition 그리고 명시적 락에 대해서 어떻게 동작을 하는지 자세히 알아보겠습니다.
+ Postgresql에서는 pg_catalog라는 스키마에 다양한 메타정보를 관리합니다. 그 ",Database
+https://surfit.io/link/50ZRo,Redis Getting Started,"Redis에 대한 내용을 최대한 간략하게 설명한 포스팅입니다.본 포스팅에서는 strings, List, Hash만 살펴볼 예정입니다.하나의 Key와 하나 이상의 Field/Element 값으로 저장할 수 있으며, Value에는 기본적으로 strings 데이터를 저장할 수 있습니다. 타입의 데이터들은 지정할 수 있으며 해당 컨테이너 타입에는 Hash, Lis",Database
+https://surfit.io/link/KRPPW,mongoDB 데이터 모델링,"관계형 데이터베이스 데이터 모델링이 테이블 설계 후 칼럼을 설계하는 순서로 진행된다면, mongoDB 데이터 모델링은 도큐먼트 설계 후 컬렉션을 설계하는 순서로 진행됩니다. 또한 애플리케이션의 처리방안을 고려한 도큐먼트 구조를 어떻게 설계하느냐에 따라 데이터 정합성과 성능에 큰 영향을 주게 되므로 이에 대한 정확한 이해가 필요합니다. 그럼 지금부터 mong",Database
+https://surfit.io/link/KPaj2,DBMS를 분석하는 방법,"DBMS는 여러가지 큰 개념이 모두 함께 유기적으로 동작하기 때문에 (SQL, Query Rewrite/Optimization, Index, Transaction, Logging)
+
+
+앞에서 말한 각 모듈들은 코드상으로는 DBMS 마다 모두 다르게 구현되어 있을 것이다. 따라서 추상적인 개념을 코드로 된 구현체로 최대한 맵핑해보려는 시도를 하는 것이 좋다.",Database
+https://surfit.io/link/K242V,mongoDB Story 2: mongoDB 특징과 구성요소,"mongoDB는 데이터를 관리하는 방식에서 관계형 데이터베이스와 큰 차이가 있으며 그중 가장 대표적인 특징은 다음과 같습니다.
+도큐먼트 데이터베이스 도큐먼트는 HTML과 같은 특정 형식의 태그 구조를 의미하며, mongoDB는 JSON(JavaScript Object Notation) 형식으로 데이터를 관리하므로 NoSQL 데이터베이스 중 도큐먼트 데이터베",Database
+https://surfit.io/link/wV1eo,is_leave vs leaved_at vs leave_status,"트위터를 보다가 재미난 포스팅을 하나 발견했다.
+you-might-as-well-timestamp-it
+전체적인 글의 주장은 다음과 같다.
+소프트웨어 개발에서는 상황에 의존하는게 좋은 설계이지, 어떤 상황에도 좋은 기준이라는건 있을 수 없다고 생각한다.
+다만, boolean (is_deleted) 대신 timestamp (deleted_at) 를 저장하는 ",Database
+https://surfit.io/link/KE1ye,Mac에 PostgreSQL없이 PSQL만 설치하기,"일반적인 GUI 클라이언트에서는 PostgreSQL의 psql을 지원하지 않습니다.
+그러다보니 psql 명령어를 입력이 필요하면 별도 설치가 필요합니다.
+
+물론 PC에 PostgreSQL 을 설치하셨으면 psql 이 설치되어있겠지만, Cloud, Docker 가 대중화된 시점에서 직접 PC에 PostgreSQL을 설치하는 경우는 거의 없는것 같습니다.
+
+1",Database
+https://surfit.io/link/wn6bJ,"Presto, 개념 및 사용법 정리","Presto는 페이스북이 최초 개발하여 오픈 소스로 공개한 대화식 데이터 쿼리 서비스이다. 이를 이용해 다양한 데이터베이스에 대한 일관된 ANSI SQL 질의가 가능하다.
+
+2020-12-27, Presto의 초기 멤버들이 페이스북을 나와 만든 PrestoSQL 프로젝트가 Trino로 리브랜딩되었다. 이로써 Presto는 페이스북이 주도하는 PrestoDB",Database
+https://surfit.io/link/w4ldb,"MongoDB, 기본 개념 및 사용법 정리","MongoDB는 수년간 대표적인 NoSQL 제품으로 자리 잡았다. 특히, 전통적인 RDBMS 대비 우월한 샤드 및 스케일 아웃 능력으로 대량 트래픽, 대량 데이터가 발생하는 모던 웹 시대에 걸맞는 저장소로 널리 쓰이고 있다.
+설치 및 운영
+MongoDB를 개발 및 테스트 목적으로 활용한다면 로컬 내 가상머신이나 AWS EC2와 같은 클라우드 환경에 직접 설",Database
+https://surfit.io/link/wnMn1,🪣 SQL과 NoSQL에 대해서 짧은 끄적임,"데이터베이스는 크게 관계형 데이터베이스와 비관계형 데이터베이스로 양분된다. 관계형 데이터베이스는 SQL을 기반으로 하고 비관계형 데이터베이스는 NoSQL로 데이터를 다룬다. SQL과 NoSQL은 만들어진 방식, 저장하는 정보의 종류, 그리고 저장하는 방법 등에 차이가 있다. 
+
+관계형 데이터베이스는 구조화 되어있는 데이터베이스를 의미한다. 전화번호와 주소,",Database
+https://surfit.io/link/KYg6g,"Metabase, 오픈 소스 BI 솔루션 Amazon ECS에 설치하기","Metabase는 다양한 데이터 소스로부터 데이터 시각화 기능을 제공하는 오픈 소스 BI 솔루션이다. 이번 글에서는 Metabase 설치형 도커 이미지를 기반으로 Amazon ECS에 서비스를 기동하는 방법을 설명하고자 한다. (예제에 나오는 foobar 네이밍은 하나의 예로서 다른 문자열을 사용해도 무방하다.)사전 지식
+Amazon ECS와 AWS Far",Database
+https://surfit.io/link/50DkW,효과적인 DynamoDB 디자인 및 활용,"이번엔 디비를 NoSQL로 AWS의 DynamoDB를 사용해서 구성해보려고 한다.
+
+아키텍처 디자인을 어떻게 해야할까 고민하던 차에, A가 리인벤트 동영상을 추천해줬는데 내용이 좋다.
+
+- 한 애플리케이션에 한 개의 테이블
+- 파티션 키는 데이터를 골고루 분산하는 용도로 (데이터 분배 결정)    - 고유 값이 많은 속성(카디널리티가 높은 속성)    - ",Database
+https://surfit.io/link/KEvRE,엘라스틱서치 시작하기 노트,"엘라스틱서치로 검색을 구현하려고 한다.
+시작하기 문서를 찾아서 봤는데, 너무 이해하기 쉽게 잘 설명해준다.
+
+아래는 노트해둔 것.
+
+해결책:
+
+엘라스틱 서비스- Kibana 시각화 도구- Elastic Search 검색 도구- Beats, Logstash 수집 도구- 이거 합해서 엘라스틱 스택
+
+기타 기능- 엘라스틱 사이트 서치: 사이트 URL 넣으면 색인",Database
+https://surfit.io/link/wWJNy,AWS Aurora  MySQL 정리,"최근에 데이터 인프라팀으로 팀을 옮기기도 했고, 그동안 AWS Aurora를 사용하면서 생각보다 MySQL과 다른 부분이 많이 있어서 정리가 필요하다고 생각이 됐습니다. AWS의 공식문서를 정리하면서 저의 생각이나 경험을 약간씩 추가하였습니다. 그리고 마지막에는 MySQL(or AWS RDS MySQL)과 다른 점을 정리해보면서 다시 한번 AWS Auror",Database
+https://surfit.io/link/wDv4y,MySQL: 테이블 이름 변경에 view 활용하기,"기존 변수를 모두 변경하면서 관련된 테이블의 이름도 함께 변경하려고 한다.
+테이블 앨리어스가 있다면 가장 쉽게 운영 중인 서비스에도 문제 없이 적용할 수 있을 것 같다.
+가만, view 가 업데이트도 가능했던가?
+
+
+해결책:
+
+단일 테이블로 생성한 뷰는 업데이트나 인서트도 가능하다.
+
+    - view 조건에 해당되지 않는 경우에도 업데이트나 인서트가 가",Database
+https://surfit.io/link/3Lknz,레디스 클러스터  Mget 명령은 어떻게 동작하는가?,"이 글에서는, 레디스 클러스터 환경에서 Mget 명령으로 다수키 조회가 어떻게 동작하는지 검토한다. 스프링부트 및 Lettuce 라이브러리를 사용하였고, 성능 모니터링을 위해서 그라파나, 프로메테우스 등을 연동하였다. 애플리케이션, 레디스, 프로메테우스 등 모든 인프라 환경은 쿠버네티스에서 실행한다. 
+
+개인PC에서의 테스트 결과이기 때문에, 실제 서버에서",Database
+https://surfit.io/link/KEknW,ElasticSearch status 바로 알기,"오늘은 ElasticSearch (이하 ES)의 status 에 대한 이야기를 해볼까 합니다. ES의 status는 무엇을 의미하는지, 그리고 어떤 값들이 있으며 어떻게 확인할 수 있는지 살펴보겠습니다.
+
+ES status 확인하기
+
+ES는 status라는 것으로 현재 클러스터의 상태를 표시합니다. 아래와 같이 cat API를 사용하면 손쉽게 클러스터의 상",Database
+https://surfit.io/link/504Dn,QueryDSL에서 Inner Join하기,"QueryDSL에서 join하는 법을 찾다가 엄청 헤맸는데, 결국 문서에서 실마리를 찾을 수 있었다. QueryDSL이 HQL 쿼리를 타입에 무관한 방법으로 사용하기 위해 만들어졌다는 것을 알 수 있었고, 그래서 HQL 문법을 뒤져 보고 알았다. HQL에서는 inner join을 사용할 때 그냥 from a, b 하고 쓰는 것이다.
+
+그래서 QueryDSL",Database
+https://surfit.io/link/50gzE,Aurora 로컬 스토리지 성능 테스트,"안녕하세요 시스템신뢰성개발팀에서 DBA로 근무하고 있는 오윤택입니다.
+
+  오로라를 사용할때 그동안 로컬스토리지의 성능이슈로 인하여 구 모델인 R3 인스턴스를 사용해왔습니다.
+최근 오로라에 R5 인스턴스가 추가된 만큼, 계속 R3 인스턴스를 사용하는게 맞는지 성능 테스트를 진행하여 결과를 공유합니다.
+
+
+Aurora의 로컬 스토리지란?
+
+Aurora는 아래",Database
+https://surfit.io/link/wVNNk,PostgreSQL의 슬로우 쿼리에 대처하기,"평화롭던 어느 날, 모니터링 시스템에서 데이터베이스의 CPU 사용량이 지속해서 높다는 경고를 보내왔습니다.
+처음에는 일시적인 문제이겠거니 했지만, 날이 가면 갈수록 CPU의 사용량은 높아졌고 이제는 90%가 넘어져 더는 그냥 넘어갈 수가 없게 되었습니다.
+
+어떤 쿼리가 문제인지 확인하기
+
+예전에는 DB의 부하를 줄이기 위해 WAS 개발자가 작성한 SQL 쿼",Database
+https://surfit.io/link/5lYbz,DB분산처리를 위한 sharding - 우아한형제들 기술 블로그,"서비스 오픈전에 아름다운 J곡선 그래프를 바라는 마음은 모두 같을 겁니다.
+그런 서비스 성장에 있어 중요한 순간에 서버가 바틀넥이 돼서 발목을 잡으면 안되겠죠. 그래서 예측 가능한 서버 확장 방안에 대해서도 사전에 준비를 해놓길 바랐었습니다.
+달리는 기차에 바퀴를 갈아끼는 것이 서비스 운영 유지보수라는 얘기가 있죠.
+하물며 DB를 유지보수 하는 것은 더욱 ",Database
+https://surfit.io/link/3xbYY,MYSQL 데이터 타입 | RDBMS의 한 종류 MYSQL의 데이터 타입을 살펴보자,"이번 포스팅에서는 MYSQL의 데이터 타입에 대해서 살펴본다. MYSQL에는 크게 4가지의 데이터 타입이 존재하며, 각각의 특징과 범위 그리고 저장 가능한 사이즈가 다르다. 데이터 타입을 살펴보고 상황에 따라 테이블을 생성할 때 어떤 타입이 필요한지 고민해보도록 하자.숫자형 데이터 타입타입정의범위UNSIGNED 사용가능 여부TINYINT(n)정수형 데이터 ",Database
+https://surfit.io/link/5lOqW,메인 데이터베이스 IDC 탈출 성공기,"안녕하세요.
+우아한형제들 시스템신뢰성개발팀 박주희입니다.
+2019년을 마무리하는 시점에 우아한형제들이 어떻게 메인 데이터베이스를 IDC 환경에서 탈출시켰는지, 그 과정을 공유하려고 합니다.
+
+
+발단
+2010년 6월 출범한 배달의민족은 (2018년 12월 기준) 앱 누적 다운로드 4000만 돌파, 월간 순 방문자 수 900만명, 전국 등록 업소 수 30여만개",Database
+https://surfit.io/link/KErxq,Aurora MySQL를 운영하면서 알면 좋을 것 같은 미세한 팁,"들어가며
+안녕하세요. 우아한형제들에서 DBA로 근무하고 있는 유영근입니다.
+저희는 AWS환경에서 RDS로 수많은 요청을 처리하고 저장하며 Aurora MySQL을 주력으로 사용하고 있습니다.
+한정된 사람구하기 힘든 DBA로 수많은 DBMS를 효율적으로 운영하고 있으며 입사 이후 DB를 운영하면서 겪었던 몇가지 사례를 공유하고자 글을 쓰게 되었습니다.
+
+Au",Database
+https://surfit.io/link/3qdV2,Mysql Explain,"MySQL 옵티마이저는 비용 기반으로 어떤 실행 계획으로 쿼리를 실행했을 때 비용이 얼마나 발생하는지를 계산해하여 비용이 가장 적은 것을 택하게 됩니다. 어디까지나 추정 값이므로 정확한 비용은 실행 전까지 정확하게는 알 수 없습니다.EXPLAIN은 MySQL 서버가 어떠한 쿼리를 실행할 것인가, 즉 실행 계획이 무엇인지 알고 싶을 때 사용하는 기본적인 명령",Database
+https://surfit.io/link/3q1jv,빅데이터 프레임워크를 활용한 데이터 인프라 구축,빅데이터 분석을 위한 인프라 구축에 대한 경험을 공유하고자 합니다. 최근 데이터 분석을 위한 데이터 처리 시간의 증가로 기존 데이터 처리방법의 한계를 경험하였습니다. 결국 빅데이터 프레임워크를 검토하고 최종적으로 기술을 선정하여 도입하게 되었습니다. 이 과정에서의 경험이 비슷한 고민을 하는 사람들에게도 도움이 될 것으로 여겨 글을 작성하고 공유하게 되었습니,Database
+https://surfit.io/link/KYV4e,Fun with SQL: generate_series in Postgres,"이 글의 원본은 여기에서 보실 수 있습니다.
+혹시 더 나은 번역을 제안해주신다면 감사하게 수용하겠습니다.
+Postgres 를 쓰다보면 샘플 데이터를 만들어내거나 리포트를 만들기 위해 필요한 조인을 하기 위한 일련의 레코드가 필요한 경우가 있다. 간단하면서 잘 사용할 수 있는, 집합을 반환하는 generate_series 라는 Postgres 의 함수를 사용",Database
+https://surfit.io/link/wZbGP,LINE Manga 데이터베이스 샤딩 - 서버 엔지니어 편,"들어가며
+
+
+
+안녕하세요. LINE Manga 개발을 담당하고 있는 Ito입니다. LINE Manga의 데이터베이스 샤딩(sharding) 작업에 대해서 서버 엔지니어 편, 데이터베이스 엔지니어 편으로 나누어 소개하려 합니다.
+
+
+
+이번 글은 서버 엔지니어 편으로, 샤딩을 하게 된 배경과 대응 방침, 애플리케이션에서 수정한 사항을 중심으로 공유하겠습니다.
+",Database
+https://surfit.io/link/wJm4N,MySQL의 Transaction Isolation Level (Lock에 관하여),"편집자 주 
+문맥에 따라 ‘Transaction’과 ‘트랜잭션’으로 영어와 한글을 혼용함.
+문맥에 따라 ‘LOCK’과 ‘lock’으로 대문자와 소문자를 혼용함. 
+
+Overview
+MySQL DB는 일반적인 운영환경에서 뛰어난 성능을 제공합니다. 특히 적은 양의 자료가 빈번하게 교류되는 환경에서는 더욱 빛을 발하죠. 국내에서는 주로 작은 규모의 웹사이트를 ",Database
+https://surfit.io/link/KR186,MySQL을 이용한 분산락으로 여러 서버에 걸친 동시성 관리,"안녕하세요. 비즈인프라개발팀 권순규입니다. 
+현재 광고시스템에서 사용하고 있는 MySQL을 이용한 분산락에 대해 설명드리고자 합니다.
+
+
+분산락을 적용하게된 원인
+
+현재 테이블은 아래 그림과 같이 User 테이블과 Card 테이블이 있고, User 테이블과 Card 테이블은 1 : N 의 구조로 생성 되어있습니다.(예제코드)
+
+하지만 User 객체는 2개의",Database

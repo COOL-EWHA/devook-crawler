@@ -1,0 +1,289 @@
+url,title,description,category
+https://surfit.io/link/GAjLg,react-query,"react-query는 리액트 애플리케이션에서 서버 상태 가져오기, 캐싱, 동기화 및 업데이트를 보다 쉽게 다룰 수 있도록 도와주며 클라이언트 상태와 서버 상태를 명확히 구분하기 위해서 만들어진 라이브러리이다.
+react-query에서 기존 상태 관리 라이브러리(redux, mobX)는 클라이언트 상태 작업에 적합하지만 비동기 또는 서버 상태 작업에는 그다",React
+https://surfit.io/link/Q6AJX,리액트로 만든 게임에 사운드 추가하기,최근 주말마다 아이를 위해 리액트로 간단한 게임을 만들고 있습니다. 무한의 계단이란 게임을 너무 집중해서 하길래 게임에서 아이한테 위해가 될 수 있는 중독적인 요소는 빼고 핵심 재미(?)만 갖고 있는 게임을 만들어볼 심산이었죠. 단순히 계단을 좌우로 오르면서 얻은 점수로 아바타를 사거나 해서 캐릭터를 꾸밀 수 있는 게임인데 여기서 점수로 게임 내의 재화를 ,React
+https://surfit.io/link/qyWg2,리액트(React) CORS 해결하기 (feat. 프록시(Proxy) 구축),"일반적으로 브라우저는 보안 문제로 인해 동일 출처 정책(SOP, Same Origin Policy)을 따릅니다. 
+두 URL의 프로토콜, 호스트, 포트가 모두 같아야 동일한 출처로 볼 수 있는데, 
+예를 들어 a-service.com 호스트에게 받은 페이지에서 b-service.com 호스트로 데이터를 요청할 수 없습니다. 
+출처가 다른 호스트로 데이터를 ",React
+https://surfit.io/link/Xe41k,마이리얼트립 웹사이트 성능 측정 및 최적화 Part 2. 렌더링,"렌더링: 컴퓨터 프로그램을 사용하여 모델로부터 영상을 만들어내는 과정렌더링의 정의를 웹사이트에 대입하면 브라우저가 HTML 문서로부터 사용자가 인지하고 상호작용할 수 있는 화면을 만들어내는 과정이 됩니다.CSS는 시각을 통해 화면의 구조를 인지할 수 있도록 돕습니다. UI 요소의 위치와 여백, 크기, 색상 등을 지정합니다. 그리고 상호작용은 버튼을 누르거나",React
+https://surfit.io/link/Bljmp,마이리얼트립 웹사이트 성능 측정 및 최적화 Part 1. 리소스 로딩,네트워크 대역폭 제한네트워크 탭에서 옵션을 선택해 원하는 속도로 시뮬레이션할 수 있습니다. 성능 측정 시 Fast 3G를 기준으로 진행했습니다.2. 캐시 비활성화Disable cache 옵션으로 리소스 캐시를 비활성화해 웹사이트 첫 방문과 동일한 환경을 유지할 수 있습니다.3. 타임라인 측정네트워크 탭에서는 시간의 흐름에 따른 리소스 로딩 정보를 분석할 수,React
+https://surfit.io/link/Z8llb,React Deep Dive — React Event System (2),리액트 17버전이 발표되면서 발표한 공식문서의 첫 번째 섹션에는 “No New Features”라는 타이틀이 달려 있습니다. 즉 리액트 17버전에는 이전 버전에서 새롭게 추가된 API(문서의 설명에 따르면 “new developer-facing features”)가 없다는 의미입니다. 하지만 바로 다음 섹션에서 “Gradual Upgrades”에 대한 언급,React
+https://surfit.io/link/7LO0m,styled-components의 StyleSheetManager 캐싱 문제,"styled-components를 사용하며 iframe 내부에서 외부 바깥에 존재하는 DOM에 style을 주입하기 위해선, StyleSheetManager를 사용해야 합니다.
+
+styled-components에는 캐싱을 위한 로직이 들어가 있고, StyleSheetManager를 사용할 때 이것이 문제를 일으킬 수 있습니다.
+
+실제로 발생한 문제를 해결하",React
+https://surfit.io/link/BlOQ2,Infinite Scroll(무한 스크롤) with Intersection Observer,"Intersection Observer API는 ""상위 레벨 Document의 Viewport 또는 부모 요소""와 ""타겟 요소"" 간 교차 지점의 변화를 비동기적으로 관찰할 수 있는 방법을 제공한다.
+
+Intersection Observer가 등장하기 전에는 어떤 요소가 화면에 보여지는지 감지하는 것은 매우 복잡한 일이었다. 따라서 요소의 visibility",React
+https://surfit.io/link/6QelN,iOS 디바이스에서 body의 scroll을 막는 방법 (How to prevent body scrolling on iOS?),"보통 팝업창 내에 컨텐츠가 길어서 스크롤이 있는 경우에는
+팝업 내부에만 스크롤이 잘 되게 하기 위해서 Dim 영역 뒤에 있는 body의 scroll은 막는 경우가 많다.
+
+그리고 웹에서는 scroll 막는 것도 쉽게 처리할 수 있다.
+바로 팝업이 떴을 때 body 태그에 overflow: hidden을 걸어줘서 scroll을 못하게끔 막아버리는 방법이다.
+",React
+https://surfit.io/link/p18AJ,리액트 라우터 v6 튜토리얼,"웹 애플리케이션에서 라우팅이라는 개념은 사용자가 요청한 URL에 따라 알맞는 페이지를 보여주는 것을 의미합니다. 웹 애플리케이션을 만들때 프로젝트를 하나의 페이지로 구성할 수도 있고, 여러 페이지를 구성할 수도 있겠지요. 
+예를 들어, 우리가 이전에 만들었던 일정 관리 애플리케이션에서는 하나의 페이지로 충분할 수 있겠지만, 우리가 블로그를 만든다고 가정해봅",React
+https://surfit.io/link/JlLV2,React Query vs SWR,"리액트 개발자라면 누구나 Redux, MobX 등의 상태 관리 라이브러리를 사용해 본 경험이 있을 것이다. 이 라이브러리들은 클라이언트 상태 관리에는 유용하지만, 서버 상태와 동기화되지 않기 때문에 프론트엔드 개발자들은 직접 상태를 업데이트해 줘야 하는 불편함이 있다.
+
+이러한 불편함을 해소하기 위해 등장한 새로운 방식의 라이브러리가 바로 React Que",React
+https://surfit.io/link/XeBYk,"React 리팩토링, 10년 넘은 리디북스 웹도 OK","핵심 목적은 생산성과 유지보수성이었어요. 디자인은 그대로 유지하지만, 구현은 완전히 새로 개발하는 것이 골자였습니다.
+
+
+
+리액트를 리팩토링하는 것이 가장 효율적이라고 판단했어요. 리액트가 기존 리디북스에서 가장 높은 비중을 차지하고 있었기 때문입니다. 기존에는 여러 프론트엔드 팀이 각각의 도메인에 해당하는 프론트엔드를 운영했었습니다. 그래서 어떤 서비스는",React
+https://surfit.io/link/rMDqb,React Query와 함께하는 API 에러 처리 설계하기,API 에러가 발생했을 때 에러를 처리하는 흐름을 정리하고 체계를 갖춥니다. 이를 통해서 모든 에러에 공통적으로 적용되는 규칙과 처리는 전역적으로 관리하여 매번 개발자가 따로 고민하지 않도록 합니다. 그리고 API를 사용하는 컴포넌트에서는 해당 컴포넌트에서 필요한 만큼의 에러 처리 로직에 집중할 수 있게 합니다. 궁극적으로는 프로젝트에 참여하는 모든 개발자,React
+https://surfit.io/link/Rvoak,Code Push 사용하기,"Code Push란?
+
+사용자의 장치에 직접 배포하는데 대응할 수 있도록 해주는 Microsoft에서 만든 App Center 클라우드 서비스 입니다.
+JS, HTML, CSS 및 이미지 변경등의 특정 업데이트를 게시할 수 있는 중앙 저장소 역할을 하며, 앱은 제공된 SDK를 사용하여 즉각 최신 업데이트를 불러올 수 있습니다.
+
+Code Push에 대해서 ",React
+https://surfit.io/link/DArxG,React redux-thunk 테스트 전략,"“사용자는 A 화면에서 자신이 이전에 작성한 TODO 리스트를 볼 수 있어야 합니다.”라는 기능을 이끌어내기 위한 테스트를 먼저 작성해야합니다. 
+어떤 테스트를 먼저 작성해야할지 떠오르시나요? 
+저는 Red-Green-Refactor 사이클 중 테스트를 먼저 작성하는 Red 단계에서 많은 고민과 시간을 투자합니다.
+
+Red, Green, Refactor C",React
+https://surfit.io/link/JlWY7,React debounce test with Jest,"useCallback 훅을 사용하지 않으면 예상대로 테스트 결과가 나오지 않습니다.
+  컴포넌트가 다시 렌더링되면 함수가 새로 생성되기 때문에 이전 타이머가 클리어되지 않고 새로운 타이머가 계속 생겨나게 됩니다.
+  디바운스 코드로 약간의 딜레이가 있지만, 디바운스 처리를 하지 않은 것과 동일한 결과를 얻게 됩니다.
+  useCallback 훅을 통해 해당",React
+https://surfit.io/link/bbnvA,Typescript와 Redux hooks를 이용하여 간단한 TODO LIST 만들기,"오늘은 Typescript, Redux hooks를 사용하여 간단한 React Todo List를 만들어보려고 한다.
+예전에 connect라는 Redux 라이브러리의 Higher order component를 사용해 Redux 프로젝트를 몇 번 만들어봤었다.
+
+그 때는 connect로 연결된 container component에서 비즈니스 로직 정의를 하고",React
+https://surfit.io/link/3xjLY,원리와 예제를 통해 React-native-reanimated V2 입문하기,Reanimated의 등장 배경부드러운 애니메이션을 구현하기 위해서는 초당 60프레임의 화면전환이 필요합니다. 그리고 이를 위해서는 16밀리초 내에 프레임이 렌더링되어야 해야합니다. RN에서 기본적으로 제공되는 gesture와 Animated API를 사용하면 애니메이션의 계산을 UI Thread와 JS Thread의 커뮤니케이션에 의존해야 합니다. 그리고,React
+https://surfit.io/link/ozlrj,React UI 상태를 URL에 저장해야 하는 방법과 이유,"화면을 몇 번 클릭한 후에 원하는 정보가 있는 상태가 되었는데, 실수로 탭을 닫은 적이 있지 않은가? (또는 Windows 업데이트를 한 적이 있지 않은가?)    
+똑같은 지루한 과정을 거치지 않고 이 상태로 돌아갈 방법이 있다면 좋을 것이다. 아니면 그 상태를 공유해서 팀원이 당신과 동일한 작업을 할 수 있다.    
+이 문제는 현재 모바일 앱에서 앱을",React
+https://surfit.io/link/VDeyR,"Integration 테스트 코드가 중요한 이유 (React Testing Library, MSW로 작성해보기)","우리가 테스트 코드를 쓰는 목적은 단순하다. 내가 만든 서비스를 매 번 일일이 실행한 후에 모든 기능을 손수 눌러서 확인하지 않고도 내가 의도한 대로 온전히 작동하는지 빠르게 점검하기 위함이다.
+
+만약 내가 어떤 기능을 최초로 개발했다고 해보자. 대부분의 경우 QA 과정을 거치게 되고, 그 과정에서 모든 경우의 수를 직접 서비스를 사용해보면서 테스트할 것이",React
+https://surfit.io/link/P182l,Suspense와 선언적으로 Data fetching처리,"FE에서 비동기 작업들의 경쟁 상태는 프로그램상으로나 논리적으로는 문제가 없지만, 사용성 측면에서는 많은 문제들을 야기할 수 있습니다.
+
+이는 React 컴포넌트들이 각각 자신만의 “생명주기”를 가지고, 마찬가지로 비동기 작업들도 각각 자신만의 “생명주기”를 가지기 때문에 발생하는 문제입니다. 대부분의 경우 이 문제를 해결하기 위해서 컴포넌트를 만들 때 데",React
+https://surfit.io/link/p1jn6,리액트에서 도넛 차트를 만들어보자!,"stroke-dasharray 속성은 도형 둘레의 dash와 gap을 정의하는 패턴으로, 도형 둘레의 stroke의 길이와 각각의 stroke 사이 공백의 패턴을 정의합니다. 예시를 통해 알아보겠습니다.
+stroke-dasharray 속성이 적용되지 않은 기본 &lt;line&gt;은 다음과 같습니다.
+&lt;svg viexBox=""0 0 100 100""&",React
+https://surfit.io/link/kqnO8,React 앱에 Next.js 끼얹기 + EC2 배포하기,"들어가기 전에..
+이번 접근성 미션을 하면서 React로 구현해놓은 페이지를 Next.js를 이용해 Migrate하고, EC2로 배포하라는 미션을 받았다!
+
+본격적으로 들어가기 전에, Next.js와 우리가 배포할 AWS EC2가 도데체 뭔지 한 번 짚고 넘어가보자. 
+✔️ Next.js가 뭘까?
+The React Framework for Productio",React
+https://surfit.io/link/kqnxP,Next.js Lazy Hydration으로 웹 성능 향상시키기,"Dynamic Import로 해당 컴포넌트의 Chunk File을 걷어내 웹 성능은 향상시킬 수 있겠지만, 그 이전의 서버단의 PreRendering 과정에서도 해당 컴포넌트가 초기 로딩 때 바로 보여질 상태가 아니라면 렌더링 요소 대상에서 제외된다.
+
+'어차피 해당 영역이 뷰 포트로 접근했을 때 유저에게 정상적으로 보여주면 아무 문제가 없지 않겠느냐'라는",React
+https://surfit.io/link/rMyvZ,React-native for testing by testing-library (part 1),"Jest만으로 테스트가 가능하지만 조금 더 편한게 테스트 하기 위해서 아래 라이브러리를 설치해 봅시다. 이 라이브러리는 Facebook에서 권장하고 있고, 사용자가 컴포넌트를 사용하는 것 처럼 테스트를 작성할 수 있도록 도와주는 툴입니다.
+참고 링크
+$yarn add -D @testing-library/react-native @types/jest
+
+
+간단한",React
+https://surfit.io/link/6QeGq,리액트 네이티브로 13년 된 네이티브 앱 전환하기,"개발에 앞서 고민한 것은 ‘네이티브 위에 리액트 네이티브를 올리느냐, 리액트 네이티브에 네이티브를 올리느냐’였어요. 장단점이 확실했죠.
+
+
+
+네이티브 위에 리액트 네이티브를 올릴 경우
+
+
+
+기존에 개발된 네이티브 구현은 안정적으로 유지될 수 있었어요. 반면 리액트 네이티브에서는 예상되는 번거로움이 있었죠. 구성에 따라 화면별로 앤드 포인트가 따지게 되고, ",React
+https://surfit.io/link/2vRLD,React Profiler API로 컴포넌트 측정하기,"ProfilerProfiler는 매우 간단하게 컴포넌트의 랜더링 비용을 측정할 수 있습니다. 측정 대상이 되는 컴포넌트를 Profiler로 감싸고, onRender 콜백을 통해 원하는 값을 얻을 수 있습니다. 프로젝트 내에 어디에든 원하는 곳에 추가할 수 있기 때문에 작은 단위의 컴포넌트의 비용을 얻고자할 때 특히 유용한 것 같습니다. 사용 방법은 아래와 ",React
+https://surfit.io/link/P188N,Redux Tool kit 총정리,"redux를 사용할 때 actionType 정의, 액션 함수, 리듀서 함수를 생성합니다. 
+이렇게 하면 너무 많은 코드가 생성되니 redux-actons를 사용하게 되고, 불변성을 지켜야하는 원칙 때문에 immer를 사용하게 되고, store 값을 효율적으로 핸들링하여 불필요 리렌더링을 막기 위해 reselect를 쓰게 되었으며, 비동기 작업을 위해, th",React
+https://surfit.io/link/3Mj2X,대수적 데이터 타입과 리액트 상태 관리,"대수적 데이터 타입에는 곱타입(product type)과 합타입(sum type)이 있습니다.곱타입(Product type)1type boolAndInt = (bool, int)boolAndInt 타입은 bool 타입과 int 타입을 가지는 튜플 타입입니다. boolAndInt 타입이 표현할 수 있는 데이터의 개수는 int 타입으로 표현할 수 있는 수([-",React
+https://surfit.io/link/exWOr,React에서의 setState,"첫 번째 의문 - setState는 어떻게 동작할까?
+사실 지금까지 이미 만들어져있는 hook들을 사용하면서, 이 hook들의 세부 동작에 대해서는 크게 고민하지 않고 사용했다. 
+몇 번 궁금해서 찾아보기는 했으나, 항상 적당한 수준의 이해만 하고 넘어가기를 반복해서 잘 이해했다고 보기는 어려웠다.
+setState는 비동기로 동작한다. 왜냐하면 React에",React
+https://surfit.io/link/6Q4YB,당신의 컴포넌트는 안녕하신가요,"‘독립적’, ‘재사용 가능하도록 분리’, ‘고립시켜 생각’이라는 말들이 나오는데 우리가 만드는 컴포넌트가 완벽히 이러한 특징을 가지느냐고 자신에게 반문해보면 아마 아닐 것이다.
+사실 위의 설명은 컴포넌트의 최대 목표를 의미하는 말이 아닐까 생각한다. 이러한 목표를 완벽하게 지키면 가장 좋겠지만, 개발하면서 위의 특징들을 못 지키는 사태가 빈번하다. 그래서 ",React
+https://surfit.io/link/AZeQz,React에서 setInterval 현명하게 사용하기(feat. useInterval),"React에서 리렌더링이 일어나면, 함수가 새로 실행된다. 보통의 subscription API들은 이렇게 새로 함수가 실행되면, 이전의 subscription을 해제하고 새로운 subscription을 만드는데 setInterval은 그렇지 못하다. 
+우리가 만든 interval을 해제하고 싶다면, clearInterval을 사용해 직접 timer를 해제",React
+https://surfit.io/link/3G4vN,React native layout with flexbox,"Flexbox in React native리액트 네이티브의 레이아웃 시스템은 기본적으로 flexbox를 지원합니다. flexbox가 동작하는 방식은 web과 동일하지만, 몇 가지 예외가 있습니다. 예를 들어 기본 flexDirection 이 column 이고, alignContent 는 flex-start , justifyContent 는 stretch 가",React
+https://surfit.io/link/Z8bLZ,Code Splitting,"코드 분할(Code Splitting)은 SPA의 성능을 향상시키는 방법입니다. 싱글 페이지 애플리케이션(Single Page Application)은 초기 실행시에 필요한 리소스를 모두 다운로드한후 해당화면에 필요한 스크립트를 실행시키는 특징이 있습니다. 때문에 초기 다운로드 비용이 매우 비싸고 , 로딩속도가 지연될수 있기 때문에 필요한 시점에 분할된 리",React
+https://surfit.io/link/KQDW4,리액트 컴포넌트들을 특정 방식으로 행동하게 만들기,"리액트는 공식문서에서 cloneElement(), isValidElement(), 그리고React.Children이라는 API들을 소개한다. 리액트로 개발하면서 이것들을 사용할 일은 거의 없지만, 이것들은 종종 유용하고 각종 라이브러리에서 실제로 사용된다. 예를 들어 react-router에서도 이것들을 사용하고 있다.
+
+이 Codesandbox는 리액트 ",React
+https://surfit.io/link/P1p4B,React Router v6 업데이트 정리,"Switch가 사라지고, Routes 등장
+Routes는 기존 Switch 처럼 경로를 순서를 기준으로 선택하는 것이 아닌, 가장 일치하는 라우트를 기반으로 선택하게 된다.
+Routes로 기존 Switch의 기능을 대체 가능
+기존 코드
+&lt;Switch&gt;
+  &lt;Route path=""/"" ..... /&gt;
+&lt;/Switch&gt;
+v6 코",React
+https://surfit.io/link/Q6lLp,리액트 네이티브로 글로벌 앱 개발하기,"리액트 네이티브를 메인 기술로 선택한 건 크로스플랫폼을 쓰기로 했기 때문입니다. 적은 개발자 수로 빠르고 효율적으로 앱(Android, iOS) 개발을 해야 하는 상황이었거든요. 리액트 네이티브 말고도 Flutter나 Ionic을 고려했는데요. 다른 대안보다도 리액트 네이티브를 사용하는 개발자가 많았습니다. 활용할 수 있는 라이브러리도 많았어요.
+
+
+
+만타",React
+https://surfit.io/link/xrPqP,Store에서 비동기 통신 분리하기 (feat. React Query),"FE 개발에서 전역 상태 관리를 위해서 Store를 사용하고 있는 것은 맞지만 상당 부분이 비동기 통신을 위해 쓰이고 있는 것 같다는 생각이었습니다. 개발하고 운영하는 프로덕트들에 빗대어 살펴보니 비동기 통신 자체와 이에 얽혀있는 다양한 정책들과 함께 Store의 역할이 너무 비대하고 이게 과연 Store의 본질이 맞는지 의문을 가지게 되었습니다.
+저희가 ",React
+https://surfit.io/link/OoAvZ,당신의 컴포넌트는 안녕하신가요,"컴포넌트는 UI를 독립적이고, 재사용 가능한 부분으로 분리해주며 각각을 고립시켜 생각할 수 있게 해줍니다.
+
+'독립적', '재사용 가능하도록 분리', '고립시켜 생각'이라는 말들이 나오는데 우리가 만드는 컴포넌트가 완벽히 이러한 특징을 가지느냐고 자신에게 반문해보면 아마 아닐 것이다.
+사실 위의 설명은 컴포넌트의 최대 목표를 의미하는 말이 아닐까 생각한다.",React
+https://surfit.io/link/Oo4eR,sagen을 사용해서 간단히 상태 관리하기,"React에서 전역 상태를 관리하기 위해서 Redux를 많이 사용합니다. 하지만, Redux의 사용법이 간단하지 않아서 대체하기 위한 라이브러리가 많이 나오고 있습니다.
+이 게시글에서는 간단하고 사용하기 쉬운 sagen에 대해 알아보겠습니다.
+sagen은 무엇인가?
+먼저, sagen은 전역 상태 관리를 하기 위한 최선의 도구는 아닙니다. 아직 개발자 도구도",React
+https://surfit.io/link/7L9lq,Chart.js 시작하기,"리액트에서 Chart.js를 사용하려면 chart.js 뿐만 아니라 리액트에서 Chart.js를 렌더링하기 위해 필요한 react-chartjs-2도 설치를 해야 합니다. 사용하시는 패키지 매니저에 따라 아래와 같이 설치를 해주세요.
+
+    &lt;yarn을 사용하는 경우&gt;
+yarn add react-chartjs-2 chart.js
+
+&lt;npm",React
+https://surfit.io/link/zMpP1,useEffect의 동작 원리,"useEffect Hook은 dependency 배열 내에 지정된 값의 변화가 일어났을 때 이펙트 함수가 실행됩니다. 이러한 특성으로 인해 컴포넌트가 마운트될 때 API를 통해 데이터를 가져오거나, state 값 또는 props 값이 변경될 때 특정 함수를 실행시키는 등의 작업을 하는 데 사용됩니다.
+함수 컴포넌트에서 return 구문 밖에서의 함수 실행은",React
+https://surfit.io/link/00AyD,Virtual DOM 만들기,"DOM은 HTML을 객체로 표현한 것이며, JavaScript와 연결될 인터페이스입니다. HTML로 작성된 코드는 HTML 파서에 의해 DOM이라는 객체가 모인 트리로 변환되는데, 이를 DOM 트리라 합니다.
+Virtual DOM의 이점
+Virtual DOM은 DOM이 변경될 때 전체 DOM을 Reflow하는 것이 아닌, 가상의 DOM을 이용해 한 번만 R",React
+https://surfit.io/link/1Yxnr,브라우저 동작원리를 알아야 하는 이유가 무엇인가요?,"해당 글은 React의 SSR인 Next.js 프레임워크에 의존하여 작성된 글입니다.그러나 전체적인 맥락과 핵심 내용을 이해하시는 데는 큰 문제는 없습니다.
+
+
+
+프론트엔드 주니어 개발자가 꼭 알아야 하는 기본지식 중 하나로 많이 소개되고 있는 '브라우저 동작 원리'취업이나, 이직 준비를 해봤다면 무조건 들여다봤을 내용인 만큼, 브라우저가 어떻게 동작하는지",React
+https://surfit.io/link/bbbDA,React DnD Tips & Tricks,"React DnD는 아이템 간의 순서 변경 등 드래그 액션이 편리한 UX를 만들 수 있는 환경에서 사용됩니다. 아래는 채널톡에서 React DnD를 사용하는 예시입니다.
+
+React DnD를 프로덕트에서 녹여서 사용할때 마주할 수 있는 문제에 대해서 한국어로 된 아티클이 꽤 부족하다고 느꼈습니다. React DnD를 오랫동안 사용했고, 최근에 채널톡에서 J",React
+https://surfit.io/link/DA8VA,Redux Toolkit (리덕스 툴킷)은 정말 천덕꾸러기일까?,"최근 프론트엔드 개발 생태계는 리덕스를 통한 상태 관리의 피로도 증가와 함께 불만의 목소리를 키워오고 있습니다. 그리고 훅 기반의 API 지원이 가속화되고 React Query, SWR 등 강력한 데이터 패칭과 캐싱 라이브러리를 사용하면서 리덕스 사용이 줄어드는 방향으로 프론트엔드 기술 트렌드가 변화하고 있다고 생각합니다.
+ 
+그런데 잠시 그 흐름에서 벗어",React
+https://surfit.io/link/Z8p8P,Next.js 12 업데이트 사항 정리,"프레임워크에서 사용하던 컴파일러를 Rust 컴파일러로 대체함 : 프로젝트 빌드 속도 증가, 새로고침 속도 증가.
+미들웨어 : 서버 단에서 미들웨어 처리가 가능한 기능 추가.
+React 18 지원 : React 18 버전을 지원.
+&lt;Image /&gt;AVIF 지원 : webP보다 20% 압출률이 더 좋은 AVIF 포맷 지원.
+봇 인식 ISR 폴백 : ",React
+https://surfit.io/link/bb1D1,Finite state machine & statecharts - XState,"우리가 상태를 관리할 때 boolean으로 여러 상태를 관리하는 보편적인 케이스에 대해서 이야기해보려 합니다. 예를 들어 회원가입 페이지 개발 요건을 아래와 같이 전달받았다고 가정해 보겠습니다.
+ 
+
+id, password 입력을 받음
+password는 8자 이상
+input 에러일 때 에러 메시지 보여줌
+OK 버튼을 누르면 서버에 요청
+서버에 요청하는 동안",React
+https://surfit.io/link/BllRZ,"Next.js 100% 활용하기 (feat. getInitialProps, getStaticPath,  getStaticProps, getServerSideProps, storybook)","일반적으로 CSR의 경우, 초기에 페이지가 일단 렌더가 된 이후, 클라이언트에서 데이터를 불러오며 다시 한 번 렌더링이 됩니다. 한편, SSR을 수행하는 경우, 처음 렌더가 될 때 서버 측에서 데이터도 함께 가져와서 그려줍니다. 그렇기 때문에 SSR의 경우, 한 번에 렌더링이 되기 때문에 초기 로딩속도가 빠르지만 페이지를 넘길 때마다 중복되는 데이터일지도 ",React
+https://surfit.io/link/KPLjv,Expo의 새로운 빌드 시스템 EAS build와 Expo Development Client,"기존 Expo managed workflow의 빌드 시스템React native로 개발을 진행할 때, 보통 Expo의 SDK를 사용한 Managed workflow와 Bare workflow 중 하나를 선택하게 됩니다. Managed workflow에서 네이티브 코드에 대한 부분은 Expo에 의해 ‘Managed’ 되고, 개발자는 오직 자바스크립트/타입스크",React
+https://surfit.io/link/dPl7Y,핀다에서 쓰는 React Custom Hooks,"custom hooks를 잘못 정의하여 사용한다면 예측하지 못한 동작들을 만들어 수 있으며, 디버깅까지 어렵게 만들 수 있습니다.
+
+클래스 컴포넌트보다 적은 양의 코드로 동일한 로직을 구현할 수 있다.
+코드 양이 적지만 명료함을 잃지 않는다. (useSomething )
+상태관리 로직의 재활용이 가능하다.
+
+참고로 usePrevious 내부에서 값을 저장할",React
+https://surfit.io/link/yRMOm,라이브 플레이어 UI 개선기,"일반적으로 웹 플레이어에는 재생, 음량, 탐색, 그리고 화질 및 화면 설정 등의 핵심적인 기능이 있다. 라이브 플레이어는 여기에 실시간 보기 기능만이 추가되었다고 보면 된다.
+먼저 라이브 플레이어의 구조를 간단하게 살펴보자. 필자는 영상이 들어오는 영역을 제외하고, 두 영역으로 나누어 작업했다.
+
+라이브 플레이어 제어 영역
+
+PC 디자인을 기준으로 화면에 ",React
+https://surfit.io/link/KvByD,합성 이벤트와 Event Pooling,React는 이벤트를 처리하기 위해 바닐라 자바스크립트와 달리 엘리먼트가 렌더링 될 때 이벤트 리스너(Event Listener)를 제공해 이벤트를 처리한다.[그림 01] Valilla Javascript에서 HTML DOM 요소에 이벤트 리스너를 추가하는 방법다만 이 이벤트 핸들러는 모든 브라우저에서 동일한 처리를 보장하기 위해 React에서 제공하는 S,React
+https://surfit.io/link/wZGDZ,React 18을 준비하세요.,React 18의 알파 버전이 출시되었습니다. (정식 릴리즈는 아직입니다.) 자동 배치(Automatic Batching)가 도입되어 배치가 개선되었습니다.startTransition 이나 선택적(Selective) Hydartion 등의 동시성(Concurrent) 기능이 추가되었습니다.새로운 서버 사이드 렌더링 아키텍처가 도입되었습니다. 이 아키텍처에서,React
+https://surfit.io/link/wWzYm,"DOM과 Virtual DOM, 그리고 CDN","객체(Object)는 보통 사물들을 의미한다. 다시 말해 인식할 수 있는 것이라 생각하면 편한데, 이를 토대로 DOM의 의미를 풀어서 생각해보면 웹 페이지를 하나의 이해할 수 있는 모델로 만드는 걸 의미한다.
+
+이를 조금 더 확장해서 과연 누가 이해할 수 있는 모델로 만드는지 생각해볼 수 있다. HTML은 보통 &lt;h1&gt;&lt;/h1&gt; 과 같",React
+https://surfit.io/link/wm4XM,"Next.js 공식문서 파헤치기(2) - 기본개념 ""Pages, pre-render(SSG/SSR)""","Next.js에서 page는 pages 디렉터리의 .js, .jsx, .ts, .tsx 파일로부터 export된 React Component입니다. 각 페이지는 그들의 파일 이름을 기반으로 route됩니다.
+ 
+  예를 들어, 만약 pages/about.js 파일을 생성한다면 /page로 쉽게 접근가능합니다.
+function About() {
+    ret",React
+https://surfit.io/link/KvBZ6,변경에 유연한 컴포넌트,"우리가 작성하는 코드는 예상할 수 없는 변경에 그나마 유연하게 대응할 수 있어야 한다.
+소프트웨어는 끊임없이 변하기 때문이다. (우리는 어떤 상황을 마주하게 되는가?)
+진행하고 있는 프로젝트가 그 어떠한 변경 없이 처음에 기획한 대로 출시되었던 적이 있는지 생각해보자. 출시를 하고 나서 그 어떠한 수정이 없던 적이 있는지 생각해보자. 이런 경우보다 출시하기",React
+https://surfit.io/link/3BEM1,"React밖에 모르는 당신에게. GatsbyJS한 잔, '채용~'","혹시 다들 뱅크샐러드 채용 사이트 보셨나요? 
+안녕하세요, 이번에 뱅크샐러드 채용 사이트와 기술 블로그를 새롭게 개발한 Web Engineer 이동근입니다.
+뱅크샐러드는 마이데이터 서비스 제공을 위해 다양한 직군에서 많은 인원을 채용하고 있습니다. 이에 맞춰 뱅크샐러드의 비전과 이야기, 채용 정보를 더욱 더 잘 전달하기 위해 작년 말부터 새로운 채용 사이트",React
+https://surfit.io/link/wZjxa,React Deep Dive: React Event System #1,"리액트로 웹 애플리케이션을 개발하다보면 사용자와 유연하게 상호작용하는 컴포넌트를 만들기 위해 onClick, onChange등의 이벤트 핸들러(Eventhandler)를 사용하게 됩니다. 크로스 브라우저 대응 등을 위해 리액트 자체적으로 제공하는 안정성 있는 이벤트 핸들링 시스템 덕분에 대부분의 경우 핸들러를 붙이기 원하는 컴포넌트에 다음과 같은 형태로 이",React
+https://surfit.io/link/5ea7y,Next.js  Version 11 업데이트 사항 정리,"Next.js가 갈수록 SEO 전용 프레임워크로 거듭나는 것 같다. 웹 바이탈(Web vital) 개선 요소들을 계속해서 공략해 나아가는 느낌이다.
+
+업데이트 사항
+Conformance: 최적의 UX를 제공할 수 있는 최적화된 솔루션을 제공하는 시스템
+Improved Performance: Cold Start up Time(Next.js 빌드 및 실행할 때",React
+https://surfit.io/link/wmgkM,Recoil 레시피: 서버 사이드 렌더링,"서버 사이드 렌더링은 React 애플리케이션에 있어 필수 기능은 아니다. 검색 엔진 최적화(SEO)나 초기 렌더링 속도를 위해, 어떻게 보면 부가적으로 제공하는 기능이라서 다룰까 말까 고민을 했는데 Redux에서 가능한 기능을 Recoil에서는 어떻게 풀어내는지 보여주고 싶어서 이 주제에 대한 글을 작성하기로 했다. 먼저 서버 사이드 렌더링의 정의부터 간단",React
+https://surfit.io/link/wdNAY,Next.js의 Hydrate란?,"Hydrate는 Server Side 단에서 렌더링 된 정적 페이지와 번들링된 JS파일을 클라이언트에게 보낸 뒤, 클라이언트 단에서 HTML 코드와 React인 JS코드를 서로 매칭 시키는 과정을 말한다.
+
+출처: https://aboutmonica.com/blog/server-side-rendering-react-hydration-best-practice",React
+https://surfit.io/link/KPkm2,Vanilla Javascript로 React UseState Hook 만들기,"React의 useState Hook의 작동방식에 대해 고민해보고, 구현해보고, 최적화하는 내용을 다룹니다.  # 1. React의 useState # (1) 의문을 갖기 필자는 React를 사용할 때 hook api들을 보면서 항상 신기했다. useState로 state와 setState를 만들 수 있다. 500ms(0.5초)마다 setCount를 실행한",React
+https://surfit.io/link/3Mm2X,React의 렌더링 퍼포먼스 개선기,"아이템의 변경을 감지하기 위해서 children의 키들을 직렬화하여 useEffect의 디펜더시에 사용합니다. (이유는 렌더링 될 때 마다 해당 배열은 레퍼런스는 항상 변하기 때문)그리고 변경되기 전에 이전값(beforeUpdateRenderKeyRef)에다가 저장하여, 현재 키 배열과 비교하여 삭제되었을 경우 캐시를 삭제해주고, 위치가 변경되었으면 해당 ",React
+https://surfit.io/link/nlWBA,React 의 성능을 조금 이라도 올려보자 (Performance Optimize),"React 는 UI (User Interface) 라이브러리 로써 매우 가볍고 빠르다.또한 React 는 개발자에게 매우 자유롭다.자유롭다는 뜻은 만드는 사람이 얼마나 이해하고, 어떻게 사용 하느냐에 따라, 제품의 성능이 극명하게 갈린다는 뜻이기도 하다.아직은 React 을 정확히 이해하지 못하는 것 같아 최근 성능을 올리기 위해 배운 내용들을 정리 해보고",React
+https://surfit.io/link/jly6q,Recoil atomFamily를 사용한 상태 관리,"Recoil은 Facebook에서 만든 React를 위한 상태 관리 라이브러리다. 아직은 버전이 0.3이며(2021년 7월 현재) Redux의 미들웨어처럼 활용할 수 있는 atomEffect의 스펙이 아직 안정화된 상태가 아니긴 하다. 하지만 API 스펙의 안정화, 성능 개선과 함께 Recoil을 기반으로 한 라이브러리가 늘어나면 Redux를 점점 대체해 ",React
+https://surfit.io/link/Jlr2E,프론트엔드 상태 관리에 대한 여정,"카카오스타일은 React에서 상태 관리를 위해 최근에 Jotai를 도입했습니다. Jotai에 대해 소개하기에 앞서 Jotai에 다다르기까지의 과정에 대해 설명해보려고 합니다.
+선언형 UI
+할일 관리 화면을 상상해봅시다. 초기 웹에서 보편적이였던 jQuery를 사용한다면, 할 일 추가를 위해 다음과 같이 작성할 것 같습니다.
+const todos = [];
+",React
+https://surfit.io/link/mxMeL,Relay 버전 13 릴리즈 및 @requied directive,Relay 13 버전이 이틀 전에 릴리즈 되었다. Rust로 완전히 리뉴얼된 컴파일러를 적용한 버전이라 기대감을 가지고 hackatalk에 적용해보았다. 13버전은 컴파일러 내부 아키텍쳐가 달라졌을 뿐 API가 달라진 것은 딱히 없기 때문에 부담없이 버전업을 진행할 수 있었다.yarn add react-relay relay-runtime yarn add -,React
+https://surfit.io/link/yRxyk,React Query로 서버 상태 관리하기,"React Query는 서버 상태(server state)를 관리하는 라이브러리다. 서버 상태란
+원격에 위치한 공간에 저장되며 앱이 소유하거나 제어하지 않는다
+데이터를 가져오고 업데이트하기 위해선 비동기 API가 필요하다
+다른 사람과 함께 사용하며, 내가 모르는 사이에 업데이트될 수 있다
+앱에서 사용하는 데이터가 “유효 기간이 지난” 상태가 될 가능성을 가",React
+https://surfit.io/link/MLWxM,React 커스텀 훅 함수의 테스트 코드 작성,"커스텀 훅은 React 함수형 컴포넌트 API를 사용하는 함수
+React에서 사용하는 커스텀 훅(custom hook)은 함수 형태로 구현한다. 하지만 일반적인 함수처럼 테스트 코드를 작성할 수는 없다. 왜냐하면 훅 안에서는 React 함수형 컴포넌트에서 사용하는 API를 사용하기 때문이다. 아래는 간단한 커스텀 훅으로써 useState API를 사용한다.",React
+https://surfit.io/link/wJXeL,Relay store와 updater 알아보기,Relay StoreRelay는 graphQL 클라이언트 라이브러리이다. 컴파일러를 통한 엄격한 네이밍 규칙으로 실수를 줄여주고 서버와의 라운드 트립을 최소화하여 성능 향상에 도움을 준다.서버와의 라운드 트립을 최소화하는 방법 중 하나는 이 글의 주제인 store 를 사용하는 것이다. 클라이언트에서 그래프큐엘로 요청을 보내면 데이터가 리턴된다. 리턴된 데이,React
+https://surfit.io/link/LLlA9,동적으로 import된 컴포넌트의 테스트,"앱을 개발할 때 번들 파일의 사이즈가 커지면 로딩 속도를 개선하기 위해 코드를 분할할 필요가 생긴다. React에서는 react-loadable을 사용하는 방법도 있지만, React.lazy를 사용해서 간단하게 동적 import를 사용할 수 있다.
+import React from 'react';
+
+const Login = React.lazy(() =&gt;",React
+https://surfit.io/link/GAl1W,[Kent C. Dodds] 어플리케이션 상태 관리,"상태 관리가 가장 어려운 문제라는 사실에도 불구하고, 나는 상태 관리를 어렵게 하는 이유 중에 하나는 종종 문제를 해결하기 위해 과한 엔지니어링(over-engineer)을 하기 때문이라고 생각한다.
+
+내가 개인적으로 리액트를 사용하면서 오랫동안 도입해보려고 시도했던 상태 관리 솔루션 하나가 있는데, 리액트 훅의 출시와 함께 (그리고 엄청난 리액트 cont",React
+https://surfit.io/link/rMydZ,카카오웹툰은 하드웨어 가속과 IntersectionObserver를 어떻게 사용했을까?,"웹 특성상 앱과 같은 성능을 기대하기는 힘들기 때문에 한번에 적은 요소를 렌더링 하거나 lazy load 기술을 도입하는 방식의 성능 개선이 필요했습니다.
+특히 카카오웹툰 앱은 스크롤 위치에 따라 배경 이미지가 따로 움직여 입체감을 느끼게 하는 패럴랙스가 많은데요. 아쉽지만 웹에서는 최적화가 쉽지 않아 이벤트 페이지를 제외하고는 전부 제거했습니다.
+본 글에",React
+https://surfit.io/link/VDGM1,CRA(Create React App) Custom Template 배포하기,프로젝트 생성CRA 커스텀 템플릿을 만들기 위해선 조건이 있다.CRA(create-react-app) 으로 새 프로젝트를 생성한다.cra-template-{프로젝트명} prefix 붙여준다.cra-template- 접두어를 붙여줘야 CRA 템플릿이라는걸 알 수 있다.불필요한 파일 삭제 및 보일러 플레이 구성CRA로 생성된 프로젝트 내부에 불필요한 파일 및 ,React
+https://surfit.io/link/Q6lbg,초심자를 위한 React Testing Library,"React Testing Library(이하 RTL)는 구현 기반의 테스트 도구인 Enzyme의 대안으로 자리 잡은 테스트 도구입니다. 따라서 RTL은 세부적인 구현사항보다는 실제 사용자 경험과 유사한 방식의 테스트를 작성할 것을 권고합니다. 예를 들어 <div>Hello World</div>라는 코드가 있다면, RTL은 div 태그를 사용하는지보다 Hel",React
+https://surfit.io/link/GAmnn,cypress를 이용하여 components test 작성하기,"Component Test를 작성하여 훨씬 더 간단하고 유지 관리하기 쉽고 다른 구성 요소와 함께 사용하고 재사용하기 쉬운 UI 구성 요소를 만들 수 있습니다.
+
+이 과정에서 테스트를 작성하고, 테스트를 통과하는 코드를 작성하고, 작성한 코드를 리팩토링하는 과정을 반복하게 됩니다.
+
+이번 글에서는 todo list 코드를 일부 작성해보겠습니다.
+
+1. Se",React
+https://surfit.io/link/xrPDA,맨날 햇갈리는 Data Fetching 정리,"보통 데이터에 의존하지 않는 (즉, Data Fetching하지 않는 페이지들) 페이지들은 모두 이에 해당한다.
+또한 페이지의 컨텐츠나 경로가 외부 데이터에 의존할 경우, getStaticProps 와 getStaticPaths 를 활용하여 HTML을 정적 생성할 수 있다.
+
+정적 생성을 사용하는 대표적인 사례로는 인터렉션에 관계없이 똑같은 정보를 제공해야",React
+https://surfit.io/link/YAY0V,React Children 과 친해지기,"React에서 가장 흔하게 볼 수 있는 prop을 물어본다면, 많은 이들이 children을 꼽지 않을까 싶은데요. React의 강력한 합성(Composition) 모델을 구현하기 위해서는 children prop을 빼놓을 수 없기 때문일 겁니다.
+export default function Alert ({children}) {
+  return (
+    &",React
+https://surfit.io/link/31Rk7,createRef와 useRef 그리고 useImperativeHandle,"Vanilla Javascript에서는 DOM 객체에 접근하기 위해 querySelector나 getElementById API를 사용해야 한다. 반면, React는 아래와 같은 이유로 DOM API를 이용한 컴포넌트 제어 방식을 권장하지 않는다.01. React를 이용한 웹 소프트웨어에서 데이터는 State로 조작되기에 DOM API와 혼합해서 데이터 및",React
+https://surfit.io/link/oz4Z1,리액트 쿼리로 에러처리하기,"에러 처리를 하면서 겪었던 어려움이 머리 속에 정리가 잘 안돼있다고 느껴서 글을 작성하게 되었다.
+같은 환경으로 에러 처리를 구현하려고 한다면 글이 참고가 될 것이다.
+알면 좋은 용어
+QueryCache
+react query의 저장소 메커니즘. react query의 모든 데이터를 저장한다.
+일반적으로 개발자가 직접 QueryCache에 접근할 일은 거의 ",React
+https://surfit.io/link/w4akO,OneSignal 리엑트네이티브 sdk 설치 방법 및 간단한 사용법,"푸시 노티피케이션 라이브러리 OneSignal 을 설정하는 방법을 다룹니다. 
+OneSignal은 오른쪽에서 보는 것처럼 다양한 플랫폼을 지원하며 web, android, ios, react-native 등 다양한 sdk를 지원하며 복잡한 노티피케이션을 편리하게 관리하게 도와주는 플랫폼을 운영하고 있습니다.
+오래전부터 꾸준히 사용하는 라이브러리인데 매번 앱",React
+https://surfit.io/link/wVB49,React 프로젝트 컴포넌트 구성,"프로젝트가 시작된지 얼마 되지 않은 경우에 소스는 비교적 일관성을 가지고 있습니다. 하지만 시간이 지남에 따라 여러 사람이 참여하고, 비슷한 새로운 프로젝트가 만들어지면서 점점 일관성이 떨어지게 됩니다. (문서나 리뷰 과정이 있으면 비교적 낫지만, 완전히 방지하기는 어려운 것 같습니다) 또한 새로운 기술이 생기면서 (예를 들어 React Hook) 기존에 ",React
+https://surfit.io/link/50pzW,React ref 톺아보기,"React로 웹프론트엔드 개발을 하다보면 React만으로는 DOM을 조작하기 어려울 때가 있습니다.
+가장 흔하게는 어떤 엘리먼트를 focus 해야 할 때 말이죠. React의 ref는 무엇이고, ref를 사용하는 이유에 대해 이야기해보는 시간을 가져보려고 합니다.
+1. ref가 뭘까?
+
+ref는 reference의 준말입니다. 한국말로는 참고, 참조 정도가",React
+https://surfit.io/link/Kynl0,react suspense,"대부분 사용자에게 무언가 진행되고 있음을 알리기 위해서 로딩 화면을 띄워본 경험이 있을 것이다.
+react suspense는 이러한 로딩 화면과 연관이 있으며 다음과 같이 정의할 수 있다.
+
+특정 컴포넌트에서 사용되고 있는 데이터의 준비가 아직 끝나지 않았음을
+react에 알릴 수 있으며 data fetching 라이브러리와 함께 사용할 수 있는 구조.
+
+",React
+https://surfit.io/link/KYN4j,리액트 훅 MVVM #4,"인스턴스를 사용하는 컴포넌트컴포넌트가 유일한 객체로 작동하지 않고 여러개의 인스턴스로 작동하는 경우는 언제일까요?
+쉽게 생각해볼 수 있는 건 컴포넌트가 props에만 의존하는 경우가 있습니다. 이렇게 구성된 컴포넌트는 자신의 props 스펙에 맞춰 값만 들어오면 정상적으로 작동하게 되므로 어디에서나 재활용할 수 있습니다.예를들어 여러 게시판에서 공통으로 이",React
+https://surfit.io/link/KpAlJ,리액트 훅 MVVM #3,"모델-렌더에서는 항상 모델을 잘 정하는 것만으로도 많은 문제가 해결됩니다(렌더는 그저 이쁜 모델 뷰어일 뿐이죠)
+사실 flux아키텍쳐는 나름 좋은 점도 많지만, 이러한 모델 분석 시 중앙의 싱글톤 형태로 모델을 만들도록 유도합니다. 아마 많은 분들이 떠올리신 모델은 다음과 같은 모양에 가까울 것입니다.12345const model = {  ""공부"":[아이템",React
+https://surfit.io/link/3Gob0,리액트 훅 MVVM #2,"함수형 컴포넌트는 말하자면 하나의 메소드가 모든 이벤트에서 불리게 되는 구조입니다.
+생성시에도, 업데이트시에도, 심지어 삭제 시에도 하나의 함수가 계속 불리게 되는거죠.따라서 한 번만 해야하는 작업이나 선언이 반복적으로 일어나고한 번만 설정하거나 생성해야하는 객체가 지속적으로 생성됩니다.리액트 훅은 이 문제를 해결하기 위해 비교값과 수동업데이트라는 정책을 ",React
+https://surfit.io/link/wJzgD,리액트 훅 MVVM #1,"vDOM과 증분 렌더링vDOM의 핵심은 증분 렌더링이라고 할 수 있습니다. 증분 렌더링은실제 네이티브 객체인 DOM의 상태를 이용하지 않고,비교군인 vDOM의 이전 렌더링 상태와 현재 변화된 상태의 차이점을 찾아낸 뒤,차이점 만큼만 연결된 실제 DOM의 속성을 업데이트하여 렌더링하는 기법입니다.이 기법은 vDOM을 비교하는 비용이 직접 DOM렌더링하는 비용",React
+https://surfit.io/link/37dxD,빠르고 간편하게 React 로 InfiniteScroll (무한 스크롤) 구현하기,"사용자의 scroll event를 계속 보며 페이지가 끝에 오는지를 판단하는 방법을 구현이다. 하지만 드르륵 스크롤 할 때마다 이벤트가 발생하는 것이다.
+Intersection Observer API
+타겟과 viewPort 사이의 intersection 변화를 비동기적으로 관찰하는 방법
+LazyLoading
+Infinite-scroll
+사용자 결과 여부에 ",React

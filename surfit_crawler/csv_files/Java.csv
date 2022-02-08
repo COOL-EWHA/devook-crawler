@@ -1,0 +1,661 @@
+url,title,description,category
+https://surfit.io/link/zMOOr,HTTP Client 책임 분리하기,"HTTP Client를 개발할 때 적절한 책임과 역할을 부여하는 방법에 대해서 이번 포스팅에서 다루려고 합니다. 보편적으로 이렇게 책임과 역할을 나누는 것이 좋다는 것이지 모든 프로젝트에 알맞은 패턴이라고 주장하는 것은 아닙니다.
+HTTP Client Code
+HTTP Client 라이브러리는 Fuel를 사용했습니다. 특정 라이브러리에 대한 부분이 핵심이 ",Java
+https://surfit.io/link/yRLOa,jOOQ 동시성(Concurrency) 제어 - Optimistic Lock / Pessimistic Lock,"1. 동시성 제어(Concurrency Control)
+왜 필요한가
+스프링 프레임워크는 기본적으로 멀티 쓰레드 환경이기 때문에 각기 다른 요청들에 의해 개발자가 원하지 않는 결과를 얻을 수 있다.
+해결 방안
+어플리케이션 사이드에서 동시성(쓰레드 기반)을 제어할 수도 있지만 이번 게시글에서는 Java 네이티브 쿼리빌더인 jOOQ를 활용하여 디비 사이드에서 동",Java
+https://surfit.io/link/gl0E9,Error Response 서버로 전달하기,"HTTP Status가 2xx가 아닌 경우, 특히 4xx가 발생하는 경우로 요청한 여려의 필드 중에 1개 이상의 오류가 있는 경우가 빈번하게 있기 때문에 b-service의 Error 응답을 그대로 전달해 줘야 하는 경우가 있습니다.
+그런데 문제가 있습니다. 서비스 로직에서 b-service에서 발생한 Error 응답을 그대로 클라이언트에게 전달하기가 어렵",Java
+https://surfit.io/link/Krk80,JPA JPQL의 조회 동작 살펴보기,"findById() 같은 경우는 영속성 컨텍스트를 먼저 찾고 영속성 컨텍스트에 해당 엔티티가 있으면 그 값을 바로 리턴합니다. 이를 1차 캐시라고 말합니다. 반면 JPQL은 영속성성 컨텍스트를 먼저 조회하지 않고 데이터베이스에 Query 하여 결과를 가져옵니다. 그리고 아래와 같은 흐름으로 영속성 컨텍스트를 저장을 시도합니다.
+JPQL을 호출하면 데이터베이",Java
+https://surfit.io/link/yR0QR,클래스는 언제 로딩되고 초기화되는가? (feat. 싱글톤),"1) 정의
+클래스 로더가 .class 파일을 찾고 JVM에 메모리에 올려놓는것을 의미합니다.
+2) 왜 올려 놓는가
+JVM은 실행될때 모든 클래스를 메모리에 올려놓지 않습니다. 그때 마다 필요한 클래스를 메모리에 올려 효율적으로 관리하기 위함입니다.
+
+1) 가이드
+클래스의 인스턴스가 생성될때
+클래스의 정적 변수가 사용될때 (단, 정적 변수는 final로 선언",Java
+https://surfit.io/link/OoZ1R,"자바 17의 새로운 기능들, 3년 만에 LTS 버전 릴리즈!","이번에 출시한 자바 17버전은 2018년에 등장한 11버전 이후의 새로운 LTS 버전이며,
+다음 LTS 버전은 2023년에 출시될 자바 21이다. 자바 버전 히스토리에 대한 전체 내용은 오라클의 자바 로드맵이나
+위키피디아의 자바 버전 히스토리를 참고하면 된다.
+
+
+
+
+
+
+
+  해당 내용은 JEP(JDK Enhancement Proposal)를 참고하여 코드",Java
+https://surfit.io/link/exDym,JAVA Collection Framework (2) - 리스트 (List),"들어가기 앞서 List , Queue , Set 이 구현하는 Collection 인터페이스의 주요 메소드들에 대해 짚고 넘어가자. Collection 인터페이스의 모든 스펙을 확인하고 싶다면, Oracle 문서를 확인하자.
+메소드
+설명
+boolean add(Object o)
+컬렉션에 객체 o 를 추가한다. 추가되어 컬렉션이 변화하였으면 true 를, 그렇지",Java
+https://surfit.io/link/Bl7L9,JAVA Collection Framework (1) - 컬렉션 프레임워크란?,"컬렉션 프레임워크는 자바 프로그래밍에서 빠질 수 없는 필수적인 요소이다. 컬렉션은 다수의 요소를 하나의 그룹으로 묶어 효율적으로 저장하고, 관리할 수 있는 기능을 제공하는 일종의 컨테이너이다. 배열은 크기가 고정되어 있는데에 반해, 컬렉션 프레임워크는 가변적인 크기를 갖는 (Resizable) 등의 특징을 갖는다. 또한 데이터 삽입, 탐색, 정렬 등 편리한",Java
+https://surfit.io/link/qynxO,JPA Fetch 조인(join)과 페이징(paging) 처리,"N+1 문제의 해결 방법인 fetch 조인(join)과 페이징(paging) 처리를 동시에 하면 발생하는 문제에 대해 알아보고 해결법을 정리하였습니다.
+
+1. fetch 조인(join)시 페이징(paging) 처리 문제Permalink
+
+JPA는 Pageable 인터페이스를 통해 쉬운 페이징 처리 기능을 제공합니다. 
+하지만 N+1 문제 회피를 위해 사용하",Java
+https://surfit.io/link/ozN2V,Testcontainers를 이용한 테스트 환경 구축하기,"색인 서버에는 다수의 로직이 구현되어 있으며 장애에 견고하게 구성되어야 하므로, 새로 추가된 로직을 면밀히 검증하고 배포 후 발생 가능한 side-effect을 줄이기 위해 테스트 구성에 더 많은 신경을 쓰고 있습니다.
+
+아래 내용은 작년 12월에 개최한 딜리셔스 테크데이에서 발표한 내용을 기반으로 정리해 보았습니다.
+
+TestCode 작성 시 자주 사용했",Java
+https://surfit.io/link/7LOV6,Java 기반의 알림 서비스로 MSA 전환기,"TTL을 기본적으로 지원해주는 NoSQL이 RDB보다 적합합니다. 유연한 스키마 대응Read/Write가 굉장히 빈번하게 일어나는 도메인 특성상 한 번에 최대한 적은 행이 추가되어야 합니다.알림 도메인의 큰 틀은 고정되어있지만, 알림의 행위를 정의하는 부분은 구조의 변경이 잦기 때문에 유연한 스키마를 가질 수 있어야 합니다.Shema-less한 NoSQL이",Java
+https://surfit.io/link/Q6ar0, Entity Framework Core ORM (활용편),"EF Core에서는 모델을 만들 때 설정(Configuration) 코드를 통해서 만들 수도 있지만, 기본 키나 관계 등 일부 기능들은 규약(Convention)을 통해서 좀 더 손쉽게 모델을 만들 수 있습니다. 따라서 이러한 채널-게임-미션-퀘스트 간의 단순한 One-to-Many 관계는 EF Core에서 모델의 코드로 쉽게 표현 됩니다. 이해에 무리가 ",Java
+https://surfit.io/link/GAZY2,Log4j 보안 문제와 재현 코드 (feat. CVE-2021-44228),"2021년 12월 9일 Log4j(version 2)를 사용하는 경우 원격 코드 실행(RCE, Remote Code Execution)을 당할 수 있다는 사실이 밝혀졌습니다. 
+해커가 원격 PC에서 보안이 취약한 어플리케이션이 동작하는 서버를 조작할 수 있다는 의미입니다. 
+보안이 취약한 서버의 명령어(shell)을 사용할 수 있기 때문에 Log4Shell",Java
+https://surfit.io/link/7LxeQ,스프링 배치는 어떤 리스너가 존재할까요?,"스프링 배치의 주요 구성요소 및 전체 프로세스 흐름스프링 배치 작업은 오랫동안 실행될 수 있으며 진행 정보를 제공하는 것이 중요합니다. 진행 중인 작업, 실패한 작업 및 완료된 작업 등 모든 정보는 배치 이벤트 리스너를 사용해서 수집 및 가공할 수 있습니다.Process flow from Step to Tasklet서비스 운영 중 배치의 실패 여부를 알기 ",Java
+https://surfit.io/link/YA6ZR,JPA 모든 N+1 발생 케이스과 해결책,"조회 시 1개의 쿼리를 생각하고 설계를 했으나 나오지 않아도 되는 조회의 쿼리가 N개가 더 발생하는 문제.
+
+ DBMS 툴을 이용해 직접 쿼리문을 만들어 조회할 때는 물론 하나의 쿼리가 발생하겠지만 mybatis, 넘어서는 JPA가 등장함에 따라 자동화된 쿼리문들이 생겨나면서 어쩔 수 없이 발생하는 문제입니다. JPA의 경우에는 객체에 대해서 조회한다고 해",Java
+https://surfit.io/link/exWog,DIP : 변경에 유연하고 테스트하기 좋은 코드 설계,"클린 코드 관련 저서들이 공통적으로 강조하는 내용은 단연 변경에 유연하고 테스트하기 좋은 코드의 중요성입니다. 소프트웨어는 항상 변경이 발생하기 쉽습니다. 요구 사항이 변경될 때마다 코드를 대거 수정해야 한다면 유지보수 측면에서 좋지 않습니다. 요구 사항 변경에 유연하게 대처할 수 있는 구조의 코드는 소프트웨어의 지속적인 성장을 위한 초석입니다.
+
+a co",Java
+https://surfit.io/link/VDzNp,Test Double,"해결하고 싶은 스토리들을 목록으로 만들고, 그 스토리들을 표현하는 테스트들을 작성하고, 
+그런 다음 그 테스트들 통과하도록 만든다. 
+여러분이 작성해야 할 필요가 있다고 생각하는 테스트들을 목록으로 만들고, 테스트를 하나 작성하고, 
+그 테스트를 통과하도록 만들고, 다른 테스트를 작성하고, 
+두 테스트 모두 통과하도록 만들고 하면서 목록이 비워질 때까지 일",Java
+https://surfit.io/link/3a7L7,여러개의 DB 작업을 동시에 수행하고 결과를 합쳐서 보내줘야 할 때,"요번 글에서 다루고자 하는 점은
+Spring 에서 API 처리 시
+Asynchronous 한 Hibernate DB 작업을 하고
+모든 결과물을 wait 해서 함께 처리한 뒤 내려줘야 하는 상황
+3가지 요소를 다 처리하는 방법에 대한 고민입니다.
+메인페이지에 보여주는 여러가지 위젯을 한번에 내려줘야 하는 상황이었는데, 위젯 1개마다 복잡한 쿼리를 날려 DB ",Java
+https://surfit.io/link/7LA1m,Quartz Clustering in Spring MVC,"""동일한 소스 코드를 다중 서버 환경으로 배포한다면 같은 시간에 같은 기능이 여러 곳에서 실행되니 위험하고, 불합리하지 않은가?"" 
+당시에는 스케줄러 어플리케이션을 별도로 한 개의 서버로 구현한다고 생각했었는데, 정답이 아니었습니다.
+
+다중 서버 환경에서 Quartz 동작Permalink
+
+
+
+Quartz in Spring MVC 포스트에서 Quartz 스",Java
+https://surfit.io/link/zMp66,테스트 코드 한 줄을 작성하기까지의 고난,"나름 잘 구성된 아키텍처이지만, 테스트 코드가 없었습니다.
+
+
+
+저희 팀은 테스트 도입과 무엇을 얼마나 테스트했는지 파악하는 것을 올해의 목표로 잡았습니다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+테스트를 하기 위한 준비
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+테스트 코드 한 줄 작성을 하기 위해서 제가 겪었던 에러들과 미리 만들어야 했던 것들에 대해서 이야기해 보겠습니다. 
+
+
+",Java
+https://surfit.io/link/9R8a7,Java 로 동기화를 해보자!,"동기화는 프로세스(스레드)가 수행되는 시점을 조절하여 서로가 알고 있는 정보가 일치하는 것인데, 쉽게 말해 프로세스 간 데이터가 일치하도록 하는 것이다. 이러한 동기화 메커니즘인 상호배제는 프로세스들이 필요로 하는 자원에 대해 배타적인 통제권을 요구하는 것이다. 쉽게 말해 하나의 프로세스가 공유자원을 사용할 때 다른 프로세스가 동일한 공유자원에 접근할 수 ",Java
+https://surfit.io/link/WkQY8,Quartz in Spring MVC,"Spring 프레임워크는 Job 스케줄링을 쉽게 구현할 수 있는 기능들을 제공합니다. 
+대표적으로 Spring Scheduler와 Spring Quartz가 있습니다. 
+간단하게 Spring Scheduler를 사용할 수도 있지만, 이번 포스트에서는 몇 가지 특장점이 있는 Spring Quartz에 대해 정리해보려 합니다.
+
+1. Spring Quartz ",Java
+https://surfit.io/link/gl8V9,Spring 로컬 캐시 라이브러리 ehcache,"ehcache는 Spring에서 간단하게 사용할 수 있는 Java기반 오픈소스 캐시 라이브러리이다.
+
+우선 캐싱 처리에 대해서 모니터링을 위하여 CacheEventLogger 라는 클래스를 만들자.이제 캐싱 처리가 되면 이 CacheEventLogger 클래스 내부의 onEvent() 메서드가 호출되면서 로그가 찍힐 것이다.다음으로는 캐싱 테스트를 위해 아",Java
+https://surfit.io/link/WkkJm,Spring Data Elasticsearch 설정 및 검색 기능 구현,"Elasticsearch는 Apache Lucene 기반의 Java 오픈소스 분산형 RESTful 검색 및 분석 엔진입니다. 방대한 양의 데이터에 대해 실시간으로 저장과 검색 및 분석 등의 작업을 수행할 수 있습니다. 특히 정형 데이터, 비정형 데이터, 지리 데이터 등 모든 타입의 데이터를 처리할 수 있는데요. Elasticsearch는 JSON 문서(Do",Java
+https://surfit.io/link/nlxyA,배민쇼핑라이브를 만드는 기술: 채팅 편,"쇼핑라이브 채팅은 각각의 채팅 서버들이 Redis Pub/Sub을 통해 메시지를 주고받으며,
+Webflux를 이용해서 채팅 트래픽을 non-blocking하게 처리합니다.
+클라이언트와의 통신은 WebSocket을 활용하고 있고요.
+처음 Webflux를 도입하기로 제안 주셨던 분은 저희 팀의 허승원님이신데요.
+당시 승원님이 담당하셨던 일부 도메인에 대해서 W",Java
+https://surfit.io/link/wV7Vy,스프링에서 코틀린 스타일 테스트 코드 작성하기,"코틀린에서 테스트를 작성하기 위한 여러 도구들 및 기능들에 대해 간단하게 소개하는 내용이라 코틀린을 잘 모르거나 막 시작하시는 분들이 가볍게 봐주시면 좋을 것 같네요.
+개요
+스프링 기반 프로젝트에서 코틀린을 사용하더라도 아래와 같이 기존에 사용하던 테스트 프레임워크인 Junit, Assertion, Mockito 등은 동일하게 사용할 수 있습니다.
+
+초기 ",Java
+https://surfit.io/link/KvBL8,🧶 Java 에서 스레드 풀(Thread Pool) 을 사용해 보자,"스레드는 동일한 메모리 영역에서 생성 및 관리가 이루어지지만, 생성하거나 수거할 때 커널 오브젝트를 동반하는 리소스이므로 생성 비용이 크게 발생한다. 스레드를 제어할 수 없는 상태에서 스레드를 무차별적으로 생성하면 리소스가 빠르게 소진되는 상황이 발생할 수 있다. 그러면 어떻게 하면 효율적으로 스레드를 제어할 수 있을까?
+스레드 풀의 동작 방식은 간단하게 ",Java
+https://surfit.io/link/50PBW,데이터베이스를 사용한 다중 인스턴스 세션 동기화 처리,"Spring Session이라는 이름의 이 기능은 Redis(Cache Server), JDBC(Database) 등을 통해 세션 정보를 저장, 관리할 수 있는 서비스를 제공합니다. 
+주말에 공부할 겸 간단하게 Spring Session JDBC를 이용하여 구현해보았습니다.
+
+1. 테스트 시나리오Permalink
+가정하는 상황과 테스트 시나리오는 다음과 같",Java
+https://surfit.io/link/w4Lq9,"Flyway 로 Java 에서 DB schema, seed 관리하기","안녕하세요, 힐링페이퍼에서 백엔드를 담당하고 있는 제이슨입니다!
+사용자가 불편함 없이 빠르고 안정적으로 더 좋은 의료 서비스를 이용할 수 있도록 하는 역할을 하고 있습니다.
+이번에 공유드릴 내용은 작년쯤 힐링페이퍼에 입사해서 가장 먼저 진행했던 Flyway 로 DB schema, seed 관리하기 입니다. Flyway 의 자세한 사용방법은 다루지 않지만, ",Java
+https://surfit.io/link/wJ2AE,Spring Retry,"Resilience4j 및 Spring Retry 라이브러리를 사용해서 ""재시도 패턴""을 구현한다. 
+
+1. Resilience4j 를 사용해서 구현
+2. Spring Retry 를 사용해서 구현
+3. (필자에게) 재시도 패턴 구현이 어려운 이유
+
+이 글을 읽기 적합한 개발자는 아래와 같다.
+- 스프링부트 애플리케이션 환경에서 ""실패에 대한 재시도 로직""을",Java
+https://surfit.io/link/3xzdj,Netflix GraphQL OpenSource,"GraphQL 은 페이스북에서 개발하여 발표한 ""API를 위한 퀴리 언어""이다. GraphQL 은 매우 직관적이며, 클라이언트에서 필요한 정보를 정확하게 요청할 수 있는 기능을 제공한다. 자세한 내용은 아래 링크를 읽어보자. 
+https://graphql-kr.github.io/
+
+
+GraphQL 구현하기 위해서는 아래와 같은 작업을 수행해야 한다.
+
+- ",Java
+https://surfit.io/link/KQdRz,"JPA Pagination, 그리고 N + 1 문제","게시판 기능을 제공하는 웹 어플리케이션에 접속하여 게시물 목록을 요청하는 경우를 상상해봅시다. DB에 저장되어 있는 게시물은 수백 만개에 육박할 수도 있습니다. 모든 게시물 목록을 조회해 화면에 렌더링하는 경우, 클라이언트가 브라우저 혹은 모바일 기기로 이를 한 눈에 보기 어려움을 겪을 공산이 큽니다. 또한 클라이언트가 보지도 않을 데이터까지 DB에서 조회",Java
+https://surfit.io/link/3NXqz,Spring Annotation 과 Reflection 을 활용해서 Entity의 여러 필드 한번에 수정하기,"일반적인 서비스에서는 여러 Entity의 다양한 필드들을 유저나 관리자의 API 호출등으로 수정하게 됩니다. 단순히 조회수 등이 추가 되는것이 아니라 도메인의 메인 프로퍼티들이 변경됩니다. 유저의 전화번호나 주소 부터,  병원의 이미지uri 나 설명등 과 같은.
+이런것들은 보통 Restful 에서 PUT /도메인이름/{id}  같은 API 를 통해 수정이 ",Java
+https://surfit.io/link/K2G0V,DTO의 사용 범위에 대하여,"DTO(Data Transfer Object)란 계층간 데이터 교환을 위해 사용하는 객체(Java Beans)입니다. 간략하게 DTO의 구체적인 용례 및 필요성을 MVC 패턴을 통해 알아볼까요? 🚀
+1.1. MVC 패턴
+
+      
+    
+  
+    
+MVC 패턴은 어플리케이션을 개발할 때 그 구성 요소를 Model과 View 및 Controller ",Java
+https://surfit.io/link/3O8jL,스프링 기초와 원리를 알아보자,"스프링 프레임워크는 자바 진영의 웹 프레임워크이다. EJB라는 겨울을 넘어 새로운 시작이라는 뜻으로 시작된 스프링은 현재는 다양한 생태계를 구축하고 있다.
+개발자로 활동하며 스프링을 사용하는 입장에서 스프링이 제공하고 있는 다양한 기능을 당연하게 사용해왔지만, 정작 스프링을 왜 사용하는지? 사용되는 기술이 무엇인지? 핵심원리를 파악하지 못하고 스프링을 사용",Java
+https://surfit.io/link/wk286,옵저버 패턴 개념 떠먹여드립니다,"Observer (옵저버) 는 '관측자' 혹은 '감시자' 라는 뜻이다. 말 그대로 무언가를 감시하는 역할을 한다는 뜻이다.
+프로토스의 옵저버가 클로킹 상태의 테란 유닛 고스트나 레이스를 감시하듯, 프로그래밍에서 Observer 패턴이라고 한다면 어떤 '이벤트' 가 일어나는 것을 감시하는 패턴을 의미한다.
+
+안드로이드를 예로 들어 설명하자면 아래와 같은 것들",Java
+https://surfit.io/link/3Gdz0,Spring Boot에 QueryDSL을 사용해보자,"QueryDSL은 정적 타입을 이용해서 SQL 등의 쿼리를 생성해주는 프레임워크입니다. QueryDSL의 장점은 다음과 같습니다.
+문자가 아닌 코드로 쿼리를 작성함으로써, 컴파일 시점에 문법 오류를 쉽게 확인할 수 있다.
+자동 완성 등 IDE의 도움을 받을 수 있다.
+동적인 쿼리 작성이 편리하다.
+쿼리 작성 시 제약 조건 등을 메서드 추출을 통해 재사용할 ",Java
+https://surfit.io/link/KPdxP,Logback 으로 쉽고 편리하게 로그 관리를 해볼까요?,"로깅이란 시스템이 동작할 때 시스템의 상태 및 동작 정보를 시간 경과에 따라 기록하는 것을 의미한다. 로깅을 통해 개발자는 개발 과정 혹은 개발 후에 발생할 수 있는 예상치 못한 애플리케이션의 문제를 진달할 수 있고, 다양한 정보를 수집할 수 있다. 사용자 로그의 경우 분석 데이터로 활용할 수 있다. 하지만 로깅을 하는 단계에서 적절한 수준의 로그 기록 기",Java
+https://surfit.io/link/3Adgp,유저 주문 취소 기능 Java 전환기,Python + Django 기반의 모놀리틱 서비스를 Java + Spring 기반의 MSA로 전환을 진행하고 있습니다. 그 중 저희 스쿼드에서 담당하고 있는 취소/교환/반품 도메인에서는 ‘유저 주문 취소 기능’ 을 전환 과정의 첫 feature 로 정하고 개발을 진행하게 되었습니다.프로젝트의 진행 과정을 기술하기 전에 저희가 지난 3월부터 5월까지 진행했,Java
+https://surfit.io/link/3Gdmk,Thymeleaf - Cannot found images,"클라이언트가 요청한 특정 문자열에 해당하는 바코드 이미지를 생성한 후 페이지에 담아 반환하는 기능을 구현하는 중에 이미지를 찾지 못하는 문제가 발생하였습니다. 
+문제 현상에 대해 요약하여 설명하면 다음과 같습니다.
+static/images/ 폴더에 기존에 저장되어 있던 이미지는 잘 찾는다.
+  클라이언트 요청으로 static/images/ 폴더에 새롭게 생",Java
+https://surfit.io/link/KYJVZ,"Email 보내기에 비동기, 이벤트를 곁들인.","서비스를 운영하는 데 Email 전송 기능을 도입하는 경우가 많다. 이메일 기능에 비동기와 이벤트 발행 방식을 도입하게 된 이유와 방법에 관해서 설명해 보고자 한다.
+
+
+Email 보내기
+Spring에서 제공하는 MailSender, JavaMailSender 인터페이스를 이용하면 쉽게 메일 서비스를 구현할 수 있다. 단순 텍스트로 구성되면
+MailSend",Java
+https://surfit.io/link/Kyj4X,Wrapper 클래스 Auto Boxing 그리고 성능 이슈,"성능 분석을 위해 사용한 모니터링 툴(tool)은 VisualVM을 사용하였습니다. 
+VisualVM에 Visual GC 플러그인(plugin)을 설치하여 가비지 컬렉션(Garvage Collection, GC)도 확인해보았습니다.
+
+Auto Boxing 테스트 코드Permalink
+SnoopInt 클래스Permalink
+기본형 타입의 멤버 변수를 지닌 클",Java
+https://surfit.io/link/3GQ1g,퀵 정렬(Quick Sort),"퀵 정렬은 
+불안정 정렬이며, 다른 원소와의 비교를 통해 정렬을 수행합니다.
+  분할 정복 알고리즘 중 하나로 평균적으로 매우 빠른 수행 속도를 가집니다.
+  추가적인 메모리 공간이 필요하지 않다.
+  이미 정렬된 리스트에 대해서는 불균형 분할이 수행되면서 수행시간이 더 오래 걸립니다.
+  평균적으로 O(n log n), 최악의 경우 O(pow(n, 2))",Java
+https://surfit.io/link/5z8a1,Spring Batch Test 작성 방법 및 고찰,"스프링 배치 애플리케이션 테스트 코드를 작성하면서 만났던 이슈와 그에 따른 나름의 고찰을 정리한 포스팅 내용입니다. 배치를 사용하지 않더라도 스프링 기반으로 테스트를 작성하는 경우에도 도움 되는 내용들이 있습니다.
+@SpringBatchTest
+Spring Batch 4.1 버전 부터는 @SpringBatchTest Annotation을 지원합니다.
+123",Java
+https://surfit.io/link/w44b4,AssertJ의 다양한 메소드 활용해보기.,"Junit에서 기본으로 제공하는 assertions 보다 AssertJ는 보다 많은 기능을 제공한다. 하지만 일반적으로 테스트할 때 항상 비슷한 형태로만 테스트하기 때문에 이번 포스팅에서는 AssertJ의 다양한 기능 중 사용에 도움이 될만한 내용들을 위주로 다뤄보고자 한다.
+기본 데이터(테스트에 사용)
+class AssertJTest {
+    Chick",Java
+https://surfit.io/link/KvY9o,GC(Garbage Collector) 종류 및 내부 원리,"모든 자바 애플리케이션은 JVM(Java Virtual Machine) 위에서 작동한다. 따라서, JVM이 작동하는데 있어서 메모리 구조와 GC는 애플리케이션의 응답 시간과 성능에 밀접한 관계를 맺고 있다.
+GC란 무엇인가?
+GC(Garbage Collection)는 자바 애플리케이션에서 사용하지 않는 메모리를 자동으로 수거하는 기능을 말한다.
+C/C++ ",Java
+https://surfit.io/link/3AWjN,JPA 사용시 테스트 코드에서 @Transactional 주의하기,서비스 레이어(@Service)에 대해 테스트를 한다면 보통 DB와 관련된 테스트 코드를 작성하게 된다. 이러면 테스트 메서드 내부에서 사용했던 데이터들이 그대로 남아있게 되어서 실제 서비스에 영향을 미칠 수 있기 때문에 테스트가 끝나면 지워야 할 필요가 있다. 이러한 문제를 해결하기 위해 @Sql 애너테이션을 이용해서 직접 DB를 Truncate하는 Qu,Java
+https://surfit.io/link/3XWLk,Singleton Pattern,"가장 흔하게 접하는 디자인 패턴입니다. 
+너무 친숙한 나머지 저는 싱글톤 패턴(Singleton Pattern)에 대해서 잘 알고 있다고 착각하고 있었습니다. 
+관련된 글을 찾아보면서 제가 몰랐던 이야기들도 있었고, 
+공부하지 않으면 머리 속에서 정리되지 않으니 관련된 내용을 이번 포스트에서 정리해보도록 하겠습니다.
+
+싱글톤 패턴(Singleton Patt",Java
+https://surfit.io/link/3XRP0,반복적으로 사용되는 인스턴스 캐싱하기,"캐시(cache)는 컴퓨터 과학에서 데이터나 값을 미리 복사해 놓는 임시 장소를 가리킨다. 캐시는 캐시의 접근 시간에 비해 원래 데이터를 접근하는 시간이 오래 걸리는 경우나 값을 다시 계산하는 시간을 절약하고 싶은 경우에 사용한다. 캐시에 데이터를 미리 복사해 놓으면 계산이나 접근 시간 없이 더 빠른 속도로 데이터에 접근할 수 있다 - wikipedia
+
+",Java
+https://surfit.io/link/wVPqp,API 문서 자동화 - Spring REST Docs 팔아보겠습니다,"API 문서를 자동화 도구로는 대표적으로 Spring REST Docs와 Swagger가 있습니다. 흔히 두 가지를 두고 무엇을 사용할까 고민하실 겁니다. 그런 당신을 위해 이번 글에서는 Spring REST Docs를 왜 사용하고, 어떻게 사용하는지 알아볼 겁니다. Swagger는 다음 글에서…
+왜 사용할까요?
+Spring REST Docs의 대표적인 장",Java
+https://surfit.io/link/3xJ4E,우리의 Thread는 왜 이렇게 부자가 되었을까?,"최근 저희 팀에서 OOM 이슈 관련하여, 분석해 본 결과 병렬 처리 진행을 위해 ForkJoinPool을 사용하게 되면서 겪은 이슈에 대해 공유드리고자 합니다.발생 시점부터, 무엇이 문제였는지 상세히 작성하였고 기본적인 내용도 포함되어 있으므로한 번쯤 시간 나실 때 담당하시는 서비스도 확인해보시면 좋을 것 같아 글을 쓰게 되었습니다.
+1. 문제 발생
+202",Java
+https://surfit.io/link/wZ1bZ,불변객체를 만드는 방법,"불변 객체는 생성 후 그 상태를 바꿀 수 없는 객체를 의미합니다. 여기서 상태를 바꿀 수 없다는 것은 어떤 의미일까요? 이는 힙영역에서 그 객체가 가리키고 있는 데이터 자체의 변화가 불가능하다는 것을 의미합니다.
+힙 영역이라는 말이 생소한 분들을 위해 간단하게 설명하자면, 위의 그림처럼 Reference를 가지고 있는 타입(object, array) 은 실",Java
+https://surfit.io/link/wno7b,하나의 테스트 케이스는 단위 기능 중 하나의 시나리오만 테스트하라,"단위 테스트란 메서드를 테스트하는 또 다른 메서드이다. 하나의 단위 테스트는 하나의 메서드의 특정 루틴을 검사한다.
+
+public class MyService {
+
+    public boolean isGreaterThanFive(final int number) {
+        return number &gt; 5;
+    }
+
+}
+isGreaterTha",Java
+https://surfit.io/link/wkLNz,좋은 코드를 위한 자바 메서드 네이밍,"코드를 작성한 의도와 목적이 명확해야 하며 다른 사람이 쉽게 읽을 수 있어야 하기 때문이다.
+왜 그래야 하나? 
+코드의 가독성이 좋아진다. 
+그러면 뭐가 좋나?
+다른 사람이 코드를 이해하는데 들이는 시간을 최소화하는 방식으로 작성된다는 것을 의미하기 때문이다.
+
+의도가 모호한 코드
+
+public List&lt;int[]&gt; getThem() {
+    ",Java
+https://surfit.io/link/KbMb1,AOP 입문자를 위한 개념 이해하기,"객체지향 프로그래밍은 어플리케이션을 설계할 때 책임과 관심사에 따라 클래스를 분리합니다. 클래스가 단일 책임을 가지도록 분리함으로써 각 모듈의 응집도는 높아지고 결합도는 낮아집니다. 클래스를 변경하는 이유는 오직 한 가지이며, 어플리케이션의 한 부분에서 변경이 발생했을 때 그 파급효과가 시스템의 전체로 퍼져나가는 정도가 낮아집니다.
+그러나 전통적인 객체지향",Java
+https://surfit.io/link/3qaLY,JPA Persistence Context,"영속성 컨텍스트는 EntityManager를 통해 접근이 가능합니다. 
+엔티티 객체를 만든 후 EntityManager의 persist(E) 메소드를 호출하여 생성한 엔티티를 영속성 컨텍스트에 저장합니다. 
+당연히 엔티티 객체를 영속성 컨텍스트에서 제거하는 방법도 존재합니다. 
+JPA가 엔티티를 어떻게 관리하는지 Entity Lifecycle을 통해 더 자",Java
+https://surfit.io/link/37YjD,제모옥은 젠킨스 조회로직 개선으로 하겠습니다. 근데 이제 비동기를 곁들인,"수행된 상태를 실시간으로 조회하기 위해 어떤 방법을 선택해야 하는가?
+
+크게는 두 가지 방법을 놓고 고민했는데요.
+바로 Spring Batch Metadata Tables와 젠킨스 API 였습니다.
+
+Spring Batch Metadata Tables
+
+
+
+Spring Batch Metadata Tables(Schema)는 Spring Batch로 수행된 ",Java
+https://surfit.io/link/50xy4,Spring Batch Reader 성능 분석 및 측정 part 2,"HibernateCursorItemReader를 이해하기 앞서 JDBC를 이용하여 대량의 데이터를 가져오는 방에 대해서 이야기해보겠습니다. 이론적인 설명은 Real MySQL을 보고 정리했습니다. MySQL를 사용 중이면 정말 추천드리는 도서입니다.
+대용량 조회 스트리밍 방식
+JDBC 표준에서 제공하는 Statement.setFetchSzie()를 이용해서",Java
+https://surfit.io/link/3Go7N,Spring Batch Reader 성능 분석 및 측정,"스프링 배치 애플리케이션에서 데이터베이스의 대량의 데이터를 처리할 때 Reader에 대한 성능 분석과 성능에 대한 측정을 정리한 포스팅 내용입니다.
+조회 대상
+1234567891011121314# created_at 인덱스CREATE TABLE `payment`(    `id`         bigint(20)     NOT NULL AUTO_INCREME",Java
+https://surfit.io/link/59mNZ,"GraalVM, Spring Native 맛보기","몇 년 전부터 Oracle에서 GraalVM 이란 jvm을 소개하기 시작했습니다.
+위 그림은 공식 사이트에 있는 건데요. 기동 시간이 50배!, 메모리도 5배 작게 사용한다는데확인을 안 할 수가 없었습니다. 
+우선 GraalVM이 무엇인지 알아보고 실전으로 들어가 보겠습니다. 
+
+탄생 배경
+C++로 만들어진 OpenJDK JIT Compiler는 노후화되어",Java
+https://surfit.io/link/KYZLV,"Spring Master, Slave 트랜잭션 처리 방식","대부분의 서비스에서는 데이터베이스를 Master, Slave 구조로 Master에서는 Create, Update, Delete 업무를 진행하고 Slave에서 Read 업무를 진행하는 구조로 설계합니다. Spring의 Master, Slave 환경에서의 트랜잭션에 대해서 포스팅해보겠습니다.
+레플리케이션
+MySQL 레플리케이션
+
+MySQL은 위와 같은 구조로 ",Java
+https://surfit.io/link/KybRB,Ngnix 웹서버를 Spring-Boot 프로젝트에 적용하기,"NGINX는 웹서버다. 
+웹서버는 인터넷 네트워크 위에서 HTTP 프로토콜을 이용해 HTML, CSS, JavaScript, 이미지와 같은 정보를 웹브라우저에게 전송한다. 
+기존 스프링부트는 apache 와 함께했었는데, 이를 Ngnix로 바꿀꺼고, 별다른 비용은 없는데 성능이 훠어어어얼ㄹㄹㄹ씬 좋아짐
+
+우분투 상에서 스프링은 돌아간다고 가정
+
+
+ubunt",Java
+https://surfit.io/link/5zAQp,Swagger와 Spring Restdocs의 우아한 조합,"MSA 환경에서의 API 문서화는 어떤 식으로 구성하는 걸까? 예컨대, 모듈이 10개 있다고 하면 각 모듈마다 API 문서가 만들어질 테고 API 문서를 클라이언트에 제공하기 위해서 각각의 (10개의) URL를 전달해야 할 텐데 이게 과연 효율적일까? 물론 기능별로 URL이 분리된다는 장점이 있고 굳이 모아보자면 각 API 문서를 다시 한번 크롤링 하여 검",Java
+https://surfit.io/link/3AVvj,JPA 를 다시 공부하면서... 잡다한 정리...,"이 글은, 필자가 오랫동안 사용하지 않아서 다 까먹었던 JPA 를 다시 공부하면서 느낀 점을 정리한 글이다. 노트에 정리한 내용을 대충 정리해서 빠르게 공유해본다. 글이 많이 지루하고, 중복 내용이 많으니.. 필요한 주제만 찾아서 읽기를 바란다.
+
+스프링부트 &amp; JPA 를 이제 막 공부하기 시작한 주니어 개발자가 읽으면 도움이 될 것 같다. Spri",Java
+https://surfit.io/link/wVnG9,Reactive Streams with Sequence Diagram,"1 req == 1 therad인 서블릿 방식의 한계를 뛰어넘기 위해 Spring에서 WebFlux를 내놨다.Spring WebFlux는 내부적으로 Spring Reactor를 사용하는데, Spring Reactor는 Reactive Streams 구현체다.Reactive Streams는 홈페이지에 다음과 같이 간단 명료하게 정의돼 있다.
+
+Reactive",Java
+https://surfit.io/link/wkWGO,자바 BigDecimal: 정확한 실수의 표현과 부동 소수점,"자바에서 제공하는 실수형 데이터 타입에는 float와 double이 있다. 정수형 int, long 타입과 동일하게 각각
+4, 8바이트의 메모리 공간을 사용하지만 실수를 가수와 지수 부분으로 나누어 표현하는 부동 소수점 방식을 기반으로
+정수보다 더 넓은 범위의 값을 표현할 수 있다. 참고로 자바에서는 실수 연산에서 double 타입을 기본적으로 사용한다.
+",Java
+https://surfit.io/link/wD6jj,[Java] Lambda & Closure,"Lambda Expression
+parameter로 정의될 수 있는 anonymous function이다.
+어떤 클래스에도 속하지 않고 만들어진 함수이다. (새로운 클래스와 객체 생성 없이도 사용할 수 있다.)
+메서드의 매개변수로 전달, 메서드의 결과로 반환되는 것이 가능하다.
+Closure
+람다계산식(lamda Calculus) 구현체
+내부에서 외부 변수",Java
+https://surfit.io/link/3qYq2,Spring Batch 파티셔닝 (Partitioning) 활용하기,"지난 시간에 소개 드린 멀티쓰레드 Step과 더불어 파티셔닝 (Partitioning)은 Spring Batch의 대표적인 Scalling 기능입니다.  
+서비스에 적재된 데이터가 적을 경우에는 Spring Batch의 기본 기능들만 사용해도 큰 문제가 없으나, 일정 규모 이상이 되면 (ex: 매일 수백만 row가 추가되는 상황에서의 일일 집계) 서버를 S",Java
+https://surfit.io/link/Kp0vY,IDE 에서는 되는데 jar 에서는 안 돼요 - Java Resource,"웬만하면 getResource() 쓰지 말고 getResourceAsStream() 쓰자
+
+기본 폴더 구조자바에서는 메이븐이 널리 사용되면서 아래와 같은 폴더 구조가 표준처럼 사용되고 있다.
+
+src/main/java 폴더 하위에 있는 java 파일은 빌드 후 target/classes 하위에 위치하게 되고,src/main/resources/static 폴",Java
+https://surfit.io/link/3AQGP,Constants vs Util,"오늘 일하다 의견을 나누게 된 Constants와 Util 얘기
+애플리케이션이 실행되는 서버 IP를 가져와서 로그에 남길 일이 있다.
+이유는 모르겠지만 InetAddress.getLocalHost().getHostAddress()로 찍으면 127.0.0.1 이 출력돼서 다른 방법을 찾아보니 아래와 같이 NetworkInterface 라는 놈을 써서 구할 수",Java
+https://surfit.io/link/37VJl,암호화 알고리즘과 Spring Boot Application에서 Entity 암호화,"하루가 멀다 하고 개인정보 유출 사고가 터지고 있다. 처음에는 충격적으로 받아들여졌지만 사고가 거듭될수록 반응도 둔감해졌다. 그래서 잇따른 정보 유출 사고에 ""개인정보는 이미 공공재""라는 자조 섞인 말까지 나왔다. 그래서 보안으로 제시되는 것들에 대한 관심 또한 높아지는것 같다. 과거에 한창 핫했던 종단간 암호화(End-to-End Encryption)나 ",Java
+https://surfit.io/link/3jAj9,주니어 개발자를 위한 단위테스트 샘플 코드 소개,"이 글에서는, 자바&amp;스프링부트 환경에서의 단위 테스트 샘플 사례를 설명합니다. 테스트 코드를 처음 접하는 주니어 개발자를 대상으로 작성한 글입니다. 주니어 대상으로 작성한 글이지만, 경험이 많은 개발자분께서 읽어주신다면 너무 감사드리며... 부족한 저에게 작은 조언이라도 해주시길 부탁드립니다.  
+
+
+본격적으로 단위테스트에 대한 글을 시작하기 전에,",Java
+https://surfit.io/link/wDkqA,Spring Batch CSV Writer,"Spring Batch를 이용해서 데이터베이스에 저장되어 있는 정보를 CSV file로 저장을 하는 방법에 대해서 작성해보겠습니다.
+데이터 흐름
+payment
+
+csv
+
+데이터의 흐름은 간단합니다. payment table -&gt; payment.csv으로 변경됩니다. payment table의 불필요한 칼럼 id, created_ay, updated_a",Java
+https://surfit.io/link/KpBk0,"아 엑셀다운로드 개발,,, 쉽고 빠르게 하고 싶다 (feat. 엑셀 다운로드 모듈 개발기)","안녕하세요! 정산시스템팀 병아리 개발자 최태현입니다.
+
+최근에 엑셀 다운로드 개발을 편하게 할 수 있는 모듈을 만들게 되었습니다.
+
+제가 엑셀 다운로드 모듈을 만들게 된 이유는 무엇인지
+  모듈을 만드는 과정에서 바뀌는 요구사항에 의해 코드가 어떻게 발전되었는지
+  이 모듈의 장단점은 무엇인지
+하나하나 말씀드리겠습니다!
+
+혹시 비슷한 불편을 겪고 계셨던 분",Java
+https://surfit.io/link/wnqGA,Big things in JDK 13,"6개월마다 GA 배포되는 신규 버전으로, openjdk13은 2019년 9월 17일에 배포되었습니다. 주요 기능은 아래와 같습니다.
+JEP350: Dynamic CDS Archives
+JEP351: ZGC: Uncommit Unused Memory (Experimental)
+JEP353: Reimplement the Legacy Socket API
+JEP3",Java
+https://surfit.io/link/K2OyD,Prometheus + Grafana로  Java 애플리케이션 모니터링하기,"목차
+요약
+모니터링 환경 구축Prometheus
+Grafana
+
+Java MetricsWith Spring Boot ActuatorMicrometer
+
+With JMX Exporter
+
+Grafana + Prometheus + Spring Boot 연동
+부록
+요약
+Spring Boot Actuator + Micrometer Registry
+spring bo",Java
+https://surfit.io/link/3aZgy,자바 Stomp Client 성능 개선기,"안녕하세요, 하이퍼커넥트 Backend Dev1팀의 Fitz 입니다.
+
+아자르에서는 프로덕트의 특성으로 인해 Message broker 서버와 Stomp client를 직접 구현하여 사용하고 있습니다. 
+이 글에서는 직접 구현되어있는 Stomp client를 non-blocking 방식으로 개선하여 성능과 안정성을 향상시킨 내용에 대해 공유합니다.
+
+
+아자",Java
+https://surfit.io/link/KYnv4,"멀티모듈 설계 이야기 with Spring, Gradle","안녕하세요. 배달의민족 프론트 서버를 개발하고 있는 권용근입니다. 멀티 모듈의 개념을 처음알게 되었을 때부터 현재까지 겪었던 문제점들과 그것을 어떻게 해결해나갔는지를 이야기해보려고 합니다. 아래 내용은 모두 Gradle 과 Spring Framework 를 사용한 경험들로 작성되었습니다.
+
+멀티 모듈 프로젝트란?
+
+멀티 모듈 프로젝트를 처음 알게된 건 20",Java
+https://surfit.io/link/wD0B1,Spring에서 Reqeust를 우아하게 로깅하기,스프링 기반의 웹 어플리케이션을 만들다 보면 요청을 처리하는데 맨 처음에 위치하고 있는 Controller(이하 컨트롤러)라는 레이어를 만들게 된다. 그럴때면 사용자가 어떤 요청(request)을 하였는지에 대해 확인이 필요할 수 있다.  물론 확인을 안해도 무방하지만 가급적 로깅은 시스템 로직에 영향을 주지 않는 범위에서 최대한 다양하게 미리 해두는게 나,Java
+https://surfit.io/link/3qVgD,Spring Boot에서 Repository로 DynamoDB 조작하기 (2) - Gradle을 활용해 실행 & 테스팅 환경 구축,"애플리케이션을 실행하거나 테스트하기 위해 docker로 DynamoDB를 띄우는 것이 번거로우니, 이번에는 Gradle을 활용해 실행 및 테스팅 환경 셋팅을 자동화 하겠습니다. https://github.com/myeongjae-kim/guestbook/tree/complete-first-chapter 이 브랜치는 1부를 끝낸 상태의 스냅샷입니다. 여기서부",Java
+https://surfit.io/link/wZ8GG,Spring Boot 여러 서버 실행 하기,"단축키 cmd + F11로 edit configuration 검색합니다.
+해당 edit configuration 으로 들어갑니다.
+
+왼쪽 상단의 + 버튼을 클릭합니다.
+Spring Boot을 선택합니다.
+상단의 Name 이름을 지정합니다.
+VM options에 -Dserver.port=8081을 지정합니다.
+동일한 방법으로 다른 Port도 등록합니다.",Java
+https://surfit.io/link/3AZEz,도움이 될수도 있는 JVM memory leak 이야기,"안녕하세요. 배민 플랫폼실 주문중계 시스템팀 오민철입니다.
+이 글은 몇 줄의 코드와 어디서 걸렸는지 모를 dependency library로 발생한 memory leak에 관한 이야기입니다.
+제목은 참 많이 고민했습니다. 사실 4월에 올리려고 했습니다. 그런데 제목을 지금까지 고민하다 저걸로 결정했습니다.",Java
+https://surfit.io/link/p1Lp9,자바 ThreadLocal: 사용법과 주의사항,"ThreadLocal은 JDK 1.2부터 제공된 오래된 클래스다. 이 클래스를 활용하면 스레드 단위로 로컬 변수를 사용할 수 있기 때문에 마치 전역변수처럼
+여러 메서드에서 활용할 수 있다. 다만 잘못 사용하는 경우 큰 부작용(side-effect)이 발생할 수 있기 때문에 다른 스레드와 변수가 공유되지 않도록 주의해야 한다.
+
+먼저 스레드 로컬(thread",Java
+https://surfit.io/link/1Yop4,"Spring Boot, JobRunr, 분산 노드에서 작업 실행하기","물리적으로 동일한 애플리케이션끼리만 Job을 분산하여 실행할 수 있다. 실행해야할 대상 메써드와 파라메터를 JSON으로 직렬화하여 전달하며, Job을 실행하게될 애플리케이션도 호출한 애플리케이션과 동일해야 한다.
+각 애플리케이션 노드는 BackgroundJobServer라 불리는 빈에 의해 기본적으로 128개의 쓰레드 풀을 이용하여 호출된 Job을 실행한다",Java
+https://surfit.io/link/Z80QG,log4j 보안 취약점 동작원리 및 jenkins 서버 확인 방법,"log4j는 자바를 사용하는 많은 프로젝트에 사용되기 때문에 직접 개발한 코드 뿐만 아니라 자바 개발된 서버 사이드 솔루션들도 모두 점검을 해봐야 합니다. 일반적으로 가장 많이 사용되는 자바로 개발된 서버 사이드 솔루션은  대략 다음과 같습니다.
+Tomcat
+JBoss
+Jenkins
+ElasticSearch
+Hadoop
+Kafka
+Spark
+등등
+방화벽 안",Java
+https://surfit.io/link/mxlmP,자바 직렬화(Java Object Serialization)에 유연성 더하기,"자바 객체를 영속화하는 방법의 하나로 자바 직렬화를 사용할 수 있다. 단순하게는 Serializable 인터페이스를 구현하거나 더 확장성 있는 방법으로는 Externalizable 인터페이스를 구현하는 것을 선택할 수 있고, 자바 직렬화에 종속되지 않는 다른 방법을 선택할 수도 있다.
+일단, Serializable 인터페이스를 구현한 클래스의 인스턴스가 외",Java
+https://surfit.io/link/rM6Po,Counter-Intuitive Reactive Streams,"비동기 프로그래밍은 늘 어렵다.
+이미 오래된 애기지만 Reactive Streams의 구현체인 RxJava나 Reactor가 나오고 Spring에서도 WebFlux가 나오면서 저변이 더욱 확대된 것 같다.학습에 의해 넘을 수 있다고는 하지만 그것도 일부 잘 하는 개발자들에 대한 얘기같고, 현실적으로는 나같은 일반적인 개발자의 직관에 반하는 부분들이 많아 여",Java
+https://surfit.io/link/EmA1m,Resilience4j를 이용한 서킷 브레이커 기초,"마이크로 서비스 사이의 통신이 이루어지는 대규모 시스템 환경에서 발생하는 느리거나 응답하지 않은 다운스트림 서비스가 발생했을 때 그 피해를 최소화시키는 것이 서킷 브레이커의 가장 큰 핵심이라고 할 수 있습니다.대표적으로 마이크로 서비스의 응답이 늦거나 전혀 응답하지 않는 경우, 일시적인 네트워크 문제 등으로 요청이 무작위로 실패하는 경우 등이 이에 해당합니",Java
+https://surfit.io/link/Z8bkk,웹 소켓에 대해 알아보자! - 테스트 편,"rest-assured 를 사용한 api 테스트를 진행한다. rest-assured 는 given, when, then 패턴으로 테스트 코드를 작성하며 Json Data 를 쉽게 검증할 수 있다.
+웹 소켓 연결을 테스트
+웹 소켓을 연결하는 테스트는 별로 어렵지 않게 구현할 수 있다.
+@SpringBootTest(webEnvironment = WebEnvir",Java
+https://surfit.io/link/xrWag,Java 8 에서 왜 함수형 프로그래밍이 도입되었을까?,"객체지향 프로그래밍과 함수형 프로그래밍은 상호 배제 관계에 있다고 생각하는가?
+객체지향과 함수형 프로그래밍
+Java 혹은 다른 객체지향 프로그래밍 언어로 처음 프로그래밍하던 시절이 생각나는가? 그 당시에는 객체지향 이라는 의미를 이해하지 못한 채 절차 지향적인 코드를 구현한 경험이 있을 것이다. 우리는 지향이라는 단어의 의미를 생각해야 한다. 지향은 하나의",Java
+https://surfit.io/link/rMMyo,Java Map의 확장 인터페이스 NavigableMap 이야기,"어떤 항목 중에서 임의의 선택을 하되 가중치를 두어야 한다면 어떻게 구현할 수 있을까요?
+  예를 들어 빨강, 파랑, 초록 중 하나를 임의대로 추출하되 각각 5,3,2 만큼 가중치를 두고 싶습니다.
+뜬금없이 가중치 문제로 시작했는데, 이 글에서 제시하는 답은 아래에 있습니다.
+일단 각자 아는 방법대로 구현해 보고 제 방법과 비교해 보시기 바랍니다.
+
+
+
+
+",Java
+https://surfit.io/link/kqlg8,전략패턴과 커맨드패턴,"같은 인터페이스를 구현하여 사용하는 디자인 패턴이지만 서로 다른 전략 패턴과 커맨드 패턴의 차이점을 예시와 함께 알아보도록 하겠습니다. 
+전략 패턴과 예시
+와이비는 오늘도 일확천금의 꿈을 꿈꾸며 복권을 사러 가게 되었습니다.
+하지만 와이비의 집과 복권 판매점의 거리가 상당히 멀어서 어떻게 가야 할 것인가에 대해서 고민을 하게 되었습니다.
+이때, 와이비가 갈",Java
+https://surfit.io/link/KE0WE,"페이징 테이블(Paging Table) 구현 (feat. Spring Boot, Vue.js)","조회 버튼을 클릭 시 search 함수를 데이터를 조회합니다.
+  fetchList 함수에 page 정보를 전달하여 API 요청을 수행합니다.
+  응답이 오면 컴포넌트(component)의 스테이트(state) 정보를 변경합니다.
+  정렬 기준과 정렬 방향을 선택할 수 있는 두 개의 select 박스를 추가합니다.
+  정렬 기준과 정렬 방향이 바뀔 때마다 ",Java
+https://surfit.io/link/KPLmv,Tomcat Session 획득과 만료,"처음 서버에 접근하는 시점엔 쿠키에 정보가 존재하지 않습니다. 
+쿠키 정보는 응답 헤더를 통해 서버로부터 전달받습니다. 
+서버로부터 한번 응답을 받은 시점에 쿠키가 생성되며, 이후부터는 브라우저가 쿠키 정보를 스스로 요청 헤더(request header)에 추가하여 데이터를 요청합니다.
+
+첫 요청 정보와 그 이후 요청 정보의 차이점Permalink
+
+
+
+1",Java
+https://surfit.io/link/KgonP,Sql을 통해서 테스트 코드를 쉽게 작성하자,데이터베이스와 의존성이 있는 테스트를 진행하는 경우 given 절에 해당하는 데이터를 set up 한 이후에 로직에 대한 검증을 진행하는 것이 일반적입니다. 이때 given 절에 대한 데이터 set up을 *.sql 파일 기반으로 작성하는 것입니다.사용방법은 간단합니다. @Sql 어노테이션을 작성하고 해당 경로에 *.sql 파일을 위치 시킵니다.테스트 코드,Java
+https://surfit.io/link/Kpy42,"OAuth2 소셜(구글, 페이스북, 네이버, 카카오) 로그인 완벽 가이드","웹 또는 앱 서비스에서 로그인을 구현하는 것은 간단하지 않은 일입니다. 로그인을 구현하기 위해서는 다양한 사전 지식들을 가지고 있어야합니다. 특히 세션이나 쿠키 등의 역할 등을 알아야하고, 보안적인 측면에서도 신경을 써주어야합니다.
+
+하지만 로그인을 구현하기 위헤서 개발 시간을 단축시켜줄 수 있는 것이 있다면 어떨까요? 이번 글에서는 스프링부트에서 Spri",Java
+https://surfit.io/link/KQ7po,"Spring Boot, Kotlin, Google Drive 공유 파일 다운로드하기","Google Drive는 구글이 제공하는 클라우드 파일 저장소 상품이다. 이번 글에서는 Google Drive의 특정 계정에 업로드된 파일을 UI 없이 완전히 프로그램으로 다운로드할 수 있는 방법을 소개하고자 한다.
+설계 시나리오
+개발자는 구글이 제공하는 웹 콘솔에서 서비스 계정(Service Account)를 생성한다. 생성 후 .json 파일을 다운로드",Java
+https://surfit.io/link/3X9EG,QueryDSL을 효과적으로 실무에 적용하기 위한 고민,"데이터베이스로 데이터를 처리할 때 문제라 느낀 부분이 있습니다. 바로 MyBatis와 JPA interface, JPQL, QueryDSL이 뒤섞여 있다는 점입니다. 외부 업체를 통한 구조개선으로 만들어진 코드가 가진 한계로 인수인계 받은 소스는 이 모든게 특별한 규칙 없이 사용되고 있었습니다. 그동안 개선할 여건이 만들어지지 않아 아직까지 유지되는 실정이",Java
+https://surfit.io/link/wdg8P,웹 소켓에 대해 알아보자!: 실전 편,"STOMP는 Simple Text Oriented Messaging Protocol의 약자이다. WebSocket 프로토콜은 Text 또는 Binary 두 가지 유형의 메시지 타입은 정의하지만 메시지의 내용에 대해서는 정의하지 않는다.
+즉, WebSocket만 사용해서 구현하게 되면 해당 메시지가 어떤 요청인지, 어떤 포맷으로 오는지, 메시지 통신 과정을 ",Java
+https://surfit.io/link/3x8MA,"slf4j, log4j2 로그 설정 하는 방법","로그는 간단하게 말해서 연속된 데이터의 기록이라고 할 수 있습니다.
+
+일반적으로 처음 프로그래밍을 배울 때는 보통 System.out.print 같은 언어에서 제공해주는 메소드를 사용해보셨을 것입니다. 프로그램이 실행되면서 콘솔에 무엇인가가 출력되는데, 이런 것들이 로그가 될 수 있습니다.
+
+Logging Framework
+
+System.out.print를",Java
+https://surfit.io/link/wJbmX,Batch 구조와 구성 요소,"스프링 배치를 사용하면서 프레임워크의 구조에 대한 이해와 사용하고 있는 클래스가 어떤 역할을 하고 있는지에 대해서 알아볼 필요가 있다고 생각합니다.
+
+이 글로 전체적인 구조를 전부 다 설명드릴 수는 없지만, 어떻게 구성이 되어 있고, 각 요소가 하는 역할은 무엇인지 소개해보도록 하겠습니다.
+
+스프링 배치 구조
+
+
+
+위 다이어그램은 스프링 배치 프레임워크 내",Java
+https://surfit.io/link/3qv72,Java Wrapper 클래스,"Java primitive type 변수가 존재하는데 wrapper 클래스가 생긴 이유가 무엇일까요?
+Java에는 기본형(primitive type) 데이터가 존재합니다. 프로그램 언어를 처음 접할 때 주로 사용하는 자료형으로 int, char, byre, short, long, float, double, boolean 등이 이에 속합니다. 이런 기본 타입",Java
+https://surfit.io/link/wDyAA,bean wiring,"스프링을 사용하는 애플리케이션에서 각 객체가 필요한 다른 객체를 직접 찾거나 생성할 필요가 없다. 컨테이너가 협업할 객체에 대한 정보를 주기 때문이다.
+애플리케이션 객체 간의 이러한 연관 관계 형성 작업이 바로 의존성 주입(Dependency Injection)의 핵심이며, 이를 보통 와이어링(wiring)이라 한다.
+스프링 설정 옵션
+스프링 컨테이너는 애",Java
+https://surfit.io/link/KbMlr,자바 빌드 도구,"프로젝트를 진행하려고 할 때, 자바 빌드 도구를 선택해야 하는 순간은 찾아오기 마련이다. Gradle이 좋다는 말은 많이 들리는데, 전체적인 사용률은 Maven이 앞선다. Google Trands 지수로 Maven과 Gradle의 전세계 검색 통계를 보자.
+
+      
+    
+  
+    
+위 사진처럼 Google Trands 지수도 Maven이 Gra",Java
+https://surfit.io/link/w6lg0,Jackson의 확장 구조를 파헤쳐 보자,"REST API의 JSON 요청 파라미터로 Enum 객체를 받을 때 Enum 객체의 이름뿐 아니라 Enum에 부여된 속성을 기반으로 역직렬화(deserialization)할 수 있도록 Jackson 설정을 정교화하는 작업을 진행했습니다.
+
+사용자 타입과 같은 각종 타입 정보는 데이터베이스에 code 값으로 저장된다. 그리고 code 값은 직관적으로 의미를 ",Java
+https://surfit.io/link/KbM7r,일급 컬렉션을 사용하는 이유,"일급 컬렉션이란 단어는 소트웍스 앤솔로지의 객체지향 생활체조 규칙 8. 일급 콜렉션 사용에서 언급되었다.
+
+Collection을 Wrapping하면서, Wrapping한 Collection 외 다른 멤버 변수가 없는 상태를 일급 컬렉션이라 한다.
+이게 무슨 말일까?
+먼저 Collection을 Wrapping한다의 의미는 아래 코드를
+public class ",Java
+https://surfit.io/link/3BZ8l,이벤트 발행으로 비즈니스 로직 분리하기,"서비스를 만들다 보면, 처음에는 단순한 crud로 시작했던 API도 점차 복잡한 연관 관계가 생기고, 동시에 처리해야 할 일들이 생긴다. 그리고 더욱 복잡한 기능을 구현하기 위해 외부 모듈이나 시스템을 연동하여 사용하면서 하나의 요청에 함께 묶여 수행되는 로직이 점차 많아지는 것을 느껴본 적이 있을 것이다. 
+하지만 이렇게 요청에 묶인 트랜잭션에서 많은 일",Java
+https://surfit.io/link/37vBM,@RequestMapping,"우리는 client에서 오는 요청을 처리하기 위한 api url을 매핑할 때 Spring의 @RequestMapping이라는 어노테이션을 사용한다. Spring은 사용자의 편리를 위해 RequestMapping을 http에서 지원하는 4가지 method인 @GetMapping, @PostMapping, @PutMapping, @DeleteMapping과 추",Java
+https://surfit.io/link/3Nzal,Reflection API 간단히 알아보자.,"Reflection API란?
+구체적인 클래스 타입을 알지 못해도 그 클래스의 정보(메서드, 타입, 변수 등등)에 접근할 수 있게 해주는 자바 API다.
+Reflection을 잘 나타낸 문장이지만 처음 공부하는 사람은 무슨 말인지 한 번에 이해하기 쉽지 않다.
+구체적인 클래스 타입을 알지 못해도, 클래스 정보에 접근이 가능하다는 게 무슨 뜻인지 천천히 알아",Java
+https://surfit.io/link/3MEvz,상품 피드 1차 개선 — Python 에서 Java 로!,"29CM 은 monolithic 구조를 MSA(Microservice Architecture) 로 전환하면서 개발 언어도 Java 로 전환하자는 결정을 하였습니다. 그래서 신규 서비스의 경우 Java + Spring 조합으로 구현하자는 원칙이 있었습니다. 이에 따라 개발자가 수기 처리하고 있던 부분을 어드민을 통해 관리할 수 있게 하고, 정확한 상품 계산을",Java
+https://surfit.io/link/K2xLq,원시 타입을 포장해야 하는 이유,"원시 타입의 변수를 선언하는 방법과,
+원시 타입의 변수를 객체로 포장한 변수를 선언하는 방법이 있다.
+(Collection으로 선언한 변수도 포장한다. 이를 일급 컬렉션이라 하며 티거의 일급 컬렉션을 참고하길 바란다.)
+이번 글에서는 객체지향 생활 체조에도 언급된
+원시 타입의 값을 객체로 포장하면 얻을 수 있는 이점들에 대해 소개하려고 한다.
+자신의 상태를",Java
+https://surfit.io/link/5zQ91,인터페이스와 추상클래스,"언제 추상클래스를 사용하고 언제 인터페이스를 사용해야 할까요? 아마 많은 주니어 개발자분들이 명쾌한 답을 내놓지 못할 것이라고 생각합니다. 저 또한 추상클래스와 인터페이스의 적절한 사용 용도를 인지하지 못한 채 개발을 해왔습니다. 그래서 이번에 추상클래스와 인터페이스에 대해 알아 보고자 합니다.
+
+
+ 추상클래스
+
+
+추상클래스는 일반클래스와 별반 다를 것이 ",Java
+https://surfit.io/link/3L7RY,Test Double을 알아보자,"테스트 더블(Test Double)이란?
+테스트를 진행하기 어려운 경우 이를 대신해 테스트를 진행할 수 있도록 만들어주는 객체를 말한다.
+
+영화 촬영 시 위험한 역할을 대신하는 스턴트 더블에서 비롯되었다.
+
+예를 들어 우리가 데이터베이스로부터 조회한 값을 연산하는 로직을 구현했다고 하자. 해당 로직을 테스트하기 위해선 항상 데이터베이스의 영향을 받을 것이고",Java
+https://surfit.io/link/KrXaZ,Builder Pattern,"빌더 패턴(Builder Pattern)은 Spring 프레임워크를 사용할 때 자주 마주쳤던 디자인 패턴입니다. 
+디자인 패턴에 대한 개념이 없었을 적에는 '왜 이런 방식으로 객체를 만들지? 생성자를 사용하면 되잖아...' 라는 생각을 하곤 했습니다. 
+최근 들어서 클린 코드, 객체 지향적 프로그래밍에 관련된 글들을 많이 접하다보니 디자인 패턴의 중요성이나",Java
+https://surfit.io/link/KrErl,상속보다는 조합(Composition)을 사용하자.,"우리는 다양한 이유로 상속을 사용한다.
+코드를 재사용함으로써 중복을 줄일 수 있다.
+변화에 대한 유연성 및 확장성이 증가한다.
+개발 시간이 단축된다.
+하지만, 상속의 장점들은 상속을 적절히 사용했을 경우에만 해당한다.
+상속을 잘못 사용하면 변화에 유연하지 않고, 오류를 내기 쉬운 소프트웨어가 된다.
+상속의 단점 : 캡슐화를 깨뜨린다.
+
+캡슐화: 만일의 상황",Java
+https://surfit.io/link/wo9e0,"Spring Boot, RabbitMQ 비동기 통신 구현하기","RabbitMQ는 AMQP(플랫폼 독립적인 비동기 메시징을 다룬 프로토콜)을 준수하여 제작된 메시지 브로커이다. 설치가 쉽고, 기능이 직관적인데다 성능이 뛰어나기 때문에 현재 비동기 메시징에 있어서는 광범위하게 사용되고 있다. 이번 글에서는 Spring Boot에서 RabbitMQ 사용 방법을 소개하고자 한다.
+AMQP 통신 원리
+AMQP에서는 브로커의 양",Java
+https://surfit.io/link/3L0me,ArchUnit - UnitTest로 아키텍처 검사를,"아키텍처(architecture)는 정의에 따르면 컴퓨터 공학에서 컴퓨터 시스템의 기능, 조직, 구현에 대한 법칙과 방법을 의미합니다.
+
+최근에는 GitHub 저장소에 README.md 파일과 더불어 ARCHITECTURE.md 파일을 추가해 아키텍처 설명서를 제공하자는 주장도 나오고 있습니다. 개발자들은 프로젝트 아키텍처에 맞게 개발해야 하는데 아키텍처에",Java
+https://surfit.io/link/wJz77,"Java 9 List.of() 메소드 사용시 주의점(ImmutableCollections, 불변 컬렉션)","최근 Modern Java In Action 이라는 책을 보면서 예제를 작성하여 깃에 커밋하고 있었다.
+
+이참에 Java 8 버전을 벗어나서 개인적으로 파격적이었던 Java 11로 코딩을 해보고 싶어서(물론 익숙한 방법을 쓰게된다) Modern Java In Action 혹은 이 블로그를 채우면서 새롭게 알아가는 내용들을 Java 11로 예제를 짜보기로 했",Java
+https://surfit.io/link/KEJZo,DTO와 VO 이야기(feat. Entity),이번 주제는 DTO와 VO에 관한 이야기이다.흔히 다들 DTO와 VO를 같은 의미로 사용하고있고 같은 역할로 사용하고 있다고 판단한다.사실 그럴것이 지금 개발상태에서는 두가지 사용법이 혼용되고 있기때문이다. 하지만 명백히 DTO와 VO는 그 히스토리가 다르며 구성요소와 사용법도 다르다.오늘은 그것에 대해서 정리해보고자 한다.VO( value object ),Java
+https://surfit.io/link/wkRe8,Mac에서 jEnv 사용하기,"자바 백엔드 프로젝트에 참여해보고 싶어서 하나도 모르지만 일단 시작해봅니다.
+자바도 여러 버전이 있을텐데 버전 스위칭을 간편하게 하고 관리할 수 있는 툴이 있습니다.
+jEnv인데 한번 설치해보겠습니다.
+
+www.jenv.be/
+
+
+
+jEnv - Manage your Java environment
+jEnv is a command line tool to hel",Java
+https://surfit.io/link/3jx7J,"Spring Boot, @Async 비동기 실행 로직 구현하기","Spring Boot 기반의 웹 애플리케이션은 기본적으로 각 요청에 대해 동기 방식으로 로직을 실행한다. 하지만, 필요에 따라 비동기 방식으로 로직을 실행해야 하는 경우도 있다. 예를 들면 I/O 부하가 많이 발생하는 배치 작업을 싱글 쓰레드로 처리하면 CPU와 메모리는 남아도는데, 병목이 생겨 느려지기 쉽상이다. 이런 경우 적절히 n개의 멀티 쓰레드로 쪼",Java
+https://surfit.io/link/50lkW,"Kotlin, Jayway JsonPath, 객체 및 JSON 문자열 제어하기","Java, Kotlin은 매우 강력한 정적 타입 언어이지만 때때로 요구사항에 따라 동적으로 변화되는 객체를 다뤄야하는 상황에 직면할 때가 있다. Map,>, List, JSON 문자열의 String 타입이 가장 대표적인 예인데, 이 데이터들을 읽어들이고 추가, 수정하는 것은 여간 번거로운 일이 아닐 수 없다. Jayway JsonPath를 이용하면 Path",Java
+https://surfit.io/link/w4zDJ,자바의 effectively final,"자바에서 final 키워드가 선언되지 않은 변수지만, 값이 재할당되지 않아 final 과 유사하게 동작하는 것을 effectively final이라고 한다.
+이 개념은 자바 8에서 도입되었는데, 익명 클래스(Anonymous Classes) 또는 람다식(Lambda Expressions)이 사용된 코드에서 쉽게 찾아볼 수 있다.
+
+익명 클래스 또는 람다식에",Java
+https://surfit.io/link/KbgBo,"Spring Boot, SSE로 단뱡향 스트리밍 통신 구현하기","Server-Sent Events(이하 SSE)는 HTTP 스트리밍을 통해 서버에서 클라이언트로 Push Notification을 할 수 있는 기술이다. HTML5 스펙에 명시된 표준 기술로 JavaScript에서는 EventSource API를 이용하여 제어가 가능하다. Internet Explorer을 제외한 대부분의 브라우저에서 지원한다.
+전통적인 웹",Java
+https://surfit.io/link/Kb4Dx,JPA Batch Insert 성능 향상기 1편 - With JPA,"성능 향상을 위해서 Batch Insert를 도입하는 과정 중 JPA, Mysql 환경에서의 Batch Insert에 대한 방법과 제약사항들에 대해서 정리했습니다. 결과적으로는 다른 프레임워크를 도입해서 해결했으며 본 포스팅은 JPA Batch Insert의 정리와, 왜 다른 프레임워크를 도입을 했는지에 대해한 내용입니다.insert rows 여러 개 연결",Java
+https://surfit.io/link/3NbzE,Spock 살펴보기,"Spock은 BDD(Behaviour-Driven Development) 프레임워크입니다.
+TDD프레임워크인 JUnit과 비슷한 점이 많으나, 기대하는 동작과 테스트의 의도를 더 명확하게 드러내주고 산만한 코드는 뒤로 숨겨주는 등의 큰 장점이 있습니다.
+기존 JUNIT의 단점
+테스트 중복 코드가 많다
+JUnit, Hamcrest, Mockito를 전부 알아",Java
+https://surfit.io/link/K2DRd,자바 Optional: 1. null은 무엇인가?,"영국의 컴퓨터과학자인 토니 호어(Tony Hoare)가 1965년에 알골(ALGOL W)이라는 프로그래밍 언어를 설계하면서
+처음 등장했다. 당시에 그는 null 참조라는 개념이 “값이 없는 상황을 가장 단순하게 구현할 수 있는 방법”이라고 생각했다.
+
+하지만 시간이 흘러 2009년, 한 소프트웨어 컨퍼런스에서 그는 자신이 고안한 null 참조를 “10억 달",Java
+https://surfit.io/link/59EMJ,IntelliJ (Ultimate & Community) 에서 스프링부트 active profile 설정하기,"IntelliJ Community로 스프링부트 환경에서 개발하시는 분들이 종종 질문 주시는 내용이라 정리하게 되었습니다.  스프링부트로 개발을 하다보면 기본 active profile 외에 다른 profile로 실행이 필요할때가 있는데요.  
+ex) local이 기본 active profile인데, local-real이란 profile로 실행하고자 할 경우",Java
+https://surfit.io/link/KP24B,자바에서 코드 실행 시간을 측정하는 방법,"먼저 currentTimeMillis 메서드를 사용해볼 수 있다. UTC인 1970년 1월 1일 자정부터 현재까지 카운트된 시간을 1/1000초인
+밀리초(milliseconds) 단위로 표시한다. currentTimeMillis의 출력값을 Date로 변환하면 현재 날짜를 구할 수 있다.
+
+
+
+사실 currentTimeMillis는 성능 측정을 위한 코드의 ",Java
+https://surfit.io/link/wVQv1,Practical 모던 자바,"최초 자바 버전에서는 인터페이스에 다음과 같은 제약이 있었다.
+상수를 선언할 수 있다. 해당 상수는 반드시 값이 할당되어 있어야 하며 값을 변경할 수 없다. 명시적으로 final을 선언하지 않더라도 final로 인식된다.
+  메서드는 반드시 추상(abstract) 메서드여야 한다. 즉, 구현체가 아니라 메서드 명세만 정의되어 있어야 한다.
+  인터페이스를 ",Java
+https://surfit.io/link/w8Blz,자바 8 람다&스트림,"이번 글은 Java8 람다와 스트림 API 관련해서 가벼운 마음으로 편하게 글을 작성하였다. 사실, Java13 이 나온 상황에서 Java 8에 대한 글을 쓰는 것이 참 부끄러운 마음이지만, 아직 실무에서 Java8을 많이 사용하기 때문에 꼭 필요한 내용이라고 생각한다. 하지만, 이 글은 Java Stream 및 Lambda에 대한 기본 개념을 전부 친절하",Java
+https://surfit.io/link/504Dn,QueryDSL에서 Inner Join하기,"QueryDSL에서 join하는 법을 찾다가 엄청 헤맸는데, 결국 문서에서 실마리를 찾을 수 있었다. QueryDSL이 HQL 쿼리를 타입에 무관한 방법으로 사용하기 위해 만들어졌다는 것을 알 수 있었고, 그래서 HQL 문법을 뒤져 보고 알았다. HQL에서는 inner join을 사용할 때 그냥 from a, b 하고 쓰는 것이다.
+
+그래서 QueryDSL",Java
+https://surfit.io/link/50L8W,MySQL 환경의 스프링부트에 하이버네이트 배치 설정 해보기,"안녕하세요. 배민상품시스템팀 권순규 입니다.
+저희팀에서 하이버네이트 배치 설정을 통해 대량 insert/update 시의 속도개선을 경험하여 공유드리고자 합니다.
+
+
+전체 예제 파일은 github 에서 확인 할 수 있습니다.
+
+하이버네이트 배치
+배치 작업은 보통 대량의 작업을 한번에 처리하는 경우를 말합니다. 이와 유사하게 하이버네이트 배치는 JDBC 에서",Java
+https://surfit.io/link/wV4Wo,우리도 채팅있으면 좋을 것 같아요.,"이 글에서는 Netty를 이용해 채팅 서버 구축을 위한 기본 셋팅과 구조에 집중해 이야기를 전개합니다.
+실제 운영환경에서 서비스되는 시스템을 만드는 과정은 많은 고민과 트러블슈팅이 필요하기 때문에 
+자칫 주제와 조금만 벗어나도 이야기가 우왕좌왕해질 수 있기 때문입니다.
+따라서 비지니스 로직이 담긴 서비스레벨과 데이터 설계 부분은 제외됐음을 알려드립니다.
+
+",Java
+https://surfit.io/link/5e60Y,Kubernetes 환경을 위한 자바 에이전트 개발기,"안녕하세요, 하이퍼커넥트 Backend Dev1팀의 Fitz 입니다.
+
+이 글에서는 Kubernetes 환경에 종속적인 Distributed tracing 기능을 개발하며 고민했던 내용과 자바 바이트코드 변환을 이용해 재사용성 높은 자바 에이전트를 구현한 경험을 공유합니다.
+
+글의 전반부에서는 배경과 어떤 요구를 위해 어떤 구현을 했는지에 대해 설명하고, ",Java
+https://surfit.io/link/w8z2q,Kotlin에서 실행가능한 jar 생성하기,"Executable jar 생성하기
+
+터미널에서 java -jar 명령어를 이용해서 간단하게 실행할 수 있는 jar 파일을 생성하는 예제입니다.
+
+
+
+Main.kt
+
+여기서는 com.snowdeer라는 패키지를 만들고 그 안에 Main.kt 파일을 생성했습니다.
+
+package com.snowdeer
+
+import java.lang.Thread.sleep
+",Java
+https://surfit.io/link/wkGQO,DBA와 개발자가 모두 행복해지는 Hibernate의 in_clause_parameter_padding 옵션,"Java ORM 기술의 표준 명세인 JPA가 소개된 지 참 오래되었지만, 국내 현실상 대규모 시스템에서 적용되어 사용된 운영 경험이 충분히 쌓이지 않고 공유되지도 않는 것 같습니다.대부분 JPA를 사용한다고 하면 Hibernate를 구현체로 사용하게 됩니다. 제가 담당하는 서비스 역시 Spring Data JPA를 활용하고 있고 JPA 구현체로 Hibern",Java
+https://surfit.io/link/wkrMz,RxJava와 Coroutines을 간단하게 알아보자.,"약 1년 전 Coroutines을 처음 다루었고, RxJava에 대해서 조금 익숙하게 사용할 시점에 작성했던 글이다.
+
+RxJava와 Kotlin Coroutines 비교해보기 - 링크
+
+그간 지원은 다음과 같다.
+
+2019 Google I/O에서 Coroutines을 적극 도입하기로 하였고,
+  ViewModel/LiveData 등을 위한 Coroutin",Java
+https://surfit.io/link/KgrNW,Spring Immutable으로 Properties 설정하기,"해당 코드는 Github에 공개되어 있습니다.
+Spring Boot 2.2 버전에서부터는 Immutable으로 Properties 설정을 할 수 있습니다. 커스텀 하게 설정한 값들은 Properties 객체로 관리하는 것이 좋습니다. 해당 내용은 Properties 설정값 가져오기를 참조하시면 됩니다. 기존 Properties의 단점은 Mutable이라는 ",Java
+https://surfit.io/link/Kr6k0,[JPA] 엔티티의 생명주기 (Entity LifeCycle),"영속과 준영속의 개념 이해하기
+    
+    인프런 강의 참고
+
+엔티티의 생명주기 (Entity LifeCycle)
+
+영속 상태와 준영속 상태
+영속 상태란
+    1) entityManager.persist(); 로 영속성 컨텍스트에 저장된 상태
+      2) entityManager.find(); 로 조회할 때 영속성 컨텍스트 1차 캐시에 없어서 DB",Java
+https://surfit.io/link/3LrR9,스프링을 활용한 파일 업로드 구현 (대용량 파일을 고려하자!),개발을 하다보면 실제로 직접 구현을 해본건 아니지만 여기저기서 들어본 지식과 그 동안의 짬밥(?)으로 추측해볼수 있는 부분들이 있다. 물론 모든일에 정답은 없겠지만 요즘 느끼는건 책에서 공부만 해본것과 다른 블로그들에서 눈으로만 보고 넘어가는것들 그리고 실제로 손가락을 움직여가며 왜 여기서는 이 방법을 사용하지 고민하면서 구현을 해본다는건 정말 엄청나게 큰,Java
+https://surfit.io/link/3qVrY,우아한 feign 적용기,"안녕하세요. 저는 비즈인프라개발팀에서 개발하고 있는 고정섭입니다.
+이 글에서는 배달의민족 광고시스템 백엔드에서 feign 을 적용하면서 겪었던 것들에 대해서 공유 하고자 합니다.
+
+
+소개
+Feign 은  Netflix 에서 개발된 Http client binder 입니다.
+  Feign 을 사용하면 웹 서비스 클라이언트를 보다 쉽게 작성할 수 있습니다.
+ ",Java
+https://surfit.io/link/3N7Zv,Spring Cloud Config 살펴보기,"스프링 5.0 마스터를보고 정리한 자료 입니다. 전체 코드는 Github에서 확인할 수 있습니다.
+
+스프링 클라우드 컨피그는 중앙 집중식 마이크로서비스 구성을 지원한다. 여기서 두 가지 중요한 구성 요소의 조합이다.
+스프링 클라우드 컨피그 서버 : 버전 관리 리포지토리로 백업된 중앙 집중식 구성 노출을 지원한다.
+스프링 클라우드 컨피그 클라이언트 : 애플리",Java
