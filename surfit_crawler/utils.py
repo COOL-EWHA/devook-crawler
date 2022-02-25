@@ -23,6 +23,7 @@ def set_chrome_driver():
     # options = Options()
     # options.headless = True
     # driver_path = os.path.join(BASE_DIR, "chromedriver")
+    # driver = webdriver.Chrome(driver_path, options=options)
 
     # for docker
     chrome_options = webdriver.ChromeOptions()
@@ -115,11 +116,12 @@ def get_surfit_dev_categories(driver, url):
 def one_cycle_of_crawling_urls_by_category(driver, url):
     """
     카테고리 별 링크들을 크롤링하는 한번의 사이클이다.
+    EC2의 용량을 고려하여 웹 페이지 스크롤은 수행하지 않는다.
     :param driver: Chrome webdriver
     :param url: 크롤링할 페이지의 url
     :return: url list
     """
-    soup = convert_driver_to_beautifulsoup_with_web_page_scroll(driver=driver, url=url)
+    soup = convert_driver_to_beautifulsoup(driver=driver, url=url)
     return parse_urls(
         soup=soup, tag_name="div", class_name="ct-item base"
     ) + parse_urls(soup=soup, tag_name="div", class_name="ct-item text")

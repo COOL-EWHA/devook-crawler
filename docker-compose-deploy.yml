@@ -9,7 +9,7 @@ services:
     environment:
       TZ: "Asia/Seoul"
     volumes:
-      - /config/nginx:/etc/nginx/conf.d
+      - ./config/nginx:/etc/nginx/conf.d
     restart: always
 
   app:

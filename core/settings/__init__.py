@@ -1,2 +1,2 @@
-from .local import *
-# from .deploy import *
+# from .local import *
+from .deploy import *
