@@ -14,6 +14,7 @@ crayons==0.4.0
 cryptography==36.0.1
 Django==4.0.2
 djangorestframework==3.13.1
+gunicorn==20.1.0
 h11==0.13.0
 idna==3.3
 isort==5.10.1
@@ -21,9 +22,7 @@ jellyfish==0.9.0
 lazy-object-proxy==1.7.1
 mccabe==0.6.1
 mypy-extensions==0.4.3
-mysqlclient==2.1.0
 networkx==2.6.3
-numpy==1.22.0
 outcome==1.1.0
 pathspec==0.9.0
 platformdirs==2.4.1
@@ -50,4 +49,3 @@ urllib3==1.26.7
 webdriver-manager==3.5.3
 wrapt==1.13.3
 wsproto==1.0.0
-yake @ git+https://github.com/LIAAD/yake@96e4a233f94ab384de30d057a8b5c889a3a21ed5
