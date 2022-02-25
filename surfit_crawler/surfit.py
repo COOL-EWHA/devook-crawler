@@ -9,11 +9,11 @@ from surfit_crawler.set_up_data import surfit_url_list
 from surfit_crawler.utils import (
     set_chrome_driver,
     append_data,
-    insert_into_database,
     initialize_jagged_list,
     one_cycle_of_crawling,
-    save_to_csv,
 )
+from surfit_crawler.utils_db import insert_into_database
+from surfit_crawler.utils_csv import save_to_csv
 from surfit_crawler.set_up_data import category_list
 
 

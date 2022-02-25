@@ -33,5 +33,5 @@ category_list = [
     "Android",
     "iOS",
     "Git",
-    "빅데이터_AI_머신러닝",
+    "빅데이터 · AI · 머신러닝",
 ]
