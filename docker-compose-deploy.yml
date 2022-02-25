@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: "devook-crawler-nginx"
+    ports:
+      - "80:80"
+    environment:
+      TZ: "Asia/Seoul"
+    volumes:
+      - /config/nginx:/etc/nginx/conf.d
+    restart: always
+
+  app:
+    build: .
+    container_name: "devook-crawler"
+    ports:
+      - "8000:8000"
+    environment:
+      TZ: "Asia/Seoul"

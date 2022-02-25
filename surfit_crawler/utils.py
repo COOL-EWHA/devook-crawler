@@ -19,10 +19,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 def set_chrome_driver():
-    options = Options()
-    options.headless = True
-    driver_path = os.path.join(BASE_DIR, "chromedriver")
-    driver = webdriver.Chrome(driver_path, options=options)
+    # for local dev
+    # options = Options()
+    # options.headless = True
+    # driver_path = os.path.join(BASE_DIR, "chromedriver")
+
+    # for docker
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    driver = webdriver.Chrome("/usr/local/bin/chromedriver", options=chrome_options)
     return driver
 
 
