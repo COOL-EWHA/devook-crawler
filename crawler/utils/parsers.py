@@ -1,4 +1,4 @@
-from surfit_crawler.set_up_data import category_list
+from crawler.surfit.set_up_data import category_list
 
 
 def parse_url_title_description(soup, tag_name, class_name, posts, index):
@@ -14,6 +14,13 @@ def parse_url_title_description(soup, tag_name, class_name, posts, index):
             posts[4].append("")
         else:
             posts[4].append(item.find("img", "img-center").attrs['src'])  # image
+
+
+def parse_title_tistory(soup, tag_name, class_name, posts, index):
+    items = soup.find_all(tag_name, class_name)
+
+    for item in items:
+        posts[0].append(item.text)  # title
 
 
 def parse_categories(

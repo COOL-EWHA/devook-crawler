@@ -38,4 +38,3 @@ typing_extensions==4.0.1
 urllib3==1.26.7
 wrapt==1.13.3
 wsproto==1.0.0
-yake @ git+https://github.com/LIAAD/yake@96e4a233f94ab384de30d057a8b5c889a3a21ed5

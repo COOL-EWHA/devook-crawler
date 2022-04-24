@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from surfit_crawler.parsers import parse_url_title_description
-from surfit_crawler.utils import (
+from crawler.utils.utils import parse_url_title_description
+from crawler.utils.utils import (
     set_chrome_driver,
     loads_a_web_page_in_the_current_session,
     web_page_scroll,

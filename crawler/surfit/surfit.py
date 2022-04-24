@@ -5,16 +5,16 @@ Surfit Crawler
 2. parse url, title, description from html
 3. insert url, title, description, category into mysql
 """
-from surfit_crawler.set_up_data import surfit_url_list
-from surfit_crawler.utils import (
+from crawler.surfit.set_up_data import surfit_url_list
+from crawler.utils.utils import (
     set_chrome_driver,
     append_data,
     initialize_jagged_list,
     one_cycle_of_crawling, one_cycle_of_crawling_urls_by_category,
 )
-from surfit_crawler.utils_db import insert_into_database
-from surfit_crawler.utils_csv import save_to_csv
-from surfit_crawler.set_up_data import category_list
+from crawler.utils.utils_db import insert_into_database
+from crawler.utils.utils_csv import save_to_csv
+from crawler.surfit.set_up_data import category_list
 
 
 def surfit_crawler_with_db():

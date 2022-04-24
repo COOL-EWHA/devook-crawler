@@ -7,15 +7,15 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 
-from surfit_crawler.parsers import (
+from crawler.utils.parsers import (
     parse_url_title_description,
     parse_categories,
     parse_urls,
 )
-from surfit_crawler.set_up_data import surfit_url_list, category_list
+from crawler.surfit.set_up_data import surfit_url_list, category_list
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 def set_chrome_driver():
