@@ -4,10 +4,10 @@ import time
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
-driver = webdriver.Chrome("../chromedriver")
+driver = webdriver.Chrome("../../chromedriver")
 driver.implicitly_wait(3)
 
-url = "https://www.surfit.io/explore/develop/bigdata-ai-ml"
+url = "https://www.surfit.io/explore/develop/php"
 driver.get(url)
 
 # 웹페이지 스크롤
@@ -27,9 +27,14 @@ html = driver.page_source
 soup = BeautifulSoup(html, "html.parser")
 
 # 데이터 개수 확인
-item_base = soup.find_all("div", "ct-item base")
-item_text = soup.find_all("div", "ct-item text")
-print(len(item_base) + len(item_text))
+# item_base = soup.find_all("div", "ct-item base")
+# item_text = soup.find_all("div", "ct-item text")
+
+item = soup.find("div", "ct-item base")
+image = item.find("img", "img-center")
+print(image.attrs['src'])
+
+driver.quit()
 
 # 모든 데이터의 title 출력 확인
 # titles = soup.find_all("div", "ct-title")

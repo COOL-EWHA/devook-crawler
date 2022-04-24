@@ -10,6 +10,11 @@ def parse_url_title_description(soup, tag_name, class_name, posts, index):
         posts[2].append(item.find("div", "ct-text").text)  # description
         posts[3].append(category_list[index])  # category
 
+        if item.find("img", "img-center") is None:
+            posts[4].append("")
+        else:
+            posts[4].append(item.find("img", "img-center").attrs['src'])  # image
+
 
 def parse_categories(
         soup, find_tag_name, find_class_name, find_all_tag_name, find_all_class_name

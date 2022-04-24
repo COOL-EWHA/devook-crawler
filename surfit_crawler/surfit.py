@@ -10,7 +10,7 @@ from surfit_crawler.utils import (
     set_chrome_driver,
     append_data,
     initialize_jagged_list,
-    one_cycle_of_crawling,
+    one_cycle_of_crawling, one_cycle_of_crawling_urls_by_category,
 )
 from surfit_crawler.utils_db import insert_into_database
 from surfit_crawler.utils_csv import save_to_csv
@@ -40,20 +40,35 @@ def surfit_crawler_with_csv():
     driver = set_chrome_driver()
 
     posts = []
-    initialize_jagged_list(list_name=posts, list_length=4)
+    initialize_jagged_list(list_name=posts, list_length=5)
 
     # 과정: 크롤링 -> items에 저장 -> csv 파일에 저장
-    column = ["url", "title", "description", "category"]
+    column = ["url", "title", "description", "category", "image"]
     for i, surfit_url in enumerate(surfit_url_list):
         one_cycle_of_crawling(driver, surfit_url, posts, i)
         items = append_data(
-            urls=posts[0], titles=posts[1], descriptions=posts[2], category=posts[3]
+            urls=posts[0], titles=posts[1], descriptions=posts[2], category=posts[3], image=posts[4]
         )
-        posts = [[], [], [], []]  # 리스트 초기화
+        posts = [[], [], [], [], []]  # 리스트 초기화
 
         save_to_csv(
             file_name=f"csv_files/{category_list[i]}.csv", column=column, data=items
         )
+
+    driver.quit()
+
+
+def surfit_link_crawler_with_csv():
+    driver = set_chrome_driver()
+
+    for i, surfit_url in enumerate(surfit_url_list):
+        urls = one_cycle_of_crawling_urls_by_category(
+            driver=driver, url=surfit_url
+        )
+        save_to_csv(
+            file_name=f"url_csv_files/{category_list[i]}.csv", column=[], data=urls
+        )
+        print("완료")
 
     driver.quit()
 

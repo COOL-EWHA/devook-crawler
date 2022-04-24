@@ -20,17 +20,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 def set_chrome_driver():
     # for local dev
-    # options = Options()
-    # options.headless = True
-    # driver_path = os.path.join(BASE_DIR, "chromedriver")
+    options = Options()
+    options.headless = True
+    driver_path = os.path.join(BASE_DIR, "chromedriver")
     # driver = webdriver.Chrome(driver_path, options=options)
+    driver = webdriver.Chrome(driver_path)
 
     # for docker
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--disable-dev-shm-usage')
-    driver = webdriver.Chrome("/usr/local/bin/chromedriver", options=chrome_options)
+    # chrome_options = webdriver.ChromeOptions()
+    # chrome_options.add_argument('--headless')
+    # chrome_options.add_argument('--no-sandbox')
+    # chrome_options.add_argument('--disable-dev-shm-usage')
+    # driver = webdriver.Chrome("/usr/local/bin/chromedriver", options=chrome_options)
     return driver
 
 
@@ -76,10 +77,10 @@ def one_cycle_of_crawling(driver, url, posts, index):
     )
 
 
-def append_data(urls, titles, descriptions, category):
+def append_data(urls, titles, descriptions, category, image):
     items = []
     for i, url in enumerate(urls):
-        data = (url, titles[i], descriptions[i], category[i])  # tuple 생성
+        data = (url, titles[i], descriptions[i], category[i], image[i])  # tuple 생성
         items.append(data)
     return items
 
@@ -121,7 +122,7 @@ def one_cycle_of_crawling_urls_by_category(driver, url):
     :param url: 크롤링할 페이지의 url
     :return: url list
     """
-    soup = convert_driver_to_beautifulsoup(driver=driver, url=url)
+    soup = convert_driver_to_beautifulsoup_with_web_page_scroll(driver=driver, url=url)
     return parse_urls(
         soup=soup, tag_name="div", class_name="ct-item base"
     ) + parse_urls(soup=soup, tag_name="div", class_name="ct-item text")
